@@ -1,0 +1,13 @@
+.home-parent-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.home-parent-bottom {
+    display: grid;
+    grid-template: repeat(4,auto)/repeat(2,minmax(100px,1fr));
+    gap: 10px;
+}
+
+

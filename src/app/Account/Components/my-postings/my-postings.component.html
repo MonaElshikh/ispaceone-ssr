@@ -1,0 +1,164 @@
+<div class="row p-0 mt-2 ">
+    <div class="col-md-3 ">
+        <div class="list-group shadow bg-white">
+            <a class="list-group-item list-group-item-action bg-secondray active"> My Postings</a>
+            <a class="list-group-item list-group-item-action cursor" [ngClass]="{'activeNode':myPostings }"
+                (click)="loadPostings('mypostings')">
+                My Postings
+            </a>
+            <a class="list-group-item list-group-item-action cursor" [ngClass]="{'activeNode':postingLikes}"
+                (click)="loadPostings('postingLikes')">
+                Postings Likes
+            </a>
+            <a class="list-group-item list-group-item-action cursor" [ngClass]="{'activeNode':postingTrackings }"
+                (click)="loadPostings('postingTrackings')">
+                Postings Loves
+            </a>
+            <a class="list-group-item list-group-item-action cursor" [ngClass]="{'activeNode':postingComments}"
+                (click)="loadPostings('postingComments')">
+                Postings Comments
+            </a>
+            <a class="list-group-item list-group-item-action cursor" [routerLink]="['/NewPosting']"
+                *ngIf="authService.isLoggedIn()">New Posting</a>
+        </div>
+    </div>
+    <div class="col-md-9" *ngIf="!DataLoading">
+        <h5 class="mb-0 header-style">{{title}} <span class="small">({{Count}})</span>
+        </h5>
+        <div class="row">
+            <div class="col-md-9">
+            </div>
+            <div class="col md-3">
+                <div class="m-2 mb-0 cursor float-right pr-3" (click)="changeMode('List')">
+                    <span *ngIf="!isGalleryView">
+                        <svg-list-view></svg-list-view>
+                    </span>
+                    <span *ngIf="isGalleryView" style="fill: gray;width: 2rem;">
+                        <svg-list-view></svg-list-view>
+                    </span>
+                </div>
+                <div class="m-2 mb-0 cursor float-right pr-3" (click)="changeMode('Gallery')">
+                    <span *ngIf="!isListView">
+                        <svg-gallrey-view></svg-gallrey-view>
+                    </span>
+                    <span *ngIf="isListView" style="fill:gray;">
+                        <svg-gallrey-view></svg-gallrey-view>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="row" *ngIf="pageOfItems">
+            <div class="col-md-12">
+                <div class="row" *ngIf="!isGalleryView">
+                    <div class="container col-md-12">
+                        <div class="card p-0 mr-1 ml-1 mb-2 mt-0" *ngFor="let article of pageOfItems">
+                            <img class="card-img-top cursor" style="position: relative;height:10rem;"
+                                [lazyLoad]="postingService.bindImageUrl('posting',article.postingLargeImageUrl)"
+                                (click)="openArticle(article)">
+                            <img class="img-fluid shadow rounded shadow square imgSize mx-2 cursor"
+                                style="position: absolute; z-index: 1000;width:7.5rem;height:7.5rem;top:50%"
+                                [lazyLoad]="postingService.bindImageUrl('profile',article.passportImageURL)"
+                                (click)="openArticle(article)">
+                            <div class="card-body mx-0 pt-1" style="padding: 1rem; padding-left:8.9rem;">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <a [routerLink]="url+article.header.split(' ').join('-')+'/'+ article.id">
+                                            <h5 class="cursor blueGreenFontStyle">{{article.header}}</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <span class="card-text  small">Posted By:</span>
+                                        <a style="cursor: pointer;" class="small text-truncate"
+                                            [routerLink]="['/Profile/',article.uname]">
+                                            {{article.author}}</a>
+                                        <span class="small"> (on {{article.time_created | date}})</span>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div *ngIf="isMyPostingsList">
+                                            <span class="card-text small">Status:&nbsp;
+                                            </span><span class="small"
+                                                [ngClass]="{ 'text-danger' :article.onllinStatus!='Approved','text-success':article.onllinStatus==='Approved'}">{{article.onllinStatus}}</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div *ngIf="isMyPostingsList">
+                                            <span class="small"
+                                                [ngClass]="{ 'text-danger' :article.lockUnlock,'text-success':!article.lockUnlock}">
+                                                {{article.lockUnlock?'Locked':'Unlocked'}}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <a class="small" style="color:navy;cursor: pointer;">Posted in:
+                                            {{article.category}}</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row flex-wrap mx-auto pb-2" *ngIf="isGalleryView">
+                    <div class="col-md-3 p-0" *ngFor="let article of pageOfItems" (click)="openArticle(article)">
+                        <div class="card card-block m-1 cursor rounded text-center" style="height:13rem;">
+                            <div class="row" style="height:10rem;">
+                                <div class="col-md-12">
+                                    <img class="card-img-top img-fluid"
+                                        [lazyLoad]="postingService.bindImageUrl('posting',article.postingLargeImageUrl)"
+                                        style="position: relative;height:7rem;">
+                                    <img class="img-fluid mt-2 mb-2 rounded-circle mx-auto d-block"
+                                        style="position: relative;height:5rem;top:-50px;z-index: 1000;"
+                                        [lazyLoad]="postingService.bindImageUrl('profile',article.passportImageURL)">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h6 class="text-center">{{article.header}}</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-100 cursor d-flex align-items-center justify-content-center mb-2">
+            <jw-pagination
+                class="pagination w-100 pt-3 pb-0 page-item page-link number-item first-item last-item previous-item"
+                [items]="articleList" [pageSize]="16" (changePage)="onChangePage($event)">
+            </jw-pagination>
+        </div>
+    </div>
+    <div class="col-md-9" *ngIf="DataLoading">
+        <div class="row">
+            <div class="col-md-12">
+                <ngx-skeleton-loader></ngx-skeleton-loader>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <ngx-skeleton-loader></ngx-skeleton-loader>
+            </div>
+            <div class="col md-3 text-right">
+                <ngx-skeleton-loader count="2" [theme]="{'width':'2rem','margin-left':'1px'}"></ngx-skeleton-loader>
+
+            </div>
+        </div>
+        <div class="d-flex flex-row flex-wrap mx-auto pb-2">
+            <div class="col-md-3 p-0" *ngFor="let i of placeHolderItems">
+                <div class="card card-block m-1 p-1 cursor rounded text-center">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ngx-skeleton-loader appearance="circle"
+                                [theme]="{ width: '150px', height: '150px','top':'2rem' ,'margin-bottom':'2rem'}">
+                            </ngx-skeleton-loader>
+                            <ngx-skeleton-loader></ngx-skeleton-loader>
+                            <ngx-skeleton-loader></ngx-skeleton-loader>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

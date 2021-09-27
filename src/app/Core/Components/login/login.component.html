@@ -1,0 +1,87 @@
+<div class="row">
+  <div class="col-lg-12 mt-2 p-0">
+    <form class="form-signin p-3 mx-auto" #loginForm="ngForm" (ngSubmit)="signIn(loginForm)">
+      <div class="card mb-3">
+        <div class="card-header bg-white cursor p-1 pl-2 mb-3">
+          <div class="row">
+            <div class="col-md-12 font-weight-bold">
+              <h5> Sign In </h5>
+            </div>
+          </div>
+        </div>
+        <div class="card-body p-0">
+          <div class="row container pt-1 m-0">
+            <div class="col-md-12">
+              <div class="form-group">
+                <div class="has-float-label">
+                  <input type="text" ngModel name="UserId" #UserId="ngModel" id="UserId" class="form-control"
+                    (change)="Reset()" placeholder="User Name" [ngClass]="{'is-invalid': !isRightgData}" required>
+                  <label for="UserId">User Name</label>
+                  <div *ngIf="UserId.touched && UserId.invalid" class="alert-alert-danger notValid">
+                    required
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="has-float-label">
+                  <input type="{{dynamicType}}" ngModel name="Password" #Password="ngModel" id="Password"
+                    class="form-control" (change)="Reset()" placeholder="Password"
+                    [ngClass]="{'is-invalid': !isRightgData}" required>
+                  <label for="Password">Password</label>
+                  <div *ngIf="Password.touched && Password.invalid" class="alert-alert-danger notValid">required</div>
+                  <div class="text-right">
+                    <span *ngIf="isPw" class="cursor" (click)="changeInputType()">
+                      <svg-hide-pw></svg-hide-pw>
+                    </span>
+                    <span *ngIf="!isPw" class="cursor" (click)="changeInputType()">
+                      <svg-show-pw></svg-show-pw>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-lg btn-primary btn-block mb-2 " [disabled]="!loginForm.valid">
+                <span *ngIf="isClicked" class="spinner-border spinner-border-sm"></span>
+                Sign in</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center p-2 cursor">
+              <a class="text-secondary" style="text-decoration: none;" (click)="openForgetPw()">Forgot Password?</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <form *ngIf="isOpenForgetPw" class="form-signin p-3 mx-auto" #forgetPwForm="ngForm"
+      (ngSubmit)="sendPw(forgetPwForm)">
+      <div class="card mb-3">
+        <div class="card-header bg-white cursor mb-3">
+          <div class="row">
+            <div class="col-md-12 font-weight-bold">
+              <h5> Retrieve Password</h5>
+            </div>
+          </div>
+        </div>
+        <div class="card-body p-0">
+          <div class="row container pt-1 m-0">
+            <div class="col-md-12">
+              <div class="form-group">
+                <div class="has-float-label">
+                  <input type="email" ngModel name="Email" #Email="ngModel" id="Email" class="form-control"
+                    placeholder="Email" [ngClass]="{'is-valid':Email.valid }" required>
+                  <label for="Email">Email</label>
+                  <div *ngIf="Email.touched && Email.invalid" class="alert-alert-danger notValid">
+                    Required
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn-lg btn-primary btn-block mb-2 " [disabled]="!forgetPwForm.valid">
+                <span *ngIf="isForgetPwClicked" class="spinner-border spinner-border-sm"></span>
+                Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

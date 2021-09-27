@@ -1,0 +1,164 @@
+<div class="row mr-3 ml-3" *ngIf="showHideStatsBoxes">
+    <div class="col md-12 mt-3 border rounded ">
+        <div class="row mb-2">
+            <div class="col-md-11"></div>
+            <div class="col-md-1">
+                <span (click)="showHideStatsBoxes=false" class="cursor" style="fill:gray">
+                    <svg-close></svg-close>
+                </span>
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-md-3">
+                <div class="card ">
+                    <div class="card-header cursor pl-2" (click)="toggleStatsBoxes()">
+                        Profile Stats
+                    </div>
+                    <div class="list-group list-group-flush statsBoxHeight" [ngClass]='{ collapse : !isStatsBoxesExpand 
+                        ,statsBoxesCollpase :!isStatsBoxesExpand}' >
+                        <table>
+                            <tr class="border-bottom">
+                                <td class="pl-2"><label class="small font-weight-bold">Photos</label>
+                                </td>
+                                <td> <label class="small">{{photosCredits}} of {{LiftimeLimits}} used</label></td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <td class="pl-2"><label class="small font-weight-bold">Profile
+                                        Likes</label></td>
+                                <td> <label class="small">{{likesCredits}} of {{DailyLimits}} used</label></td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <td class="pl-2"><label class="small font-weight-bold">Profile
+                                        Favorites</label></td>
+                                <td> <label class="small">{{favsCredits}} of {{DailyLimits}} used</label></td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <td class="pl-2"><label class="small font-weight-bold">Profile
+                                        Blocks</label></td>
+                                <td> <label class="small">{{blockCredits}} of {{DailyLimits}} used</label></td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <td class="pl-2"><label class="small font-weight-bold">Profile
+                                        Reports</label></td>
+                                <td> <label class="small">{{reportCredits}} of {{DailyLimits}} used</label></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="p-2 text-center">
+                    <button class="btn btn-sm btn-dark statsButtonWidth">Upload Photos</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card ">
+                    <div class="card-header cursor pl-2" (click)="toggleStatsBoxes()">
+                        Messages Stats
+                    </div>
+                    <div class="list-group list-group-flush statsBoxHeight" [ngClass]='{ collapse : !isStatsBoxesExpand
+                        ,statsBoxesCollpase :!isStatsBoxesExpand }'>
+                        <table>
+                            <tr class="border-bottom">
+                                <td class="pl-2"><label class="small font-weight-bold">Messages</label></td>
+                                <td> <label class="small">{{messageCredits}} of {{DailyLimits}} used</label></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="p-2 text-center">
+                    <button class="btn btn-sm btn-dark statsButtonWidth">Check Inbox</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card ">
+                    <div class="card-header cursor pl-2" (click)="toggleStatsBoxes()">
+                        Interests Stats
+                    </div>
+                    <div class="list-group list-group-flush statsBoxHeight"
+                        [ngClass]='{ collapse : !isStatsBoxesExpand ,statsBoxesCollpase :!isStatsBoxesExpand}'>
+                        <table>
+                            <tr class="border-bottom ">
+                                <td class="pl-2">
+                                    <a><label class="small font-weight-bold">Views</label> </a>
+                                </td>
+                                <td>
+                                    <label class="small">0 of 10 used</label>
+                                </td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <td class="pl-2"><label class="small font-weight-bold">Appearances</label></td>
+                                <td> <label class="small">2 of 10 used</label></td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <td class="pl-2"><label class="small font-weight-bold">Likes</label>
+                                </td>
+                                <td> <label class="small">{{likesCredits}} of {{DailyLimits}} used</label></td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <td class="pl-2"><label class="small font-weight-bold">Favorites</label>
+                                </td>
+                                <td> <label class="small">{{favsCredits}} of {{DailyLimits}} used</label></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="p-2 text-center">
+                    <button class="btn btn-sm btn-dark statsButtonWidth">See Interests</button>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card ">
+                    <div class="card-header cursor pl-2" (click)="toggleStatsBoxes()">
+                        Postings Stats
+                    </div>
+                    <div class="list-group list-group-flush statsBoxHeight"
+                        [ngClass]='{ collapse : !isStatsBoxesExpand ,statsBoxesCollpase :!isStatsBoxesExpand}'>
+                        <table>
+                            <tr class="border-bottom ">
+                                <td class="pl-2">
+                                    <a><label class="small font-weight-bold">Articles</label> </a>
+                                </td>
+                                <td>
+                                    <label class="small">{{articleCredits}} of {{MonthlyLimits}} used</label>
+                                </td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <td class="pl-2"><label class="small font-weight-bold">Article
+                                        Likes</label></td>
+                                <td> <label class="small">{{articleLikesCredits}} of {{DailyLimits}} used</label></td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <td class="pl-2"><label class="small font-weight-bold">Article
+                                        Tracks</label></td>
+                                <td> <label class="small">{{articleTracks}} of {{DailyLimits}} used</label></td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <td class="pl-2"><label class="small font-weight-bold">Article
+                                        Comments</label></td>
+                                <td> <label class="small">{{articleCommentsCredits}} of {{DailyLimits}} used</label>
+                                </td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <td class="pl-2"><label class="small font-weight-bold">Comments
+                                        Likes</label></td>
+                                <td> <label class="small">{{articleCommentLikesCredits}} of {{DailyLimits}} used</label>
+                                </td>
+                            </tr>
+                            <tr class="border-bottom">
+                                <td class="pl-2"><label class="small font-weight-bold">Views</label>
+                                </td>
+                                <td> <label class="small">0 of {{DailyLimits}} used</label></td>
+                            </tr>
+                            <tr>
+                                <td class="pl-2"><label class="small font-weight-bold">Appearances</label></td>
+                                <td> <label class="small">2 of 10 used</label></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="p-2 text-center">
+                    <button class="btn btn-sm btn-dark statsButtonWidth">New Posting</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

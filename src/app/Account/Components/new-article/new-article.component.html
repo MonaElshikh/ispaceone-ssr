@@ -1,0 +1,169 @@
+<div class="row">
+    <div class="col-md-12 container mb-3 mt-3 rounded shadow bg-white" *ngIf="isUsedFullArticleLimits">
+        <p class="text-danger pl-3">Limits Alert: You usesd all your credits.</p>
+    </div>
+    <div class="col md-12 mb-2 rounded bg-white p-0 " *ngIf="!isUsedFullArticleLimits">
+        <h5 class="header-style">New Post</h5>
+        <form #newPostFrom="ngForm" (ngSubmit)="savePostings(newPostFrom)">
+            <div class="card mb-3 p-2">
+                <div class="row mb-2">
+                    <div class="col-md-2 LabelFont">Posting Category:</div>
+                    <div class="col-md-8">
+                        <select class="form-control" name="postCategory" ngModel #postCategory="ngModel"
+                            [ngClass]="{'is-valid':postCategory.valid }" style="width: 91%;" required>
+                            <option selected="selected" value="">Select One</option>
+                            <option *ngFor="let postCategory of postingCategoriesList"
+                                value="{{postCategory.categoryName}}">{{postCategory.categoryName}}
+                            </option>
+                        </select>
+                    </div>
+                    <div class="col-md-2" *ngIf="postCategory.touched && postCategory.invalid"
+                        class="alert-alert-danger notValid">
+                        required
+                    </div>
+                </div>
+                <div class="border-bottom mb-2">
+                </div>
+                <div class="row mb-2">
+                    <div class="col-md-2 LabelFont">Posting Title:</div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-11">
+                                <input type="text" placeholder="Posting Title" name="postingTitle" ngModel
+                                    #postingTitle="ngModel" [ngClass]="{'is-valid':postingTitle.valid }" required
+                                    class="form-control" maxlength="50" minlength="10"
+                                    (ngModelChange)="newArticleTitleRemainingChars= $event.length">
+                            </div>
+                            <div class="col-md-1 my-auto">
+                                <app-chars-counter [usedChars]="newArticleTitleRemainingChars" [maxChars]="50">
+                                </app-chars-counter>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2" *ngIf="postingTitle.touched && postingTitle.invalid"
+                        class="alert-alert-danger notValid">
+                        <div *ngIf="postingTitle.errors.required">[required]</div>
+                        <div *ngIf="postingTitle.errors.minlength">[Min 10 characters]
+                        </div>
+                    </div>
+                </div>
+                <div class="border-bottom mb-2"></div>
+                <div class="row mb-2">
+                    <div class="col-md-2 LabelFont">Posting Description:</div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-11">
+                                <input type="text" placeholder="Posting Description" name="postingTags" ngModel
+                                    #postingTags="ngModel" required minlength="10"
+                                    [ngClass]="{'is-valid':postingTags.valid }" class="form-control" maxlength="150"
+                                    (ngModelChange)="newArticleTagsRemainingChars= $event.length">
+                            </div>
+                            <div class="col-md-1 my-auto">
+                                <app-chars-counter [usedChars]="newArticleTagsRemainingChars" [maxChars]="150">
+                                </app-chars-counter>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pl-0" *ngIf="postingTags.touched && postingTags.invalid"
+                        class="alert-alert-danger notValid">
+                        <div *ngIf="postingTags.errors.required">[required]</div>
+                        <div *ngIf="postingTags.errors.minlength">[Min 10 characters]</div>
+                    </div>
+                </div>
+                <div class="border-bottom mb-2"></div>
+                <div class="row mb-2">
+                    <div class="col-md-2 LabelFont">Posting Body:</div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-11">
+                                <textarea autosize cols="10" rows="4" placeholder="Posting Body" class="form-control"
+                                    maxlength="12000" name="postingBody" ngModel #postingBody="ngModel" required
+                                    minlength="100" [ngClass]="{'is-valid':postingBody.valid }"
+                                    (ngModelChange)="newArticleBodyRemainingChars= $event.length"></textarea>
+                            </div>
+                            <div class="col-md-1 my-auto">
+                                <app-chars-counter [usedChars]="newArticleBodyRemainingChars" [maxChars]="12000">
+                                </app-chars-counter>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 p2-0" *ngIf="postingBody.touched && postingBody.invalid"
+                        class="alert-alert-danger notValid">
+                        <div *ngIf="postingBody.errors.required">[required]</div>
+                        <div *ngIf="postingBody.errors.minlength">[Min 100 characters]
+                        </div>
+                    </div>
+                </div>
+                <div class="border-bottom mb-2"></div>
+                <div class="row mb-2 pt-2 pb-2" *ngIf="!isUploadingPosterImage">
+                    <div class="col-md-2 LabelFont">Upload Picture:</div>
+                    <div class="col-md-10">
+                        <input type="file" (change)="fileChangeEvent($event)" />
+                    </div>
+                </div>
+                <div class="row row mb-2 pt-2 pb-2" *ngIf="isUploadingPosterImage">
+                    <div class="text-center col-md-8">
+                        <h5>Crop Image</h5>
+                        <image-cropper [imageChangedEvent]="imageChangedEvent" [maintainAspectRatio]="true"
+                            [aspectRatio]="32/15" [cropperMinWidth]="1280" [cropperMinHeight]="600" [imageQuality]="100"
+                            format="png,jpeg,jpg" (imageCropped)="imageCropped($event)"
+                            (imageLoaded)="imageLoaded($event)" (cropperReady)="cropperReady()"
+                            (loadImageFailed)="loadImageFailed()">
+                        </image-cropper>
+                    </div>
+                    <div class="text-center col-md-4">
+                        <h5>Preview</h5>
+                        <img class="pt-1 img-fluid" style="width:19rem;height:10rem;" [src]="croppedImage" />
+                    </div>
+                </div>
+                <div class="row pb-4" *ngIf="isUploadingPosterImage">
+                    <div class="col-md-8">
+                        <p class="text-danger" *ngIf="isLoadingImageError">{{loadingimageError}}</p>
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-default rounded-pill rounded-sm border-secondary text-secondary"
+                            (click)="CancelPosterUpload()">Cancel</button>
+                    </div>
+                </div>
+                <div class="border-bottom mb-2"></div>
+                <div class="row mb-2 pt-2 pb-2">
+                    <div class="col-md-2 LabelFont">Allow Comments:</div>
+                    <div class="col-md-10">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="rbAllowComments" ngModel
+                                #AllowComments="ngModel" id="rbAllowComments" value="Yes">
+                            <label class="form-check-label" for="rbAllowComments">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="rbAllowComments" ngModel
+                                #AllowComments="ngModel" id="rbrbAllowCommentsNo" value="No">
+                            <label class="form-check-label" for="rbrbAllowCommentsNo">No</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-bottom mb-2"></div>
+                <div class="row mb-2 pt-2 pb-2">
+                    <div class="col-md-2 LabelFont">Article Pack: </div>
+                    <div class="col-md-6">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="checkbox" name="cbArticlePack" ngModel
+                                #ArticlePack="ngModel">
+                            <label class="form-check-label small" for="cbArticlePack">Use Premium Article
+                                Pack</label>
+                        </div>
+                    </div>
+                    <div class="col-md-3 small">(1 of 1 Available)</div>
+                    <div class="col-md-1"><a [routerLink]="['/Upgrade']" class="blueLink small">Buy now</a>
+                    </div>
+                </div>
+                <div class="border-bottom mb-2"></div>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <button type="submit" class="btn btn-sm btn-primary"
+                            [disabled]="!newPostFrom.valid">Publish</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

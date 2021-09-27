@@ -1,0 +1,15 @@
+.centered-table{
+    margin: 0 auto;
+}
+.statsBoxWidth{
+    width: 12rem;height: 24rem;
+} 
+.statsBoxesCollpase{
+    height: 0rem;
+}
+.statsButtonWidth{
+    width: 13.5rem;
+}
+.statsBoxHeight{
+height: 14.5rem;
+}

@@ -1,0 +1,86 @@
+<div class="row">
+  <div class="col-lg-2"></div>
+  <div class="col-lg-8  m-3 border rounded shadow-lg p-4 m-4 bg-white">
+    <div class="card">
+      <div class="card-header p-0 cursor bg-light" id="headingOne" (click)="tagsToggle()">
+        <h3 class="mb-0">
+          <span class="btn text-secondary pl-2" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+            aria-controls="collapseOne">
+            Tags
+          </span>
+        </h3>
+      </div>
+      <table class="bg-light px-5 tagsresourecesGrid" [ngClass]="{ collapse : isExpanedTage }">
+        <tbody>
+          <tr>
+            <td class="px-2 w-50  border-bottom border-right"> <a class="linkFontStyle"
+                [routerLink]="['/Love-Romance']">Love & Romance</a></td>
+            <td class="px-2 border-bottom"><a class="linkFontStyle" [routerLink]="['/Friends-Acquaintances']">Friends &
+                Acquaintances</a></td>
+          </tr>
+          <tr>
+            <td class="px-2 border-bottom border-right"><a class="linkFontStyle"
+                [routerLink]="['/Dating-Courtship']">Dating & Courtship </a></td>
+            <td class="px-2 border-bottom border-top"><a class="linkFontStyle" [routerLink]="['/Hookups-Affairs']">
+                Hookups & Affairs</a></td>
+          </tr>
+          <tr>
+            <td class="px-2 border-bottom border-right"> <a class="linkFontStyle"
+                [routerLink]="['/Infidelity-Cheating']">Infidelity & Cheating</a></td>
+            <td class="px-2 border-bottom border-top"><a class="linkFontStyle" [routerLink]="['/Sex-Intimacy']">Sex &
+                Intimacy </a></td>
+          </tr>
+          <tr>
+            <td class="px-2 border-bottom border-right"><a class="linkFontStyle"
+                [routerLink]="['/Heartbreaks-Breakups']">Heartbreaks & Breakups</a></td>
+            <td class="px-2 border-bottom border-top"><a class="linkFontStyle"
+                [routerLink]="['/Marriage-Wedding']">Marriage & Wedding</a></td>
+          </tr>
+          <tr>
+            <td class="px-2 border-bottom border-right"><a class="linkFontStyle"
+                [routerLink]="['/Relationship-Commitment']">Relationship & Commitment</a></td>
+            <td class="px-2 border-bottom border-top"><a class="linkFontStyle"
+                [routerLink]="['/Attraction-Crushes']">Attraction & Crushes</a></td>
+          </tr>
+          <tr>
+            <td class="px-2 border-bottom border-right"><a class="linkFontStyle"
+                [routerLink]="['/Singles-Unattached']">Singles & Unattached</a></td>
+            <td class="px-2 border-bottom border-top"><a class="linkFontStyle"
+                [routerLink]="['/Flirting-Seducing']">Flirting & Seducing</a> </td>
+          </tr>
+          <tr>
+            <td class="px-2 border-bottom border-right"><a class="linkFontStyle"
+                [routerLink]="['/Harmony-Compatibility']">Harmony & Compatibility</a></td>
+            <td class="px-2 border-bottom border-top"><a class="linkFontStyle"
+                [routerLink]="['/Chemistry-Connection']">Chemistry & Connection</a></td>
+          </tr>
+          <tr>
+            <td class="px-2 border-bottom border-right"><a class="linkFontStyle"
+                [routerLink]="['/Spouses-Couples']">Spouses & Couples</a></td>
+            <td class="px-2 border-bottom border-top"><a class="linkFontStyle" [routerLink]="['/Gays-Lesbians']">Gays &
+                Lesbians</a></td>
+          </tr>
+          <tr>
+            <td class="px-2 border-bottom border-right"><a class="linkFontStyle"
+                [routerLink]="['/Abbreviations-Acronyms']">Abbreviations & Acronyms</a></td>
+            <td class="px-2 border-bottom border-top"><a class="linkFontStyle"
+                [routerLink]="['/Idioms-Proverbs']">Idioms & Proverbs </a></td>
+          </tr>
+          <tr>
+            <td class="px-2 border-bottom border-right"><a class="linkFontStyle"
+                [routerLink]="['/Quotes-Sayings']">Quotes & Sayings</a></td>
+            <td class="px-2 border-bottom border-top"><a class="linkFontStyle"
+                [routerLink]="['/Astrology-Horoscope']">Astrology & Horoscope </a></td>
+          </tr>
+          <tr>
+            <td class="px-2 border-right "><a class="linkFontStyle"
+                [routerLink]="['/Life-Style']">Life-Style</a></td>
+            <td class="px-2 border-top"><a class="linkFontStyle" [routerLink]="['/Extras-Extras']">Extras
+                & Extras </a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="col-lg-2"></div>
+</div>

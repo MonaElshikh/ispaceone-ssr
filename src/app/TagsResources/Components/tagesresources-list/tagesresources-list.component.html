@@ -1,0 +1,62 @@
+<div class="mb-3 pt-2">
+    <div class="row">
+        <div class="col-lg-3">
+            <app-tagesresourses-leftmenu></app-tagesresourses-leftmenu>
+        </div>
+        <ng-container *ngIf="articlesList.length> 0; else elseTemplate">
+            <div class="col-lg 9">
+                <h5 class="header-style">
+                    {{header}}
+                </h5>
+                <div class="rounded mt-2 mb-3">
+                    <div class=" row mt-2">
+                        <div class="col-lg-12 text-secondry textCenetrPosition textSmallSize "> <label>{{lbl1}}
+                            </label><br>
+                            <label>{{lbl2}}
+                            </label>
+                        </div>
+                    </div>
+                    <div class="media m-2 border rounded" *ngFor="let article of pageOfItems,index as i"
+                        [attr.data-index]="i">
+                        <img src="{{images[i]}}" class="img-fluid img-thumbnail m-2 w-25 h-25 cursor p-0" alt="..."
+                            (click)="openArticle(article)">
+                        <div class="media-body mt-2">
+                            <a class="blueGreenFontStyle cursor" (click)="openArticle(article)"
+                                [attr.data-index]="i">{{article.title}}</a><br />
+                            {{article.description}}
+                        </div>
+                    </div>
+                    <div class="w-100 cursor d-flex align-items-center justify-content-center">
+                        <jw-pagination
+                            class="pagination w-100 pt-3 pb-0 page-item page-link number-item first-item last-item previous-item"
+                            [items]="articlesList" [pageSize]="10" (changePage)="onChangePage($event)">
+                        </jw-pagination>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+        <ng-template #elseTemplate>
+            <div class="col-md-9">
+                <div class="border pl-3 pr-3 pt-3 mb-2">
+                    <ngx-skeleton-loader></ngx-skeleton-loader>
+                </div>
+                <div class="mb-2 mb-2 w-50 mx-auto">
+                    <ngx-skeleton-loader></ngx-skeleton-loader>
+                    <ngx-skeleton-loader></ngx-skeleton-loader>
+                </div>
+                <div class="card mb-2" *ngFor="let item of placholderList">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <ngx-skeleton-loader appearance="circle"
+                                [theme]="{width:'6rem',height:'6rem','border-radius':'1rem'}">
+                            </ngx-skeleton-loader>
+                        </div>
+                        <div class="col-md-10 my-auto">
+                            <ngx-skeleton-loader></ngx-skeleton-loader>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </div>
+</div>

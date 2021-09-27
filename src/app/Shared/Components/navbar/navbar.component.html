@@ -1,0 +1,238 @@
+<nav class="navbar navbar-expand-lg navbar-dark footer-bg-dark divColor fixed-top pt-0"
+  style="font-size: 12px;height: auto;">
+  <div class="container">
+    <a class="navbar-brand" [routerLink]="['/']" *ngIf="!authService.isLoggedIn()">
+      <img src="assets/images/ispace1_logo.png" style="width: 95px;height: 27px;" alt="i1logo"> <span
+        class="sr-only">(current)</span>
+    </a>
+    <a class="navbar-brand cursor" (click)="goHome();this.updateMessageCount();this.UpdateIntCount()"
+      *ngIf="authService.isLoggedIn()">
+      <img src="assets/images/ispace1_logo.png" style="width: 95px;height: 27px;" alt="i1logo"> <span class="sr-only">(current)</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+      aria-label="Toggle navigation" [attr.aria-expanded]="isExpanded" (click)="toggle()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav" [ngClass]="{ show: isExpanded }">
+      <ul class="navbar-nav flex-grow mr-auto">
+
+        <li class="nav-item" *ngIf="!authService.isLoggedIn()">
+          <a class="nav-link" [routerLink]="['/']" (click)="toggle()" (mouseleave)="homeOver=false"
+            (mouseenter)="homeOver=true">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="short-div text-center">
+                  <span *ngIf="!homeOver" style="fill:rgba(255,255,255,.5)">
+                    <svg-home></svg-home>
+                  </span>
+                  <span *ngIf="homeOver" style="fill:rgba(255,255,255,.75)">
+                    <svg-home></svg-home>
+                  </span>
+                </div>
+                <div class="short-div"> Home</div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" [routerLink]="['/Profiles']"
+            (click)="toggle();this.updateMessageCount();this.UpdateIntCount()" (mouseleave)="profilesOver=false"
+            (mouseenter)="profilesOver=true">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="short-div text-center">
+                  <span *ngIf="!profilesOver" style="fill:rgba(255,255,255,.5)">
+                    <svg-profiles></svg-profiles>
+                  </span>
+                  <span *ngIf="profilesOver" style="fill:rgba(255,255,255,.75)">
+                    <svg-profiles></svg-profiles>
+                  </span>
+                </div>
+                <div class="short-div"> Profiles</div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="cursor: pointer" (click)="toggle();this.updateMessageCount();this.UpdateIntCount()"
+            [routerLink]="['/Postings']" (mouseleave)="postingsOver=false" (mouseenter)="postingsOver=true">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="short-div text-center">
+                  <span *ngIf="!postingsOver" style="fill:rgba(255,255,255,.5)">
+                    <svg-postings></svg-postings>
+                  </span>
+                  <span *ngIf="postingsOver" style="fill:rgba(255,255,255,.75);">
+                    <svg-postings></svg-postings>
+                  </span>
+                </div>
+                <div class="short-div">
+                  Postings
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item" ngbDropdown *ngIf="!authService.isLoggedIn()">
+          <a class="nav-link" style="cursor: pointer" ngbDropdownToggle id="navbarDropdown2" role="button"
+            (mouseleave)="moreOver=false" (mouseenter)="moreOver=true">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="short-div text-center">
+                  <span *ngIf="!moreOver" style="fill:rgba(255,255,255,.5);">
+                    <svg-more></svg-more>
+                  </span>
+                  <span *ngIf="moreOver" style="fill:rgba(255,255,255,.75);">
+                    <svg-more></svg-more>
+                  </span>
+                </div>
+                <div class="short-div">
+                  More
+                </div>
+              </div>
+            </div>
+          </a>
+          <div ngbDropdownMenu aria-labelledby="navbarDropdown2" class="dropdown-menu dropdown-menu-center">
+            <a ngbDropdownItem [routerLink]="['/Partners']" (click)="toggle()">Partners</a>
+            <a ngbDropdownItem [routerLink]="['/Announcements']" (click)="toggle()">Announcements</a>
+            <a ngbDropdownItem [routerLink]="['/Plans']" (click)="toggle()">Plans</a>
+            <a ngbDropdownItem [routerLink]="['/Advertising']" (click)="toggle()">Advertising</a>
+            <a ngbDropdownItem [routerLink]="['/About']" (click)="toggle()">About</a>
+            <a ngbDropdownItem [routerLink]="['/WeatherForecast']" (click)="toggle()">WeatherForecast</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cursor" (click)="toggle(); goProfile();this.updateMessageCount();this.UpdateIntCount()"
+            (mouseleave)="profileOver=false" (mouseenter)="profileOver=true"
+            [ngClass]="{'disabled':!authService.isLoggedIn() }">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="short-div text-center">
+                  <span *ngIf="!profileOver || (profileOver && !authService.isLoggedIn())"
+                    style="fill:rgba(255,255,255,.5) ;">
+                    <svg-profile></svg-profile>
+                  </span>
+                  <span *ngIf="profileOver && authService.isLoggedIn()" style="fill:rgba(255,255,255,.75) ;">
+                    <svg-profile></svg-profile>
+                  </span>
+                </div>
+                <div class="short-div">
+                  My Profile
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link cursor" (click)="toggle();goInbox();this.updateMessageCount();this.UpdateIntCount()"
+            (mouseleave)="mesgOver=false" (mouseenter)="mesgOver=true"
+            [ngClass]="{'disabled':!authService.isLoggedIn() }">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="short-div text-center">
+                  <span *ngIf="!mesgOver || (mesgOver && !authService.isLoggedIn())" style="fill:rgba(255,255,255,.5);">
+                    <svg-messages></svg-messages>
+                  </span>
+                  <span *ngIf="mesgOver && authService.isLoggedIn()" style="fill:rgba(255,255,255,.75);">
+                    <svg-messages></svg-messages>
+                  </span>
+                  <span class="badge badge-pill badge-light"
+                    *ngIf="authService.isLoggedIn() && authService.GetMesgCount()>0">{{authService.GetMesgCount()}}</span>
+                </div>
+                <div class="short-div">
+                  My Messages
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="cursor: pointer" (click)="toggle();this.updateMessageCount();this.UpdateIntCount()"
+            [routerLink]="['/ProfileInterests']" (mouseleave)="interestsOver=false" (mouseenter)="interestsOver=true"
+            [ngClass]="{'disabled':!authService.isLoggedIn() }">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="short-div text-center" style="fill:rgba(255,255,255,.5);">
+                  <span *ngIf="!interestsOver || (interestsOver && !authService.isLoggedIn())">
+                    <svg-interests></svg-interests>
+                  </span>
+                  <span *ngIf="interestsOver && authService.isLoggedIn()" style="fill:rgba(255,255,255,.75);">
+                    <svg-interests></svg-interests>
+                  </span>
+                  <span class="badge badge-pill badge-light"
+                    *ngIf="authService.isLoggedIn() && authService.GetInterestsCount()>0">{{authService.GetInterestsCount()}}</span>
+                </div>
+                <div class="short-div">
+                  My Interests
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cursor" [routerLink]="['/MyPostings']"
+            (click)="toggle();this.updateMessageCount();this.UpdateIntCount()" (mouseleave)="myPostingOver=false"
+            (mouseenter)="myPostingOver=true" [ngClass]="{'disabled':!authService.isLoggedIn() }">
+            <div class=" row">
+              <div class="col-md-12">
+                <div class="short-div text-center">
+                  <span *ngIf="!myPostingOver || (myPostingOver && !authService.isLoggedIn())"
+                    style="fill:rgba(255,255,255,.5);">
+                    <svg-post></svg-post>
+                  </span>
+                  <span *ngIf="myPostingOver && authService.isLoggedIn()" style="fill:rgba(255,255,255,.75);">
+                    <svg-post></svg-post>
+                  </span>
+                </div>
+                <div class="short-div">
+                  My Postings
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link " *ngIf="!authService.isLoggedIn()" [routerLink]="['/Login']" (click)="toggle()">Sign In
+          </a>
+        </li>
+        <li class="nav-item pr-3">
+          <a *ngIf="!authService.isLoggedIn()" class="nav-link " [routerLink]="['/Register']" (click)="toggle()">Sign Up
+          </a>
+        </li>
+        <li class="nav-item mr-3 mt-2" *ngIf="authService.isLoggedIn()">
+          <div style="border: 2px solid #008080;border-radius: 50%;margin-top: 6px"
+            *ngIf="UpgradeTo==='Featured' && UpgradeStatus==='Approved'">
+            <span class="cursor" style="fill:#008080;">
+              <svg-star></svg-star>
+            </span>
+          </div>
+          <div style="border: 2px solid #1e90ff;border-radius: 50%;margin-top: 6px"
+            *ngIf="UpgradeTo==='Premium'  && UpgradeStatus==='Approved'">
+            <span class="cursor" style="fill:#1e90ff;">
+              <svg-star></svg-star>
+            </span>
+          </div>
+        </li>
+        <li class="nav-item" ngbDropdown>
+          <a class="navbar-brand cursor" ngbDropdownToggle id="navbarProfileImage" *ngIf="authService.isLoggedIn()">
+            <img [src]="authService.setUserProfileImageUrl()" class="rounded-circle imgSize" alt="Logo"
+              (click)="authService.getSname();BindAccountData();">
+          </a>
+          <div ngbDropdownMenu aria-labelledby="navbarProfileImage" class="dropdown-menu dropdown-menu-right">
+            <a ngbDropdownItem (click)="toggle();goProfile()" class="cursor">
+              {{authService.getSname()}}
+            </a>
+            <a ngbDropdownItem (click)="toggle()">A/C:&nbsp;{{AccountType}}</a>
+            <a ngbDropdownItem (click)="toggle()">Status: {{profileStatus}}</a>
+            <a ngbDropdownItem [routerLink]="['/Settings']" (click)="toggle()">Settings</a>
+            <a ngbDropdownItem [routerLink]="['/Upgrade']" (click)="toggle()">Upgrade</a>
+            <a ngbDropdownItem [routerLink]="['/Support']" (click)="toggle()">Support</a>
+            <a ngbDropdownItem [routerLink]="['/']" (click)="logOut();toggle()">Logout</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

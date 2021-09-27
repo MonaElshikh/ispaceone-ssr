@@ -1,0 +1,135 @@
+<div class="mb-3 pt-2 ">
+  <ng-container *ngIf="TagsResourcesObject && TagsResourcesObject !==undefined; else elseTemplate">
+    <div class="card mb-3 border-0">
+      <img src="{{randomImageUrl}}" class="img-fluid img-thumbnail w-100 h-100 p-0" alt="..."
+        *ngIf="TagsResourcesObject && TagsResourcesObject !==undefined">
+      <div class="card-body" *ngIf="TagsResourcesObject && TagsResourcesObject !==undefined">
+        <div class="row">
+          <div class="col-lg-12 p-0">
+            <h3 class="text-break textCenetrPosition">
+              {{TagsResourcesObject.title}}
+            </h3>
+            <h5 class="card-title text-break ">
+              {{TagsResourcesObject.description}}
+            </h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 p-0">
+            <div class="pb-2">
+              <small>Read This: </small><small class="cursor blueLink">
+                <a *ngIf="readThisList[0] && readThisList[0]!= undefined" class="cursor"
+                  (click)="openArticle(readThisList[0])">{{readThisList[0].title}}</a>
+              </small>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 p-0">
+            <p class="card-text text-break whiteSpace" *ngIf="TagsResourcesObject && TagsResourcesObject !=undefined">
+              {{TagsResourcesObject.body}}
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 p-0 mb-3 mt-3">
+            <small>Read This: </small><small class="cursor blueLink">
+              <a *ngIf="readThisList[1] && readThisList[1] != undefined" class="cursor"
+                (click)="openArticle(readThisList[1])">{{readThisList[1].title}}</a>
+            </small>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 p-0 ">
+            <div class="dottedBorder mb-3" *ngIf="TagsResourcesObject && TagsResourcesObject !=undefined">
+              <div class="row">
+                <div class="col-md-12">
+                  <small class="pl-2">Date Posted/Updated On:</small>
+                  <small>{{TagsResourcesObject.date}}</small>
+                </div>
+              </div>
+              <div class="row pb-1" *ngIf="TagsResourcesObject && TagsResourcesObject !=undefined">
+                <div class="col-md-12" *ngIf="TagsResourcesObject.authors && TagsResourcesObject.authors!=undefined ">
+                  <small class="float-left pl-2">
+                    Author(s):&nbsp;
+                  </small>
+                  <a *ngFor="let auth of TagsResourcesObject.authors.author ,index as i"
+                    class="card-text small float-left cursor text-decoration-none" href="{{auth.authorLink}}"
+                    target="_blank" rel="noreferrer">
+                    {{
+                    TagsResourcesObject.authors.author.length >1 && i
+                    !=TagsResourcesObject.authors.author.length-1 ? auth.authorName + ',' :
+                    auth.authorName
+                    }}&nbsp;
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 p-0">
+            <button class="btn btn-secondary mb-2" (click)="navigate(TagsResourcesObject,'prev')">
+              Prev
+            </button><br>
+          </div>
+          <div class="col-lg-3 text-center">
+            <a class="btn btn-secondary mb-2" [routerLink]="menuUrl"> Menu</a>
+          </div>
+          <div class="col-lg-3 text-center">
+            <a class="btn btn-secondary " [routerLink]="url"> List</a>
+          </div>
+          <div class="col-lg-3 p-0">
+            <button class="btn btn-secondary mb-2 float-right" (click)="navigate(TagsResourcesObject,'next')">
+              Next
+            </button><br>
+          </div>
+        </div>
+        <div class=" row dottedBorder mt-2 mb-2">
+          <div class="col-lg-12 p-0 pl-2">
+            <small>
+              All content on this page is copyright protected by ispace1. No part of the content on
+              this page should be copied or republished in any manner without obtaining our prior
+              necessary written permission.
+            </small>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 p-0" *ngIf="articlesList && articlesList!=undefined">
+            <h5>Related Articles</h5>
+            <div class="media mb-2 border rounded p-2" *ngFor="let article of articlesList,index as i"
+              [attr.data-index]="i">
+              <div class="media-body" *ngIf="article && article!=undefined">
+                <a class="homeBulletlabelsFontStyle cursor" (click)="openArticle(article)"
+                  [attr.data-index]="i">{{article.title}}</a><br />
+                {{article.description}}
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center pt-1">
+          <button (click)="showComments=true" style="width: 9rem;"
+            class="btn btn-sm btn-default text-primary border-primary">
+            Load
+            Comments
+          </button>
+        </div>
+        <div class="row" *ngIf="showComments">
+          <div class="col-lg-12 m-3" *ngIf="TagsResourcesObject && TagsResourcesObject!= undefined">
+            <disqus [identifier]="url+TagsResourcesObject.title.split(' ').join('-')">
+            </disqus>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  <ng-template #elseTemplate>
+    <div class="card mb-3 border-0">
+      <ngx-skeleton-loader appearance="circle" [theme]="{'width':'68.5rem','height':'25rem','border-radius':'2rem'}">
+      </ngx-skeleton-loader>
+      <div class="card-body" >
+        <ngx-skeleton-loader count="30"></ngx-skeleton-loader>
+      </div>
+    </div>
+  </ng-template>
+</div>

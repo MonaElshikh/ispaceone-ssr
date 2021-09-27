@@ -1,0 +1,36 @@
+<div class="row p-0 mb-3">
+  <div class="col-md-3 pt-0">
+    <app-footer-left-menu></app-footer-left-menu>
+  </div>
+  <div class="col-md-9"  *ngIf="!DataLoading">
+    <h5 class="header-style">Partners</h5>
+    <div *ngFor="let partner of partenersList">
+      <div class="card">
+        <div class="card-header">
+          {{partner.name}}
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-2">
+              <img src="{{partner.image}}" class="squaire mx-2" alt="">
+            </div>
+            <div class="col-md-10">
+              <a class="card-text small blueLink" href="{{partner.link}}">
+                Gold Partners', image: 'assets/images/ez.jpg', link: 'Buy any set of books from EZ Solutions and get $20
+                off when you use the coupon code "ez20of"
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-9" *ngIf="DataLoading">
+    <div class="border mb-2 pt-2 pl-2 pr-2">
+      <ngx-skeleton-loader></ngx-skeleton-loader>
+    </div>
+    <div class="border p-3">
+      <ngx-skeleton-loader count="30"></ngx-skeleton-loader>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,493 @@
+<div class="row mt-2 mb-3 p-0">
+    <div class="col-md-3 ">
+        <div class="list-group shadow bg-white">
+            <a class="list-group-item list-group-item-action bg-secondray active">
+                My Interests
+            </a>
+            <a class="list-group-item list-group-item-action cursor" [ngClass]="{'activeNode':isLikes}"
+                (click)="toggleTabs('likes')">
+                Likes
+            </a>
+            <a class="list-group-item list-group-item-action cursor" [ngClass]="{'activeNode':isFavs}"
+                (click)="toggleTabs('favorites')">
+                Loves
+            </a>
+            <a class="list-group-item list-group-item-action cursor" [ngClass]="{'activeNode':isViewers }"
+                (click)="toggleTabs('viewers')">
+                Viewers
+            </a>
+            <a class="list-group-item list-group-item-action cursor" [ngClass]="{'activeNode':isViews}"
+                (click)="toggleTabs('views')">
+                Views
+            </a>
+        </div>
+    </div>
+    <div class="col-md-9" *ngIf="!DataLoading">
+        <h5 class="mb-2 header-style">Profile {{title}}</h5>
+        <!-- Tab panes -->
+        <div class="tab-content mb-3 pt-1" id="interestsContentpanes">
+            <div *ngIf="isLikes" id="likesPane" class="tab-pane container show  active"
+                [ngClass]="{'show':isLikes , 'active':isLikes}" role="tabpanel" aria-labelledby="Likes-tab">
+                <div class="row">
+                    <div class="col-md-4 pl-0"><button class="btn btn-sm btn-primary"
+                            [ngClass]="{' btn-primary':likedYou ,'btn-secondary': !likedYou}"
+                            (click)="loadIntersts('likedYou')">Profiles That
+                            Like You&nbsp;({{LikesMeCount}})</button></div>
+                    <div class="col-md-4 text-center">
+                        <button class="btn btn-sm btn-secondary"
+                            [ngClass]="{' btn-primary':mutualLikes,'btn-secondary': !mutualLikes} "
+                            (click)="loadIntersts('mutualLikes',true)">Mutual Like &nbsp;({{MutualLikesCount}})</button>
+                    </div>
+                    <div class="col-md-4 text-right pr-0"><button class="btn btn-sm btn-secondary"
+                            [ngClass]="{' btn-primary':youliked ,'btn-secondary': !youliked}"
+                            (click)="loadIntersts('youliked',true)">Profiles That You Like &nbsp;
+                            ({{MeLikesCount}})</button></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 p-0">
+                        <div class="m-2 mb-0 cursor float-right" (click)="changeMode('List')">
+                            <span *ngIf="!isGalleryView">
+                                <svg-list-view></svg-list-view>
+                            </span>
+                            <span *ngIf="isGalleryView" style="fill:gray;">
+                                <svg-list-view></svg-list-view>
+                            </span>
+                        </div>
+                        <div class="m-2 mb-0 cursor float-right" (click)="changeMode('Gallery')">
+                            <span *ngIf="!isListView">
+                                <svg-gallrey-view></svg-gallrey-view>
+                            </span>
+                            <span *ngIf="isListView" style="fill:gray;">
+                                <svg-gallrey-view></svg-gallrey-view>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" *ngIf="!isGalleryView">
+                    <div class="container col-md-12">
+                        <div class="card p-0 pb-4 pb-0 mr-3 ml-3 mb-3 mt-0 cursor" *ngFor="let profile of pageOfItems"
+                            (click)="goProfile(profile.uname)">
+                            <img class="card-img-top cursor" style="position: relative;height:10rem;"
+                                [lazyLoad]="ProfilesLikedMeService.bindImageUrl('posting',profile.canvasImageURL)">
+                            <img class="img-fluid shadow rounded shadow square imgSize mx-2 cursor"
+                                style="position: absolute; z-index: 1000;width:7.5rem;height:7.5rem;top:40%"
+                                [lazyLoad]="ProfilesLikedMeService.bindImageUrl('profile',profile.passportImageURL)">
+                            <div class="card-body mx-0 pb-0 pt-0" style="padding-left:8.9rem;">
+                                <div class="row pt-1">
+                                    <div class="col-md-4 pr-0 pl-2">
+                                        <span class="cursor" style="fill:#1e90ff;" *ngIf="aType==='Premium'">
+                                            <svg-star></svg-star>
+                                        </span>
+                                        <span class="cursor" style="fill:#008080;" *ngIf="aType==='Featured'">
+                                            <svg-star></svg-star>
+                                        </span>
+                                        <a class="card-text cursor ">{{profile.sname}} </a>
+                                        <label> {{profile.gender}} | {{ProfilesILikedService.CalculateAge(profile.dob)}}
+                                            yrs old
+                                            | {{profile.city}}, {{profile.state}},
+                                            {{ProfilesILikedService.getCountryAppriviation(profile.country)}}</label>
+                                    </div>
+                                    <div class="col-md-8 p-0">
+                                        <div class="pl-2">
+                                            <h6>
+                                                <small *ngIf="profile.photoTagline">{{profile.photoTagline}}</small>
+                                                <small *ngIf="!profile.photoTagline">'hello there, looking forward to
+                                                    connecting
+                                                    with you – thanks, ' {{profile.sname}}</small>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row flex-wrap mx-auto pb-2" *ngIf="isGalleryView">
+                    <div class="col-md-3 p-0" *ngFor="let profile of pageOfItems" (click)="goProfile(profile.uname)">
+                        <div class="card card-block m-1 cursor rounded text-center">
+                            <div class="row" style="height:12.2rem;">
+                                <div class="col-md-12">
+                                    <img class="card-img-top img-fluid"
+                                        [lazyLoad]="ProfilesLikedMeService.bindImageUrl('posting',profile.canvasImageURL)"
+                                        style="position: relative;height: 8rem;">
+                                    <img class="img-fluid mt-2 mb-2 rounded-circle mx-auto d-block"
+                                        style="position: relative;height:9.5rem;top:-95px;z-index: 1000;"
+                                        [lazyLoad]="ProfilesLikedMeService.bindImageUrl('profile',profile.passportImageURL)">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5 class="text-center mb-0">
+                                        <span class="cursor mr-1" style="fill:#1e90ff;" *ngIf="aType==='Premium'">
+                                            <svg-star></svg-star>
+                                        </span>
+                                        <span class="cursor mr-1" style="fill:#008080;" *ngIf="aType==='Featured'">
+                                            <svg-star></svg-star>
+                                        </span> {{profile.sname}}
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 pb-2">
+                                    <small class="text-center">{{profile.gender}} |
+                                        {{ProfilesILikedService.CalculateAge(profile.dob)}} yrs |
+                                        {{ProfilesILikedService.getCountryAppriviation(profile.country)}}</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="isFavs" id="favoritesPane" class="tab-pane container fade"
+                [ngClass]="{'show':!isLikes  , 'active':!isLikes}" role="tabpanel" aria-labelledby="favorites-tab">
+                <div class="row">
+                    <div class="col-md-4 pl-0"><button class="btn btn-sm btn-primary"
+                            [ngClass]="{' btn-primary':favYou ,'btn-secondary': !favYou}"
+                            (click)="loadIntersts('favoritedyou',true)">Profiles That Love
+                            You&nbsp;({{FavmeCount}})</button></div>
+                    <div class="col-md-4 text-center">
+                        <button class="btn btn-sm border-secondary"
+                            [ngClass]="{' btn-primary':MutualFav ,'btn-secondary': !MutualFav}"
+                            (click)="loadIntersts('mutualFavorites',true)">Mutual Love &nbsp;({{MutualFavCount}})</button>
+                    </div>
+                    <div class="col-md-4 text-right pr-0"><button class="btn btn-sm border-primary"
+                            [ngClass]="{' btn-primary':youFav ,'btn-secondary': !youFav}"
+                            (click)="loadIntersts('youfavorited',true)">Profiles That You
+                            Love&nbsp;({{MeFavCount}})
+                        </button></div>
+                </div>
+                <div class="row">
+                    <div class="col md-12 p-0">
+                        <div class="m-2 mb-0 cursor float-right" (click)="changeMode('List')">
+                            <span *ngIf="!isGalleryView">
+                                <svg-list-view></svg-list-view>
+                            </span>
+                            <span *ngIf="isGalleryView" style="fill:gray;">
+                                <svg-list-view></svg-list-view>
+                            </span>
+                        </div>
+                        <div class="m-2 mb-0 cursor float-right" (click)="changeMode('Gallery')">
+                            <span *ngIf="!isListView">
+                                <svg-gallrey-view></svg-gallrey-view>
+                            </span>
+                            <span *ngIf="isListView" style="fill:gray;">
+                                <svg-gallrey-view></svg-gallrey-view>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" *ngIf="!isGalleryView">
+                    <div class="container col-md-12">
+                        <div class="card p-0 pb-4 mr-3 ml-3 mb-3 mt-0" *ngFor="let profile of pageOfItems"
+                            (click)="goProfile(profile.uname)">
+                            <img class="card-img-top cursor" style="position: relative;height:10rem;"
+                                [lazyLoad]="ProfilesLikedMeService.bindImageUrl('posting',profile.canvasImageURL)">
+                            <img class="img-fluid shadow rounded shadow square imgSize mx-2 cursor"
+                                style="position: absolute; z-index: 1000;width:7.5rem;height:7.5rem;top:40%"
+                                [lazyLoad]="ProfilesLikedMeService.bindImageUrl('profile',profile.passportImageURL)">
+                            <div class="card-body mx-0 pb-0 pt-0" style="padding-left:8.9rem;">
+                                <div class="row  pt-1">
+                                    <div class="col-md-4 pr-0 pl-2">
+                                        <span class="cursor" style="fill:#1e90ff;" *ngIf="aType==='Premium'">
+                                            <svg-star></svg-star>
+                                        </span>
+                                        <span class="cursor" style="fill:#008080;" *ngIf="aType==='Featured'">
+                                            <svg-star></svg-star>
+                                        </span>
+                                        <a class="card-text cursor ">{{profile.sname}} </a>
+                                        <label> {{profile.gender}} | {{ProfilesILikedService.CalculateAge(profile.dob)}}
+                                            yrs old
+                                            | {{profile.city}}, {{profile.state}},
+                                            {{ProfilesILikedService.getCountryAppriviation(profile.country)}}</label>
+                                    </div>
+                                    <div class="col-md-8 p-0">
+                                        <div class="pl-2">
+                                            <h6>
+                                                <small *ngIf="profile.photoTagline">{{profile.photoTagline}}</small>
+                                                <small *ngIf="!profile.photoTagline">'hello there, looking forward to
+                                                    connecting
+                                                    with you – thanks, ' {{profile.sname}}</small>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex flex-row flex-wrap mx-auto pb-2" *ngIf="isGalleryView">
+                    <div class="col-md-3 p-0" *ngFor="let profile of pageOfItems" (click)="goProfile(profile.uname)">
+                        <div class="card card-block m-1 cursor rounded text-center">
+                            <div class="row" style="height:12.2rem;">
+                                <div class="col-md-12">
+                                    <img class="card-img-top img-fluid"
+                                        [lazyLoad]="ProfilesLikedMeService.bindImageUrl('posting',profile.canvasImageURL)"
+                                        style="position: relative;height: 8rem;">
+                                    <img class="img-fluid mt-2 mb-2 rounded-circle mx-auto d-block"
+                                        style="position: relative;height:9.5rem;top:-95px;z-index: 1000;"
+                                        [lazyLoad]="ProfilesLikedMeService.bindImageUrl('profile',profile.passportImageURL)">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5 class="text-center mb-0">
+                                        <span class="cursor mr-1" style="fill:#1e90ff;" *ngIf="aType==='Premium'">
+                                            <svg-star></svg-star>
+                                        </span>
+                                        <span class="cursor mr-1" style="fill:#008080;" *ngIf="aType==='Featured'">
+                                            <svg-star></svg-star>
+                                        </span> {{profile.sname}}
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 pb-2">
+                                    <small class="text-center ">{{profile.gender}} |
+                                        {{ProfilesILikedService.CalculateAge(profile.dob)}} yrs |
+                                        {{ProfilesILikedService.getCountryAppriviation(profile.country)}}</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="isViewers" id="viewersPane" class="tab-pane container show  active"
+                [ngClass]="{'show':isViewers , 'active':isViewers}" role="tabpanel" aria-labelledby="viewers-tab">
+                <div class="row">
+                    <div class="col-md-9 p-0">
+                        <p class="pt-2">Profiles That Visited You ({{ViewresCount}})</p>
+                    </div>
+                    <div class="col md-3 p-0">
+                        <div class="m-2 mb-0 cursor float-right pr-3" (click)="changeMode('List')">
+                            <span *ngIf="!isGalleryView">
+                                <svg-list-view></svg-list-view>
+                            </span>
+                            <span *ngIf="isGalleryView" style="fill:gray;">
+                                <svg-list-view></svg-list-view>
+                            </span>
+                        </div>
+                        <div class="m-2 mb-0 cursor float-right pr-3" (click)="changeMode('Gallery')">
+                            <span *ngIf="!isListView">
+                                <svg-gallrey-view></svg-gallrey-view>
+                            </span>
+                            <span *ngIf="isListView" style="fill:gray;">
+                                <svg-gallrey-view></svg-gallrey-view>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" *ngIf="!isGalleryView">
+                    <div class="col-md-12">
+                        <div class="card p-0 pb-4 mr-3 ml-3 mb-3 mt-0" *ngFor="let profile of pageOfItems"
+                            (click)="goProfile(profile.uname)">
+                            <img class="card-img-top cursor" style="position: relative;height:10rem;"
+                                [lazyLoad]="ProfilesLikedMeService.bindImageUrl('posting',profile.canvasImageURL)">
+                            <img class="img-fluid shadow rounded shadow square imgSize mx-2 cursor"
+                                style="position: absolute; z-index: 1000;width:7.5rem;height:7.5rem;top:40%"
+                                [lazyLoad]="ProfilesLikedMeService.bindImageUrl('profile',profile.passportImageURL)">
+                            <div class="card-body mx-0 pb-0 pt-0" style="padding-left:8.9rem;">
+                                <div class="row pt-1">
+                                    <div class="col-md-4 pr-0 pl-2">
+                                        <span class="cursor" style="fill:#1e90ff;" *ngIf="aType==='Premium'">
+                                            <svg-star></svg-star>
+                                        </span>
+                                        <span class="cursor" style="fill:#008080;" *ngIf="aType==='Featured'">
+                                            <svg-star></svg-star>
+                                        </span>
+                                        <a class="card-text cursor ">{{profile.sname}} </a>
+                                        <label> {{profile.gender}} | {{ProfilesILikedService.CalculateAge(profile.dob)}}
+                                            yrs old
+                                            | {{profile.city}}, {{profile.state}},
+                                            {{ProfilesILikedService.getCountryAppriviation(profile.country)}}</label>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="pl-2">
+                                            <h6>
+                                                <small *ngIf="profile.photoTagline">{{profile.photoTagline}}</small>
+                                                <small *ngIf="!profile.photoTagline">'hello there, looking forward to
+                                                    connecting
+                                                    with you – thanks, ' {{profile.sname}}</small>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" *ngIf="isGalleryView">
+                    <div class="col-md-3 p-0" *ngFor="let profile of pageOfItems" (click)="goProfile(profile.uname)">
+                        <div class="card card-block m-1 cursor rounded text-center">
+                            <div class="row" style="height:12.2rem;">
+                                <div class="col-md-12">
+                                    <img class="card-img-top img-fluid"
+                                        [lazyLoad]="ProfilesLikedMeService.bindImageUrl('posting',profile.canvasImageURL)"
+                                        style="position: relative;height: 8rem;">
+                                    <img class="img-fluid mt-2 mb-2 rounded-circle mx-auto d-block"
+                                        style="position: relative;height:9.5rem;top:-95px;z-index: 1000;"
+                                        [lazyLoad]="ProfilesLikedMeService.bindImageUrl('profile',profile.passportImageURL)">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5 class="text-center mb-0">
+                                        <span class="cursor mr-1" style="fill:#1e90ff;" *ngIf="aType==='Premium'">
+                                            <svg-star></svg-star>
+                                        </span>
+                                        <span class="cursor mr-1" style="fill:#008080;" *ngIf="aType==='Featured'">
+                                            <svg-star></svg-star>
+                                        </span> {{profile.sname}}
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 pb-2">
+                                    <small class="text-center">{{profile.gender}} |
+                                        {{ProfilesILikedService.CalculateAge(profile.dob)}} yrs |
+                                        {{ProfilesILikedService.getCountryAppriviation(profile.country)}}</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="isViews" id="viewsPane" class="tab-pane container fade"
+                [ngClass]="{'show':!isViewers  , 'active':!isViewers}" role="tabpanel" aria-labelledby="views-tab">
+                <div class="row">
+                    <div class="col-md-9 p-0">
+                        <p class="pt-2">Profiles That You Visited ({{ViewsCount}})</p>
+                    </div>
+                    <div class="col md-3 p-0">
+                        <div class="m-2 mb-0 cursor float-right pr-3" (click)="changeMode('List')">
+                            <span *ngIf="!isGalleryView">
+                                <svg-list-view></svg-list-view>
+                            </span>
+                            <span *ngIf="isGalleryView" style="fill:gray;">
+                                <svg-list-view></svg-list-view>
+                            </span>
+                        </div>
+                        <div class="m-2 mb-0 cursor float-right pr-3" (click)="changeMode('Gallery')">
+                            <span *ngIf="!isListView">
+                                <svg-gallrey-view></svg-gallrey-view>
+                            </span>
+                            <span *ngIf="isListView" style="fill:gray;">
+                                <svg-gallrey-view></svg-gallrey-view>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" *ngIf="!isGalleryView">
+                    <div class="container col-md-12">
+                        <div class="card p-0 pb-4 mr-3 ml-3 mb-3 mt-0" *ngFor="let profile of pageOfItems"
+                            (click)="goProfile(profile.uname)">
+                            <img class="card-img-top cursor" style="position: relative;height:10rem;"
+                                [lazyLoad]="ProfilesLikedMeService.bindImageUrl('posting',profile.canvasImageURL)">
+                            <img class="img-fluid shadow rounded shadow square imgSize mx-2 cursor"
+                                style="position: absolute; z-index: 1000;width:7.5rem;height:7.5rem;top:40%"
+                                [lazyLoad]="ProfilesLikedMeService.bindImageUrl('profile',profile.passportImageURL)">
+                            <div class="card-body mx-0 pb-0 pt-0" style="padding-left:8.9rem;">
+                                <div class="row pt-1">
+                                    <div class="col-md-4 pr-0 pl-2">
+                                        <span class="cursor" style="fill:#1e90ff;" *ngIf="aType==='Premium'">
+                                            <svg-star></svg-star>
+                                        </span>
+                                        <span class="cursor" style="fill:#008080;" *ngIf="aType==='Featured'">
+                                            <svg-star></svg-star>
+                                        </span>
+                                        <a class="card-text cursor ">{{profile.sname}} </a>
+                                        <label> {{profile.gender}} | {{ProfilesILikedService.CalculateAge(profile.dob)}}
+                                            yrs old
+                                            | {{profile.city}}, {{profile.state}},
+                                            {{ProfilesILikedService.getCountryAppriviation(profile.country)}}</label>
+                                    </div>
+                                    <div class="col-md-8 p-0">
+                                        <div class="pl-2">
+                                            <h6>
+                                                <small *ngIf="profile.photoTagline">{{profile.photoTagline}}</small>
+                                                <small *ngIf="!profile.photoTagline">'hello there, looking forward to
+                                                    connecting
+                                                    with you – thanks, ' {{profile.sname}}</small>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" *ngIf="isGalleryView">
+                    <div class="col-md-3 p-0" *ngFor="let profile of pageOfItems" (click)="goProfile(profile.uname)">
+                        <div class="card card-block m-1 cursor rounded text-center">
+                            <div class="row" style="height:12.2rem;">
+                                <div class="col-md-12">
+                                    <img class="card-img-top img-fluid"
+                                        [lazyLoad]="ProfilesLikedMeService.bindImageUrl('posting',profile.canvasImageURL)"
+                                        style="position: relative;height: 8rem;">
+                                    <img class="img-fluid mt-2 mb-2 rounded-circle mx-auto d-block"
+                                        style="position: relative;height:9.5rem;top:-95px;z-index: 1000;"
+                                        [lazyLoad]="ProfilesLikedMeService.bindImageUrl('profile',profile.passportImageURL)">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h5 class="text-center mb-0">
+                                        <span class="cursor mr-1" style="fill:#1e90ff;" *ngIf="aType==='Premium'">
+                                            <svg-star></svg-star>
+                                        </span>
+                                        <span class="cursor mr-1" style="fill:#008080;" *ngIf="aType==='Featured'">
+                                            <svg-star></svg-star>
+                                        </span> {{profile.sname}}
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 pb-2">
+                                    <small class="text-center">{{profile.gender}} |
+                                        {{ProfilesILikedService.CalculateAge(profile.dob)}} yrs |
+                                        {{ProfilesILikedService.getCountryAppriviation(profile.country)}}</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cursor d-flex align-items-center justify-content-center ">
+                <jw-pagination
+                    class="pagination w-100 pt-3 pb-0 page-item page-link number-item first-item last-item previous-item"
+                    [items]="profileList" [pageSize]="16" (changePage)="onChangePage($event)">
+                </jw-pagination>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-9" *ngIf="DataLoading">
+        <div class="row">
+            <div class="col-md-12">
+                <ngx-skeleton-loader></ngx-skeleton-loader>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <ngx-skeleton-loader></ngx-skeleton-loader>
+            </div>
+            <div class="col md-3 text-right">
+                <ngx-skeleton-loader count="2" [theme]="{'width':'2rem','margin-left':'1px'}"></ngx-skeleton-loader>
+
+            </div>
+        </div>
+        <div class="d-flex flex-row flex-wrap mx-auto pb-2">
+            <div class="col-md-3 p-0" *ngFor="let i of placeHolderItems">
+                <div class="card card-block m-1 p-1 cursor rounded text-center">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ngx-skeleton-loader appearance="circle"
+                                [theme]="{ width: '150px', height: '150px','top':'2rem' ,'margin-bottom':'2rem'}">
+                            </ngx-skeleton-loader>
+                            <ngx-skeleton-loader></ngx-skeleton-loader>
+                            <ngx-skeleton-loader></ngx-skeleton-loader>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

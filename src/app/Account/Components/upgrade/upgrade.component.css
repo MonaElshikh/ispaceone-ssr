@@ -1,0 +1,37 @@
+
+.basic-box ,
+.active-basic-box  {
+    border-top:5px solid #800080;
+    border-bottom: 5px solid #800080;
+}
+.premium-box ,
+.active-premium-box {
+    border-top:5px solid #800000;
+    border-bottom:5px solid #800000 ;
+}
+.plus-box ,
+.active-plus-box {
+    border-top:5px solid #FF0000; 
+    border-bottom: 5px solid #FF0000;
+ 
+}
+.exclusive-box ,
+.active-exclusive-box 
+ {
+    border-top:5px solid #FF00FF;
+    border-bottom: 5px solid #FF00FF;
+}
+.basic-box,
+.premium-box,
+.plus-box,
+.exclusive-box {
+    border-radius: 10px;
+    color: gray;
+}
+.active-basic-box,
+.active-premium-box,
+.active-plus-box,
+.active-exclusive-box {
+    border-radius: 10px;
+    color: black;
+}

@@ -1,0 +1,411 @@
+<div class="row">
+  <!-- <p>{{regForm.value | json}}</p> -->
+  <div *ngIf="isSignUp" class="col-lg-12 p-0">
+    <form [formGroup]="regForm" (ngSubmit)="Register(regForm,activationForm)" class="sing-up-form mx-auto mb-3 ">
+      <div class="card mb-2 ">
+        <div class="card-header bg-white cursor mb-1 p-1 pl-2">
+          <div class="row">
+            <div class="col-md-12">
+              <h5>Sign Up</h5>
+            </div>
+          </div>
+        </div>
+        <div class="card-body p-0 ">
+          <div class="row mt-3">
+            <div class="col-md-8 border p-2 mx-auto col-md-11 rounded profile-type-width"
+              [ngClass]="{'border-danger':networks.errors?.checkboxListMinChecks}" >
+              <div style="position: absolute;top: -14px;left: 10px;z-index: 2;background-color: white;">
+                Looking For
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" checked value="Just Friends"
+                        formArrayName="networks" (change)="onCheckboxChange($event)">
+                      <span>Just Friends</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="Activity Partner" formArrayName="networks"
+                        (change)="onCheckboxChange($event)">
+                      <span>Activity Partner</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="Virtual Relationship"
+                        formArrayName="networks" (change)="onCheckboxChange($event)">
+                      <span>Virtual Relationship</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="Open Relationship" formArrayName="networks"
+                        (change)="onCheckboxChange($event)">
+                      <span>Open Relationship</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="Short Relationship"
+                        formArrayName="networks" (change)="onCheckboxChange($event)">
+                      <span>Short Relationship</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="Long Relationship" formArrayName="networks"
+                        (change)="onCheckboxChange($event)">
+                      <span>Long Relationship</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="Business Partner" formArrayName="networks"
+                        (change)="onCheckboxChange($event)">
+                      <span>Business Partner</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input type="checkbox" class="form-check-input" value="Career Opportunities"
+                        formArrayName="networks" (change)="onCheckboxChange($event)">
+                      <span>Career Opportunities</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div *ngIf="networks.errors?.checkboxListMinChecks" class="pl-2 alert-alert-danger notValid">
+                    [required]
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group mb-0">
+            <div class="row p-2">
+              <div class="col-md-11">
+                <div class="has-float-label">
+                  <input type="text" id="UserName" formControlName="username" name="UserName" maxlength="25"
+                    (ngModelChange)="userNameRemainingChars= $event.length" class="form-control pl-2"
+                    [ngClass]="{'is-valid':username.valid }" placeholder="User Name">
+                  <label for="UserName">User Name</label>
+                  <div class="small" *ngIf="username.pending">Checking user name ....</div>
+                  <div *ngIf="username.touched && username.invalid" class="alert-alert-danger notValid">
+                    <div *ngIf="username.errors.required">[required]</div>
+                    <div *ngIf="username.errors.minlength">[Username must be at least 6 characters]</div>
+                    <div *ngIf="username.errors.DuplicateUserName">[user name is taken before]</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-1 my-auto">
+                <app-chars-counter [usedChars]="userNameRemainingChars" [maxChars]="25">
+                </app-chars-counter>
+              </div>
+            </div>
+          </div>
+          <div class="form-group mb-0">
+            <div class="row p-2">
+              <div class="col-md-11">
+                <div class="has-float-label">
+                  <input type="text" id="EmailAddress" formControlName="email" maxlength="50" name="EmailAddress"
+                    (ngModelChange)="emailRemainingChars= $event.length" class="form-control pl-2"
+                    [ngClass]="{'is-valid':email.valid }" placeholder="Email Address">
+                  <label for="EmailAddress">Email Address</label>
+                  <div class="small" *ngIf="email.pending">Checking email ....</div>
+                  <div *ngIf="email.touched && email.invalid" class="alert-alert-danger notValid">
+                    <div *ngIf="email.errors.required">[required]</div>
+                    <div *ngIf="email.errors.email">[Enter real valid email add]</div>
+                    <div *ngIf="email.errors.DuplicateEmail">[email is taken before]</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-1 my-auto">
+                <app-chars-counter [usedChars]="emailRemainingChars" [maxChars]="50">
+                </app-chars-counter>
+              </div>
+            </div>
+          </div>
+          <div class="form-group mb-0">
+            <div class="row p-2">
+              <div class="col-md-11">
+                <div class="has-float-label">
+                  <input type="password" id="Password" formControlName="password" name="Password" maxlength="20"
+                    (ngModelChange)="passWordRemainingChars= $event.length" class="form-control pl-2"
+                    [ngClass]="{'is-valid':password.valid }" placeholder="Password">
+                  <label for="Password">Password</label>
+                  <div *ngIf="password.touched && password.invalid" class="alert-alert-danger notValid">
+                    <div *ngIf="password.errors.required">[required]</div>
+                    <div *ngIf="password.errors.minlength">[Password must be at least 6 characters]</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-1 my-auto">
+                <app-chars-counter [usedChars]="passWordRemainingChars" [maxChars]="20">
+                </app-chars-counter>
+              </div>
+            </div>
+            <app-password-strength [passwordToCheck]="password.value" [barLabel]="barLabel"></app-password-strength>
+          </div>
+          <div class="form-group mb-0">
+            <div class="row p-2">
+              <div class="col-md-11">
+                <div class="has-float-label">
+                  <input type="password" id="confirmPassword" formControlName="confirmPassword" name="confirmPassword"
+                    class="form-control pl-2" maxlength="20"
+                    (ngModelChange)="confirmPassWordRemainingChars= $event.length"
+                    [ngClass]="{'is-valid':confirmPassword.valid }" placeholder="Confirm Password">
+                  <label for="confirmPassword">Confirm Password</label>
+                  <div *ngIf="confirmPassword.touched && confirmPassword.invalid" class="alert-alert-danger notValid">
+                    <div *ngIf="confirmPassword.errors.required">[required]</div>
+                    <div *ngIf="confirmPassword.errors.minlength">[Confirm password must be at least 6 characters]
+                    </div>
+                    <div *ngIf="confirmPassword.errors.confirmPasswordValidator">[Password and confirm password must
+                      be
+                      same]</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-1 my-auto">
+                <app-chars-counter [usedChars]="confirmPassWordRemainingChars" [maxChars]="20">
+                </app-chars-counter>
+              </div>
+            </div>
+          </div>
+          <div class="form-group mb-0">
+            <div class="row p-2">
+              <div class="col-md-11">
+                <div class="has-float-label">
+                  <input type="text" id="FullName" formControlName="fullName" name="FullName" maxlength="30"
+                    class="form-control pl-2" [ngClass]="{'is-valid':fullName.valid }"
+                    (ngModelChange)="fullNameRemainingChars= $event.length" placeholder="Full Name">
+                  <label for="FullName">Full Name</label>
+                  <div *ngIf="fullName.touched && fullName.invalid" class="alert-alert-danger notValid">
+                    [required]
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-1 my-auto">
+                <app-chars-counter [usedChars]="fullNameRemainingChars" [maxChars]="30">
+                </app-chars-counter>
+              </div>
+            </div>
+          </div>
+          <div class="form-group mb-0">
+            <div class="row p-2">
+              <div class="col-md-11">
+                <select class="form-control" id="country" formControlName="location" (change)="SelectCountry($event)"
+                  [ngClass]="{'is-valid':location.valid }">
+                  <option selected value="">Country</option>
+                  <option *ngFor="let country of CountriesList">
+                    {{country.countryName}} - {{country.countryPrefix}}</option>
+                </select>
+                <div *ngIf="location.touched && location.invalid" class="alert-alert-danger notValid">
+                  [required]
+                </div>
+              </div>
+              <div class="col-md-1"></div>
+            </div>
+            <div class="row p-2">
+              <div class="col-md-4">
+                <select *ngIf="isUSA" class="form-control mt-2" id="state" formControlName="state"
+                  [ngClass]="{'is-valid':state.valid }">
+                  <option selected value="">State</option>
+                  <option *ngFor="let state of StatesList">{{state.stateName}} - {{state.statePrefix}} </option>
+                </select>
+                <div class="has-float-label" *ngIf="!isUSA">
+                  <input type="text" name="state" id="state" class="form-control pl-2 mt-2" formControlName="state"
+                    [ngClass]="{'is-valid':state.valid }" placeholder="State">
+                  <label *ngIf="!isUSA" for="state">State</label>
+                </div>
+                <div *ngIf="state.touched && state.invalid" class="alert-alert-danger notValid">
+                  [required]
+                </div>
+              </div>
+              <div class="col-md-7">
+                <div class="has-float-label">
+                  <input type="text" id="city" formControlName="city" name="city" maxlength="20"
+                    [ngClass]="{'is-valid':city.valid }" class="form-control pl-2 mt-2"
+                    (ngModelChange)="cityRemainingChars= $event.length" placeholder="City">
+                  <label for="city">City</label>
+                  <div *ngIf="city.touched && city.invalid" class="alert-alert-danger notValid">
+                    [required]
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-1 my-auto">
+                <app-chars-counter [usedChars]="cityRemainingChars" [maxChars]="20">
+                </app-chars-counter>
+              </div>
+            </div>
+          </div>
+          <div class="form-group form-check-inline  border rounded gender-radio-width"
+            [ngClass]="{'border-danger':gender.touched && gender.invalid}">
+            <div> <label class="pr-2">You are:</label></div>
+            <div class="radio">
+              <label class="p-1">
+                <input type="radio" formControlName="gender" value="Male">
+                Male
+              </label>
+            </div>
+            <div class="radio">
+              <label class="p-1">
+                <input type="radio" formControlName="gender" value="Female">
+                Female
+              </label>
+            </div>
+          </div>
+          <div class="form-group form-check-inline border rounded gender-radio-width"
+            [ngClass]="{'border-danger':seekingGender.touched && seekingGender.invalid}">
+            <div> <label class="pr-2">Interested in:</label></div>
+            <div class="radio">
+              <label class="p-1">
+                <input type="radio" formControlName="seekingGender" value="Male">
+                Male
+              </label>
+            </div>
+            <div class="radio">
+              <label class="p-1">
+                <input type="radio" formControlName="seekingGender" value="Female">
+                Female
+              </label>
+            </div>
+          </div>
+          <div class="row pl-2 pb-1">
+            <div class="col-md-6">
+              <div *ngIf="gender.touched && gender.invalid" class="alert-alert-danger notValid">
+                [required]
+              </div>
+            </div>
+            <div class="col-md-6 p-0">
+              <div *ngIf="seekingGender.touched && seekingGender.invalid" class="alert-alert-danger notValid">
+                [required]
+              </div>
+            </div>
+          </div>
+          <div class="form-group mb-0">
+            <div class="row p-2">
+              <div class="col-md-11">
+                <div class="has-float-label">
+                  <input type="date" class="form-control pl-2" name="dateOfBirth" formControlName="dateOfBirth"
+                    [ngClass]="{'is-valid':dateOfBirth.valid }">
+                  <label>Date of Birth</label>
+                  <div *ngIf="dateOfBirth.touched && dateOfBirth.invalid" class="alert-alert-danger notValid">
+                    <div *ngIf="dateOfBirth.errors.required"> [required] </div>
+                    <div *ngIf="dateOfBirth.errors.dateRangeValidator">[You must be over the age of 18 to use our
+                      services]
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-1"></div>
+            </div>
+          </div>
+          <div class="form-group mb-0">
+            <div class="row p-2">
+              <div class="col-md-6">
+                <input type="text" formControlName="captcha" disabled class="captcha text-center rounded">
+                <span class="cursor" style="fill:gray" (click)="reloadCapthca()">
+                  <svg-reload></svg-reload>
+                </span>
+              </div>
+              <div class="col-md-5">
+                <div class="has-float-label">
+                  <input type="text" id="Security" name="Security" formControlName="securityCode"
+                    class="form-control pl-2" [ngClass]="{'is-valid':securityCode.valid }" placeholder="Security Code">
+                  <label>Security Code </label>
+                  <div *ngIf="securityCode.touched && securityCode.invalid" class="alert-alert-danger notValid">
+                    <div *ngIf="securityCode.errors.required"> [required] </div>
+                    <div *ngIf="securityCode.errors.ConfirmCaptchaValidator">[Worng Security Code]</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-1"></div>
+            </div>
+          </div>
+          <div class="form-group mb-0">
+            <div class="form-check-inline p-2">
+              <label class="form-check-label">
+                <input type="checkbox" name="agreement" invalid="true" class="form-check-input"
+                  formControlName="agreement">
+                <span class="text-secondary"> I agree to the </span><a class="text-secondary"
+                  [routerLink]="['/UserAgreement']">User
+                  Agreement</a>,
+                <a class="text-secondary" [routerLink]="['/PrivacyPolicy']">Privacy Policy</a>, <a
+                  class="text-secondary" [routerLink]="['/CopyrightPolicy']">Copyright
+                  Policy</a>, <span class="text-secondary">and </span> <a class="text-secondary"
+                  [routerLink]="['/CookieUse']">Cookie Use</a>
+              </label>
+              <div *ngIf="agreement.touched && agreement.invalid" class="alert-alert-danger notValid pl-1">
+                [required]
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary text-center p-2 m-2" [disabled]="regForm.invalid">
+              Sign Up</button>
+          </div>
+
+        </div>
+      </div>
+    </form>
+  </div>
+  <div *ngIf="!isSignUp" class="container col-lg-12 mb-4 mt-4 rounded shadow bg-white">
+    <form class="form-signin p-3 mx-auto" #activationForm="ngForm" (ngSubmit)="ActivateAccount(activationForm)">
+      <div class="card mb-3 mt-3">
+        <div class="card-header bg-white cursor mb-3">
+          <div class="row">
+            <div class="col-md-12 font-weight-bold">
+              Activation
+            </div>
+          </div>
+        </div>
+        <div class="card-body p-2">
+          <div class="form-group">
+            <div class="has-float-label">
+              <input ngModel name="activationCode" #activationCode="ngModel" id="activationCode" class="form-control"
+                [ngClass]="{'is-valid':activationCode.valid }" required>
+              <label>Activation Code</label>
+              <div *ngIf="activationCode.touched && activationCode.invalid" class="alert-alert-danger notValid">
+                Required
+              </div>
+            </div>
+          </div>
+          <div class="text-center mx-auto">
+            <p class="text-secondary">Your account will be automatically deleted if not activated in the next:
+              {{timeLeft * 1000 | date:'mm:ss' }}</p>
+          </div>
+          <button class="btn btn-lg btn-primary btn-block mb-2 " [disabled]="!activationForm.valid || timeLeft===0">
+            Send</button>
+          <button class="btn btn-lg btn-secondary btn-block mb-2" [disabled]="resendActivationCode"
+            (click)="ResendActivationCode()">
+            Resend Code</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

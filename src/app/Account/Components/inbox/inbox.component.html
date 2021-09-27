@@ -1,0 +1,222 @@
+<div class="row  mt-2 mb-3 p-0 " *ngIf="!DataLoading">
+    <div class="col-md-3">
+        <div class="list-group shadow bg-white pb-1">
+            <select class="form-control">
+                <option>View All</option>
+                <option>Read</option>
+                <option>Unread</option>
+                <option>Replied</option>
+                <option>Unreplied</option>
+                <option>Starred</option>
+            </select>
+            <div class="media border p-1 m-1 list-scrollY" *ngFor="let message of filteredMessageList,index as i; "
+                [ngClass]="{'selectedRecord':selected[i],'unSelectedRecord':!selected[i]}">
+                <div class="media-body p-0 cursor " (onCreate)="SetMessageExtraData(message,i);">
+                    <div class="row pr-2 " [ngClass]="{'mb-3':DeleteMesg[i]}">
+                        <div class="col-md-3 d-flex align-items-center">
+                            <img [src]="messagesService.bindImageUrl('profile',photos[i])"
+                                class="mr-3 imgSize rounded-circle" alt="..." (click)="openProfile(message,null,i,'')">
+                        </div>
+                        <div class="col-md-6 p-0"
+                            (click)="openMessageDetails(message,i);ChangeRouteParam(this.uNames[i]);">
+                            <div class="h-50 text-truncate">
+                                <span [ngClass]="{'font-weight-bold':unreadMessages[i]}">{{names[i]}}</span>
+                            </div>
+                            <div class="h-50"><span [ngClass]="{'font-weight-bold':unreadMessages[i]}">
+                                    {{message.date | date}}</span>
+                            </div>
+                        </div>
+                        <div class="col-md-3 p-0">
+                            <div>
+                                <span *ngIf="unreadMessages[i]" style="fill: #0000FF;">
+                                    <svg-unread></svg-unread>
+                                </span>
+                                <span *ngIf="!unreadMessages[i]" style="fill: #0000FF;">
+                                    <svg-read></svg-read>
+                                </span>
+                                <span class="cursor pl-2" [ngClass]="{'goldStar': Flagged[i], 'grayStar':!Flagged[i]}"
+                                    (click)="FlagMessage(message.id,Flagged[i])">
+                                    <svg-star></svg-star>
+                                </span>
+                            </div>
+                            <div>
+                                <span *ngIf="repliedMessages[i]" style="fill: #00FF00;">
+                                    <svg-replied></svg-replied>
+                                </span>
+                                <span *ngIf="!repliedMessages[i]" style="fill: #00FF00;">
+                                    <svg-unreplied></svg-unreplied>
+                                </span>
+                                <span class="cursor pl-2" style="fill:#FF0000" (click)="DeleteMesg[i]=true">
+                                    <svg-close></svg-close>
+                                </span>
+                            </div>
+                            <div>
+                                <span *ngIf="message.mutuallikes===2" style="fill: #1E90FF;">
+                                    <svg-like></svg-like>
+                                </span>
+                                <span class="pl-2" *ngIf="message.mutualFav===2" style="fill: red;stroke-width: 0;">
+                                    <svg-love></svg-love>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div *ngIf="DeleteMesg[i]" class="alert alert-primary col-md-12 p-0 pl-1 mb-0" role="alert">
+                        <div class="row pl-1">
+                            <div class="col-md-8 pr-0">
+                                Permanently Delete?
+                            </div>
+                            <div class="col-md-4 p-0">
+                                <a class="alert-link cursor" (click)="DeleteMessage(message);">Yes</a>&nbsp;&nbsp;
+                                <a class="alert-link cursor" (click)="DeleteMesg[i]=false">No</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" *ngIf="isPaging">
+                <div class="col-md-6 text-left">
+                    <a *ngIf="isLess" class="cursor font-weight-bold pl-2" (click)="ViewLess()">Less</a>
+                </div>
+                <div class="col-md-6 text-right">
+                    <a *ngIf="isMore" class="cursor font-weight-bold pr-2" (click)="ViewMore()">More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-9 ">
+        <div *ngIf="!isShowDetailsBox">
+            <div class="row">
+                <div class="col-md-12 mt-1">
+                    <h5 class="header-style">Message Conversation</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card  border">
+                        <div class="card-header">
+                            <h6>Please select a message from the left.</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="isShowDetailsBox">
+            <div class="row">
+                <div class="col-md-12 mt-1">
+                    <h6 class="border p-2">Message Conversation With {{PartnerName}} ({{threadsCount}})</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card border">
+                        <div class="card-header p-0 pl-3 pr-1">
+                            <div class="row">
+                                <div class="col-md-11 p-1 text-center">
+                                    <textarea autosize class="form-control" maxlength="500" [(ngModel)]="messageBody"
+                                        [placeholder]="sendMessageTo"
+                                        (ngModelChange)="remainingText = $event.length"></textarea>
+                                </div>
+                                <div class="col-md-1 p-1 text-right d-flex flex-wrap align-items-center cursor">
+                                    <span class="pl-2 my-auto">
+                                        <app-chars-counter [usedChars]="remainingText" [maxChars]="500">
+                                        </app-chars-counter>
+                                    </span>
+                                    <button (click)="CheckSpamMessage()" class="btn btn-primary btn-sm pr-1 mb-2"
+                                        [disabled]="messageBody===''">Send
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body list-scrollY pt-2">
+                            <div class="row mb-3" style="height:22.5px;">
+                                <div class="col-md-6 text-center">
+                                    <span *ngIf="isMutualLikes" style="fill:#1E90FF;">
+                                        Mutual Like &nbsp; <svg-like></svg-like>
+                                    </span>
+                                </div>
+                                <div class="col-md-6 text-center">
+                                    <span *ngIf="isMutualLoves" style="fill:red;">
+                                        Mutual Love &nbsp; <svg-love></svg-love>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="row border rounded mb-2" style="width:65%;"
+                                *ngFor="let thread of messageThreadsList ,index as i;"
+                                [ngClass]="{'float-right myThreadbg' : isThreadOwner[i] ,'hisThreadbg':!isThreadOwner[i]}"
+                                (onCreate)="SetMessageThreadsExtraData(thread,i)">
+                                <div class="col-md-12">
+                                    <div class="row mb-1" *ngIf="!isThreadOwner[i]">
+                                        <div class="col-md-1 cursor p-0 pt-1 pl-1 text-center">
+                                            <img [src]="messagesService.bindImageUrl('profile',thread.senderImage)"
+                                                class="imgSize rounded-circle" alt="..."
+                                                (click)="openProfile(null,thread,0,'')">
+                                        </div>
+                                        <div class="col-md-11 pl-2 pt-2">
+                                            <label class="whiteSpace">{{thread.message}}</label>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-1 " *ngIf="isThreadOwner[i]">
+                                        <div class="col-md-11 pl-2 pt-2 pr-0 text-left ">
+                                            <label class="whiteSpace">{{thread.message}}</label>
+                                        </div>
+                                        <div class="col-md-1 cursor p-0 pt-1 pr-1 text-center">
+                                            <img [src]="messagesService.bindImageUrl('profile',thread.senderImage)"
+                                                class="imgSize rounded-circle" alt="..."
+                                                (click)="openProfile(null,thread,0,'')">
+                                        </div>
+                                    </div>
+                                    <div class="row border-top dotted ">
+                                        <div class="col-md-12 small pl-1" style="color: #808080">
+                                            {{notification[i]}} {{ thread.date |date }} {{readStatus[i]}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-md-12">
+                    <div class="card border small p-2">
+                        Please Note: these are the messages
+                        with at least one inbound message from the other side.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row  mt-2 mb-3 p-0 " *ngIf="DataLoading">
+    <div class="col-md-3">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <ngx-skeleton-loader></ngx-skeleton-loader>
+                    </div>
+                    <div class="card-body">
+                        <div class="row" *ngFor="let item of placholderList">
+                            <div class="col-md-2 p-0">
+                                <ngx-skeleton-loader appearance="circle"
+                                    [theme]="{width:'3rem',height:'3rem','border-radius':'2rem'}">
+                                </ngx-skeleton-loader>
+                            </div>
+                            <div class="col-md-10 p-0 pl-3 pt-4">
+                                <div>
+                                    <ngx-skeleton-loader></ngx-skeleton-loader>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-9">
+        <div class="card-header">
+            <ngx-skeleton-loader></ngx-skeleton-loader>
+        </div>
+        <ngx-skeleton-loader [theme]="{'height':'3rem','margin-top':'1rem'}"></ngx-skeleton-loader>
+    </div>
+</div>

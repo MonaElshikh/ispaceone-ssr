@@ -1,0 +1,32 @@
+<div *ngFor="let field of customFields,index as i">
+    <div class="row" *ngIf="!deleteRecord[i]">
+        <div class="col-md-3"><input type="text" placeholder="Custom Field Label" class="form-control" [ngModel]="value"
+                (ngModelChange)="labels[i]= $event.length">
+            <div class="m-1">
+                <app-chars-counter [usedChars]="labels[i]== null? labels[i]= 0 :labels[i]" [maxChars]="16">
+                </app-chars-counter>
+            </div>
+        </div>
+        <div class="col-md-8"><input type="text" placeholder="Custom Field Value" class="form-control" [ngModel]="value"
+                (ngModelChange)="values[i]= $event.length">
+            <div class="m-1">
+                <app-chars-counter [usedChars]="values[i]==null ? values[i]=0 : values[i]" [maxChars]="50">
+                </app-chars-counter>
+            </div>
+        </div>
+        <div class="col-md-1">
+            <span *ngIf="!deleteRecord[i]" (click)="addRemoveCustomFileds(i,'remove')" class="cursor"
+                style="font-size: 1rem;fill:gray">
+                <svg-close></svg-close>
+            </span>
+        </div>
+    </div>
+</div>
+<div class="row mt-2 mb-2">
+    <div class="col-md-9"></div>
+    <div class="col-md-3">
+        <button class="btn btn-sm btn-primary float-right mr-4" (click)="addRemoveCustomFileds(showedRecords,'add')">+
+            Custom Fields
+            {{showedRecords}}/8</button>
+    </div>
+</div>

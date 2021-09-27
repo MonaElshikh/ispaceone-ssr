@@ -1,0 +1,201 @@
+<div class="row" *ngIf="!DataLoading">
+    <div class="col-md-12 mt-2 p-0">
+        <h5 class="header-style">Support</h5>
+        <div class="row mt-3 mb-2">
+            <div class="col-md-12 ">
+                <span class="text-center">
+                    <h6 class="pb-2">List of your support tickets</h6>
+                </span>
+                <table class="table table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Subject</th>
+                            <th scope="col">Type of problem</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr [ngClass]="{'selectedRecord':selected[i],'unSelectedRecord':!selected[i]}"
+                            *ngFor="let ticket of pageOfItems ,index as i;" class="cursor"
+                            (click)="OpenTicketDetails(ticket,i)">
+                            <td>{{ticket.problemName}}</td>
+                            <td>{{ticket.typeOfProblem}}</td>
+                            <td>{{ticket.problemStatus}}</td>
+                            <td>{{ticket.problemDate |date}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="w-100 cursor d-flex align-items-center justify-content-center mr-2 ml-2 mt-0 mb-0">
+                <jw-pagination
+                    class="pagination w-100 pt-3 pb-0 page-item page-link number-item first-item last-item previous-item"
+                    [items]="ticktesList" [pageSize]="10" (changePage)="onChangePage($event)">
+                </jw-pagination>
+            </div>
+        </div>
+        <div class="row pb-4">
+            <div class="col-md-12">
+                <button class="btn btn-default text-primary border-primary rounded-pill float-right"
+                    style="width: 10rem;" (click)="ShowHideButtons('newticket')">New ticket</button>
+                <button *ngIf="ShowNewTicket"
+                    class="btn btn-default text-secondary border-secondary rounded-pill float-right mr-1"
+                    (click)="ShowHideButtons('cancelnew')">Cancel</button>
+
+            </div>
+        </div>
+        <div *ngIf="ShowTicketDetails">
+            <div class="card mb-3">
+                <div class="card-header pl-2">
+                    <div class="row">
+                        <div class="col-md-11">
+                            <textarea autosize maxlength="500" placeholder="Please type your message here"
+                                [(ngModel)]="replyMeesage" (ngModelChange)="messageRemainingChars= $event.length"
+                                type="text" class="form-control" id="sendMessage"></textarea>
+                        </div>
+                        <div class="col-md-1 p-0 pl-1">
+                            <div class="short-div float-left p-2">
+                                <app-chars-counter [usedChars]="messageRemainingChars" [maxChars]="500">
+                                </app-chars-counter>
+                            </div>
+                            <div class="short-div">
+                                <button class="btn btn-sm btn-default text-primary border-primary rounded-pill"
+                                    [disabled]="replyMeesage===''" style="width: 4rem;"
+                                    (click)="ReplyTicket()">Reply</button>
+                            </div>
+                            <div class="short-div mt-1">
+                                <button class="btn btn-sm btn-default text-secondary border-secondary rounded-pill"
+                                    style="width: 4rem;" (click)="ShowHideButtons('cancelreply')">Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body pt-2 pb-0">
+                    <div class="row mb-2 border rounded" *ngFor="let thread of ticktesDetailsList ,index as i;"
+                        [ngClass]="{'myThreadbg' :thread.senderId === profileId ,'hisThreadbg':thread.senderId !== profileId}">
+                        <div class="col-md-12">
+                            <div class="row mb-1" *ngIf="thread.senderId !== profileId">
+                                <div class="col-md-12">
+                                    <label class="whiteSpace">Admin: {{thread.body}}</label>
+                                </div>
+                            </div>
+                            <div class="row mb-1" *ngIf="thread.senderId === profileId">
+                                <div class="col-md-12">
+                                    <label class="whiteSpace">You: {{thread.body}}</label>
+                                </div>
+                            </div>
+                            <div class="row border-top dotted ">
+                                <div class="col-md-12 small pl-1" style="color: #808080">
+                                    {{ thread.replyDate |date }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-3" *ngIf="ShowNewTicket">
+            <form name="newTicketFrm" #newTicketFrm="ngForm" (ngSubmit)="CreateTicket(newTicketFrm)">
+                <div class="card-header">New Ticket</div>
+                <div class="card-body">
+                    <div class="row pt-2">
+                        <div class="col-md-2">Type of problem: </div>
+                        <div class="col-md-9">
+                            <select class="form-control" name="typeOfProblem" ngModel #typeOfProblem="ngModel">
+                                <option value="All" selected>All</option>
+                                <option value="Layout">Layout</option>
+                                <option value="Bug">Bug</option>
+                            </select>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                    <div class="row pt-2">
+                        <div class="col-md-2">Subject:</div>
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" name="Subject" ngModel #Subject="ngModel"
+                                (ngModelChange)="subjectRemainingChars= $event.length">
+                        </div>
+                        <div class="col-md-1">
+                            <app-chars-counter [usedChars]="subjectRemainingChars" [maxChars]="50">
+                            </app-chars-counter>
+                        </div>
+                    </div>
+                    <div class="row pt-2">
+                        <div class="col-md-2">Problem: </div>
+                        <div class="col-md-9">
+                            <textarea autosize class="form-control" name="problem"
+                                placeholder="Please type your message here" ngModel #problem="ngModel"
+                                (ngModelChange)="problemRemainingChars= $event.length"></textarea>
+                        </div>
+                        <div class="col-md-1">
+                            <app-chars-counter [usedChars]="problemRemainingChars" [maxChars]="500">
+                            </app-chars-counter>
+                        </div>
+                    </div>
+                    <div class="row pt-2">
+                        <div class="col-md-11">
+                            <button type="submit" class="btn btn-secondary float-right pr-2">Send</button>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="row" *ngIf="DataLoading">
+    <div class="col-md-12 mt-2 p-0">
+        <div class="card-header">
+            <ngx-skeleton-loader></ngx-skeleton-loader>
+        </div>
+        <div class="text-center">
+            <ngx-skeleton-loader [theme]="{'width':'40rem','margin-top':'1rem','margin-bottom':'1rem'}">
+            </ngx-skeleton-loader>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">
+                                <ngx-skeleton-loader></ngx-skeleton-loader>
+                            </th>
+                            <th scope="col">
+                                <ngx-skeleton-loader></ngx-skeleton-loader>
+                            </th>
+                            <th scope="col">
+                                <ngx-skeleton-loader></ngx-skeleton-loader>
+                            </th>
+                            <th scope="col">
+                                <ngx-skeleton-loader></ngx-skeleton-loader>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of placeHolderList" class="cursor">
+                            <td>
+                                <ngx-skeleton-loader></ngx-skeleton-loader>
+                            </td>
+                            <td>
+                                <ngx-skeleton-loader></ngx-skeleton-loader>
+                            </td>
+                            <td>
+                                <ngx-skeleton-loader></ngx-skeleton-loader>
+                            </td>
+                            <td>
+                                <ngx-skeleton-loader></ngx-skeleton-loader>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row pb-2">
+            <div class="col-md-12">
+                <ngx-skeleton-loader appearance="circle"
+                    [theme]="{width: '10rem',height: '3rem','border-radius': '2rem','float':'right'}">
+                </ngx-skeleton-loader>
+            </div>
+        </div>
+    </div>
+</div>

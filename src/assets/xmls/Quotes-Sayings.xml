@@ -1,0 +1,5961 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Items>
+  <Item>
+    <id>1</id>
+    <title>Logic Quotes And Sayings</title>
+    <description>Quotes And Sayings About Logic</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>2</id>
+    <title>Criticism Quotes And Sayings</title>
+    <description>Quotes And Sayings About Criticism</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>3</id>
+    <title>Assertiveness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Assertiveness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>4</id>
+    <title>Cinema Quotes And Sayings</title>
+    <description>Quotes And Sayings About Cinema</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>5</id>
+    <title>Contentment Quotes And Sayings</title>
+    <description>Quotes And Sayings About Contentment</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>6</id>
+    <title>Thoughtful Quotes And Sayings</title>
+    <description>Quotes And Sayings About Thoughtful</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>7</id>
+    <title>Free Quotes And Sayings</title>
+    <description>Quotes And Sayings About Free</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>8</id>
+    <title>Visions Quotes And Sayings</title>
+    <description>Quotes And Sayings About Visions</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>9</id>
+    <title>Hugs Quotes And Sayings</title>
+    <description>Quotes And Sayings About Hugs</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>10</id>
+    <title>Relax Quotes And Sayings</title>
+    <description>Quotes And Sayings About Relax</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>11</id>
+    <title>Familiarity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Familiarity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>12</id>
+    <title>Supernatural Quotes And Sayings</title>
+    <description>Quotes And Sayings About Supernatural</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>13</id>
+    <title>Sleep Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sleep</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>14</id>
+    <title>Inferiority Quotes And Sayings</title>
+    <description>Quotes And Sayings About Inferiority</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>15</id>
+    <title>Intelligence Quotes And Sayings</title>
+    <description>Quotes And Sayings About Intelligence</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>16</id>
+    <title>Zodiac Quotes And Sayings</title>
+    <description>Quotes And Sayings About Zodiac</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>17</id>
+    <title>Apology Quotes And Sayings</title>
+    <description>Quotes And Sayings About Apology</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>18</id>
+    <title>Impossibility Quotes And Sayings</title>
+    <description>Quotes And Sayings About Impossibility</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>19</id>
+    <title>Meditation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Meditation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>20</id>
+    <title>Paradise Quotes And Sayings</title>
+    <description>Quotes And Sayings About Paradise</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>21</id>
+    <title>Pessimism Quotes And Sayings</title>
+    <description>Quotes And Sayings About Pessimism</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>22</id>
+    <title>Gentleman Quotes And Sayings</title>
+    <description>Quotes And Sayings About Gentleman</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>23</id>
+    <title>Baby Quotes And Sayings</title>
+    <description>Quotes And Sayings About Baby</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>24</id>
+    <title>Perception Quotes And Sayings</title>
+    <description>Quotes And Sayings About Perception</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>25</id>
+    <title>Nudity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Nudity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>26</id>
+    <title>Respect Quotes And Sayings</title>
+    <description>Quotes And Sayings About Respect</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>27</id>
+    <title>Common Quotes And Sayings</title>
+    <description>Quotes And Sayings About Common</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>28</id>
+    <title>Devotion Quotes And Sayings</title>
+    <description>Quotes And Sayings About Devotion</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>29</id>
+    <title>Separation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Separation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>30</id>
+    <title>Cheerfulness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Cheerfulness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>31</id>
+    <title>Roses Quotes And Sayings</title>
+    <description>Quotes And Sayings About Roses</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>32</id>
+    <title>Flaws Quotes And Sayings</title>
+    <description>Quotes And Sayings About Flaws</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>33</id>
+    <title>Creativity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Creativity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>34</id>
+    <title>Kiss Quotes And Sayings</title>
+    <description>Quotes And Sayings About Kiss</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>35</id>
+    <title>Laziness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Laziness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>36</id>
+    <title>Work Quotes And Sayings</title>
+    <description>Quotes And Sayings About Work</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>37</id>
+    <title>Morals Quotes And Sayings</title>
+    <description>Quotes And Sayings About Morals</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>38</id>
+    <title>Honor Quotes And Sayings</title>
+    <description>Quotes And Sayings About Honor</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>39</id>
+    <title>Lesbianism Quotes And Sayings</title>
+    <description>Quotes And Sayings About Lesbianism</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>40</id>
+    <title>Heart Quotes And Sayings</title>
+    <description>Quotes And Sayings About Heart</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>41</id>
+    <title>Bachelors Quotes And Sayings</title>
+    <description>Quotes And Sayings About Bachelors</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>42</id>
+    <title>Harmony Quotes And Sayings</title>
+    <description>Quotes And Sayings About Harmony</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>43</id>
+    <title>Novelty Quotes And Sayings</title>
+    <description>Quotes And Sayings About Novelty</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>44</id>
+    <title>Cooperation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Cooperation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>45</id>
+    <title>Integrity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Integrity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>46</id>
+    <title>Sorrow Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sorrow</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>47</id>
+    <title>Leaders Quotes And Sayings</title>
+    <description>Quotes And Sayings About Leaders</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>48</id>
+    <title>Enjoyment Quotes And Sayings</title>
+    <description>Quotes And Sayings About Enjoyment</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>49</id>
+    <title>Remarkable Quotes And Sayings</title>
+    <description>Quotes And Sayings About Remarkable</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>50</id>
+    <title>Remorse Quotes And Sayings</title>
+    <description>Quotes And Sayings About Remorse</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>51</id>
+    <title>Firmness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Firmness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>52</id>
+    <title>Zen Quotes And Sayings</title>
+    <description>Quotes And Sayings About Zen</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>53</id>
+    <title>Autumn Quotes And Sayings</title>
+    <description>Quotes And Sayings About Autumn</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>54</id>
+    <title>Faults Quotes And Sayings</title>
+    <description>Quotes And Sayings About Faults</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>55</id>
+    <title>Seamen Quotes And Sayings</title>
+    <description>Quotes And Sayings About Seamen</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>56</id>
+    <title>Choice Quotes And Sayings</title>
+    <description>Quotes And Sayings About Choice</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>57</id>
+    <title>Mistakes Quotes And Sayings</title>
+    <description>Quotes And Sayings About Mistakes</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>58</id>
+    <title>Cure Quotes And Sayings</title>
+    <description>Quotes And Sayings About Cure</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>59</id>
+    <title>Boyfriend Quotes And Sayings</title>
+    <description>Quotes And Sayings About Boyfriend</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>60</id>
+    <title>Reassurance Quotes And Sayings</title>
+    <description>Quotes And Sayings About Reassurance</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>61</id>
+    <title>Uniqueness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Uniqueness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>62</id>
+    <title>Footsteps Quotes And Sayings</title>
+    <description>Quotes And Sayings About Footsteps</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>63</id>
+    <title>Waiting Quotes And Sayings</title>
+    <description>Quotes And Sayings About Waiting</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>64</id>
+    <title>Privacy Quotes And Sayings</title>
+    <description>Quotes And Sayings About Privacy</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>65</id>
+    <title>Negative Quotes And Sayings</title>
+    <description>Quotes And Sayings About Negative</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>66</id>
+    <title>Individualism Quotes And Sayings</title>
+    <description>Quotes And Sayings About Individualism</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>67</id>
+    <title>Goodness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Goodness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>68</id>
+    <title>Seduction Quotes And Sayings</title>
+    <description>Quotes And Sayings About Seduction</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>69</id>
+    <title>Worry Quotes And Sayings</title>
+    <description>Quotes And Sayings About Worry</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>70</id>
+    <title>Habit Quotes And Sayings</title>
+    <description>Quotes And Sayings About Habit</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>71</id>
+    <title>Uncertainty Quotes And Sayings</title>
+    <description>Quotes And Sayings About Uncertainty</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>72</id>
+    <title>Healing Quotes And Sayings</title>
+    <description>Quotes And Sayings About Healing</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>73</id>
+    <title>Longevity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Longevity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>74</id>
+    <title>Connection Quotes And Sayings</title>
+    <description>Quotes And Sayings About Connection</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>75</id>
+    <title>Light Quotes And Sayings</title>
+    <description>Quotes And Sayings About Light</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>76</id>
+    <title>Stars Quotes And Sayings</title>
+    <description>Quotes And Sayings About Stars</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>77</id>
+    <title>Unconscious Quotes And Sayings</title>
+    <description>Quotes And Sayings About Unconscious</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>78</id>
+    <title>Quiet Quotes And Sayings</title>
+    <description>Quotes And Sayings About Quiet</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>79</id>
+    <title>Generosity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Generosity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>80</id>
+    <title>Treasure Quotes And Sayings</title>
+    <description>Quotes And Sayings About Treasure</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>81</id>
+    <title>Goal Quotes And Sayings</title>
+    <description>Quotes And Sayings About Goal</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>82</id>
+    <title>Dumb Quotes And Sayings</title>
+    <description>Quotes And Sayings About Dumb</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>83</id>
+    <title>Giving Quotes And Sayings</title>
+    <description>Quotes And Sayings About Giving</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>84</id>
+    <title>Flowers Quotes And Sayings</title>
+    <description>Quotes And Sayings About Flowers</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>85</id>
+    <title>Dignity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Dignity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>86</id>
+    <title>Belief Quotes And Sayings</title>
+    <description>Quotes And Sayings About Belief</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>87</id>
+    <title>Nothing Quotes And Sayings</title>
+    <description>Quotes And Sayings About Nothing</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>88</id>
+    <title>Moments Quotes And Sayings</title>
+    <description>Quotes And Sayings About Moments</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>89</id>
+    <title>Charisma Quotes And Sayings</title>
+    <description>Quotes And Sayings About Charisma</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>90</id>
+    <title>Obvious Quotes And Sayings</title>
+    <description>Quotes And Sayings About Obvious</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>91</id>
+    <title>Magnificence Quotes And Sayings</title>
+    <description>Quotes And Sayings About Magnificence</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>92</id>
+    <title>Friends Quotes And Sayings</title>
+    <description>Quotes And Sayings About Friends</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>93</id>
+    <title>Beginning Quotes And Sayings</title>
+    <description>Quotes And Sayings About Beginning</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>94</id>
+    <title>Frigidity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Frigidity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>95</id>
+    <title>Dreams Quotes And Sayings</title>
+    <description>Quotes And Sayings About Dreams</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>96</id>
+    <title>Contrast Quotes And Sayings</title>
+    <description>Quotes And Sayings About Contrast</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>97</id>
+    <title>Indifference Quotes And Sayings</title>
+    <description>Quotes And Sayings About Indifference</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>98</id>
+    <title>Men Quotes And Sayings</title>
+    <description>Quotes And Sayings About Men</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>99</id>
+    <title>Sarcasm Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sarcasm</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>100</id>
+    <title>Sensuality Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sensuality</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>101</id>
+    <title>Value Quotes And Sayings</title>
+    <description>Quotes And Sayings About Value</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>102</id>
+    <title>Surrender Quotes And Sayings</title>
+    <description>Quotes And Sayings About Surrender</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>103</id>
+    <title>Insincerity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Insincerity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>104</id>
+    <title>Sound Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sound</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>105</id>
+    <title>Instinct Quotes And Sayings</title>
+    <description>Quotes And Sayings About Instinct</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>106</id>
+    <title>Worth Quotes And Sayings</title>
+    <description>Quotes And Sayings About Worth</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>107</id>
+    <title>Disagreements Quotes And Sayings</title>
+    <description>Quotes And Sayings About Disagreements</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>108</id>
+    <title>God Quotes And Sayings</title>
+    <description>Quotes And Sayings About God</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>109</id>
+    <title>Purity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Purity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>110</id>
+    <title>Difficulty Quotes And Sayings</title>
+    <description>Quotes And Sayings About Difficulty</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>111</id>
+    <title>Thought Quotes And Sayings</title>
+    <description>Quotes And Sayings About Thought</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>112</id>
+    <title>Rebirth Quotes And Sayings</title>
+    <description>Quotes And Sayings About Rebirth</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>113</id>
+    <title>Nervousness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Nervousness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>114</id>
+    <title>Revolution Quotes And Sayings</title>
+    <description>Quotes And Sayings About Revolution</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>115</id>
+    <title>Angels Quotes And Sayings</title>
+    <description>Quotes And Sayings About Angels</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>116</id>
+    <title>Reciprocity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Reciprocity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>117</id>
+    <title>Sensibility Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sensibility</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>118</id>
+    <title>Opinions Quotes And Sayings</title>
+    <description>Quotes And Sayings About Opinions</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>119</id>
+    <title>Charm Quotes And Sayings</title>
+    <description>Quotes And Sayings About Charm</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>120</id>
+    <title>Variety Quotes And Sayings</title>
+    <description>Quotes And Sayings About Variety</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>121</id>
+    <title>Culture Quotes And Sayings</title>
+    <description>Quotes And Sayings About Culture</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>122</id>
+    <title>Doubt Quotes And Sayings</title>
+    <description>Quotes And Sayings About Doubt</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>123</id>
+    <title>Completion Quotes And Sayings</title>
+    <description>Quotes And Sayings About Completion</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>124</id>
+    <title>Quotations Quotes And Sayings</title>
+    <description>Quotes And Sayings About Quotations</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>125</id>
+    <title>Infinite Quotes And Sayings</title>
+    <description>Quotes And Sayings About Infinite</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>126</id>
+    <title>Inequality Quotes And Sayings</title>
+    <description>Quotes And Sayings About Inequality</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>127</id>
+    <title>Needs Quotes And Sayings</title>
+    <description>Quotes And Sayings About Needs</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>128</id>
+    <title>Knowledge Quotes And Sayings</title>
+    <description>Quotes And Sayings About Knowledge</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>129</id>
+    <title>Consideration Quotes And Sayings</title>
+    <description>Quotes And Sayings About Consideration</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>130</id>
+    <title>Dancing Quotes And Sayings</title>
+    <description>Quotes And Sayings About Dancing</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>131</id>
+    <title>Superficiality Quotes And Sayings</title>
+    <description>Quotes And Sayings About Superficiality</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>132</id>
+    <title>Motivation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Motivation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>133</id>
+    <title>Gender Quotes And Sayings</title>
+    <description>Quotes And Sayings About Gender</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>134</id>
+    <title>Precedents Quotes And Sayings</title>
+    <description>Quotes And Sayings About Precedents</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>135</id>
+    <title>Money Quotes And Sayings</title>
+    <description>Quotes And Sayings About Money</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>136</id>
+    <title>Relaxation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Relaxation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>137</id>
+    <title>Jokes Quotes And Sayings</title>
+    <description>Quotes And Sayings About Jokes</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>138</id>
+    <title>Excuses Quotes And Sayings</title>
+    <description>Quotes And Sayings About Excuses</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>139</id>
+    <title>Confidence Quotes And Sayings</title>
+    <description>Quotes And Sayings About Confidence</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>140</id>
+    <title>Righteousness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Righteousness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>141</id>
+    <title>Tenacity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Tenacity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>142</id>
+    <title>Destiny Quotes And Sayings</title>
+    <description>Quotes And Sayings About Destiny</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>143</id>
+    <title>Emotion Quotes And Sayings</title>
+    <description>Quotes And Sayings About Emotion</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>144</id>
+    <title>Spring Quotes And Sayings</title>
+    <description>Quotes And Sayings About Spring</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>145</id>
+    <title>Commitment Quotes And Sayings</title>
+    <description>Quotes And Sayings About Commitment</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>146</id>
+    <title>Willpower Quotes And Sayings</title>
+    <description>Quotes And Sayings About Willpower</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>147</id>
+    <title>Favors Quotes And Sayings</title>
+    <description>Quotes And Sayings About Favors</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>148</id>
+    <title>Parents Quotes And Sayings</title>
+    <description>Quotes And Sayings About Parents</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>149</id>
+    <title>Temptation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Temptation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>150</id>
+    <title>Efficiency Quotes And Sayings</title>
+    <description>Quotes And Sayings About Efficiency</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>151</id>
+    <title>Escapism Quotes And Sayings</title>
+    <description>Quotes And Sayings About Escapism</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>152</id>
+    <title>Singing Quotes And Sayings</title>
+    <description>Quotes And Sayings About Singing</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>153</id>
+    <title>Questions Quotes And Sayings</title>
+    <description>Quotes And Sayings About Questions</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>154</id>
+    <title>Mercy Quotes And Sayings</title>
+    <description>Quotes And Sayings About Mercy</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>155</id>
+    <title>Blessings Quotes And Sayings</title>
+    <description>Quotes And Sayings About Blessings</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>156</id>
+    <title>Sentimentality Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sentimentality</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>157</id>
+    <title>Beliefs Quotes And Sayings</title>
+    <description>Quotes And Sayings About Beliefs</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>158</id>
+    <title>Desire Quotes And Sayings</title>
+    <description>Quotes And Sayings About Desire</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>159</id>
+    <title>Nostalgia Quotes And Sayings</title>
+    <description>Quotes And Sayings About Nostalgia</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>160</id>
+    <title>Ritual Quotes And Sayings</title>
+    <description>Quotes And Sayings About Ritual</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>161</id>
+    <title>Pornography Quotes And Sayings</title>
+    <description>Quotes And Sayings About Pornography</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>162</id>
+    <title>Experience Quotes And Sayings</title>
+    <description>Quotes And Sayings About Experience</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>163</id>
+    <title>Provocative Quotes And Sayings</title>
+    <description>Quotes And Sayings About Provocative</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>164</id>
+    <title>Exaggeration Quotes And Sayings</title>
+    <description>Quotes And Sayings About Exaggeration</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>165</id>
+    <title>Gossip Quotes And Sayings</title>
+    <description>Quotes And Sayings About Gossip</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>166</id>
+    <title>Acting Quotes And Sayings</title>
+    <description>Quotes And Sayings About Acting</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>167</id>
+    <title>Open Quotes And Sayings</title>
+    <description>Quotes And Sayings About Open</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>168</id>
+    <title>Kindness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Kindness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>169</id>
+    <title>Fame Quotes And Sayings</title>
+    <description>Quotes And Sayings About Fame</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>170</id>
+    <title>Leader Quotes And Sayings</title>
+    <description>Quotes And Sayings About Leader</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>171</id>
+    <title>Sickness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sickness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>172</id>
+    <title>Merit Quotes And Sayings</title>
+    <description>Quotes And Sayings About Merit</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>173</id>
+    <title>Affirmation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Affirmation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>174</id>
+    <title>Leisure Quotes And Sayings</title>
+    <description>Quotes And Sayings About Leisure</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>175</id>
+    <title>Slang Quotes And Sayings</title>
+    <description>Quotes And Sayings About Slang</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>176</id>
+    <title>Boldness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Boldness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>177</id>
+    <title>Argument Quotes And Sayings</title>
+    <description>Quotes And Sayings About Argument</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>178</id>
+    <title>Glamour Quotes And Sayings</title>
+    <description>Quotes And Sayings About Glamour</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>179</id>
+    <title>Silence Quotes And Sayings</title>
+    <description>Quotes And Sayings About Silence</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>180</id>
+    <title>Usefulness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Usefulness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>181</id>
+    <title>Dream Quotes And Sayings</title>
+    <description>Quotes And Sayings About Dream</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>182</id>
+    <title>Home Quotes And Sayings</title>
+    <description>Quotes And Sayings About Home</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>183</id>
+    <title>Laughter Quotes And Sayings</title>
+    <description>Quotes And Sayings About Laughter</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>184</id>
+    <title>Girls Quotes And Sayings</title>
+    <description>Quotes And Sayings About Girls</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>185</id>
+    <title>Iron Quotes And Sayings</title>
+    <description>Quotes And Sayings About Iron</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>186</id>
+    <title>Gay Quotes And Sayings</title>
+    <description>Quotes And Sayings About Gay</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>187</id>
+    <title>Perfection Quotes And Sayings</title>
+    <description>Quotes And Sayings About Perfection</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>188</id>
+    <title>Etiquette Quotes And Sayings</title>
+    <description>Quotes And Sayings About Etiquette</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>189</id>
+    <title>Encouraging Quotes And Sayings</title>
+    <description>Quotes And Sayings About Encouraging</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>190</id>
+    <title>Measure Quotes And Sayings</title>
+    <description>Quotes And Sayings About Measure</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>191</id>
+    <title>Leading Quotes And Sayings</title>
+    <description>Quotes And Sayings About Leading</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>192</id>
+    <title>Equality Quotes And Sayings</title>
+    <description>Quotes And Sayings About Equality</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>193</id>
+    <title>Music Quotes And Sayings</title>
+    <description>Quotes And Sayings About Music</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>194</id>
+    <title>Development Quotes And Sayings</title>
+    <description>Quotes And Sayings About Development</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>195</id>
+    <title>Ecstasy Quotes And Sayings</title>
+    <description>Quotes And Sayings About Ecstasy</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>196</id>
+    <title>Fulfillment Quotes And Sayings</title>
+    <description>Quotes And Sayings About Fulfillment</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>197</id>
+    <title>Suspicion Quotes And Sayings</title>
+    <description>Quotes And Sayings About Suspicion</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>198</id>
+    <title>Paranoia Quotes And Sayings</title>
+    <description>Quotes And Sayings About Paranoia</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>199</id>
+    <title>Principles Quotes And Sayings</title>
+    <description>Quotes And Sayings About Principles</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>200</id>
+    <title>Obsessions Quotes And Sayings</title>
+    <description>Quotes And Sayings About Obsessions</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>201</id>
+    <title>Pressure Quotes And Sayings</title>
+    <description>Quotes And Sayings About Pressure</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>202</id>
+    <title>Infinity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Infinity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>203</id>
+    <title>Mission Quotes And Sayings</title>
+    <description>Quotes And Sayings About Mission</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>204</id>
+    <title>Fate Quotes And Sayings</title>
+    <description>Quotes And Sayings About Fate</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>205</id>
+    <title>Accomplishments Quotes And Sayings</title>
+    <description>Quotes And Sayings About Accomplishments</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>206</id>
+    <title>Expectations Quotes And Sayings</title>
+    <description>Quotes And Sayings About Expectations</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>207</id>
+    <title>Manners Quotes And Sayings</title>
+    <description>Quotes And Sayings About Manners</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>208</id>
+    <title>Comfort Quotes And Sayings</title>
+    <description>Quotes And Sayings About Comfort</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>209</id>
+    <title>Ageing Quotes And Sayings</title>
+    <description>Quotes And Sayings About Ageing</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>210</id>
+    <title>Style Quotes And Sayings</title>
+    <description>Quotes And Sayings About Style</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>211</id>
+    <title>Result Quotes And Sayings</title>
+    <description>Quotes And Sayings About Result</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>212</id>
+    <title>Homesickness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Homesickness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>213</id>
+    <title>Inspiration Quotes And Sayings</title>
+    <description>Quotes And Sayings About Inspiration</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>214</id>
+    <title>Challenge Quotes And Sayings</title>
+    <description>Quotes And Sayings About Challenge</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>215</id>
+    <title>Admiration Quotes And Sayings</title>
+    <description>Quotes And Sayings About Admiration</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>216</id>
+    <title>Life Quotes And Sayings</title>
+    <description>Quotes And Sayings About Life</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>217</id>
+    <title>Legends Quotes And Sayings</title>
+    <description>Quotes And Sayings About Legends</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>218</id>
+    <title>Reality Quotes And Sayings</title>
+    <description>Quotes And Sayings About Reality</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>219</id>
+    <title>Validity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Validity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>220</id>
+    <title>Sanity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sanity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>221</id>
+    <title>Recreation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Recreation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>222</id>
+    <title>Pleasure Quotes And Sayings</title>
+    <description>Quotes And Sayings About Pleasure</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>223</id>
+    <title>Practicality Quotes And Sayings</title>
+    <description>Quotes And Sayings About Practicality</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>224</id>
+    <title>Goodwill Quotes And Sayings</title>
+    <description>Quotes And Sayings About Goodwill</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>225</id>
+    <title>Comparisons Quotes And Sayings</title>
+    <description>Quotes And Sayings About Comparisons</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>226</id>
+    <title>Pity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Pity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>227</id>
+    <title>Concern Quotes And Sayings</title>
+    <description>Quotes And Sayings About Concern</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>228</id>
+    <title>Richness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Richness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>229</id>
+    <title>Joy Quotes And Sayings</title>
+    <description>Quotes And Sayings About Joy</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>230</id>
+    <title>Mental Quotes And Sayings</title>
+    <description>Quotes And Sayings About Mental</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>231</id>
+    <title>Action Quotes And Sayings</title>
+    <description>Quotes And Sayings About Action</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>232</id>
+    <title>Idiots Quotes And Sayings</title>
+    <description>Quotes And Sayings About Idiots</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>233</id>
+    <title>Sense Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sense</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>234</id>
+    <title>Eccentricity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Eccentricity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>235</id>
+    <title>Karma Quotes And Sayings</title>
+    <description>Quotes And Sayings About Karma</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>236</id>
+    <title>Intellectuals Quotes And Sayings</title>
+    <description>Quotes And Sayings About Intellectuals</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>237</id>
+    <title>Incompetence Quotes And Sayings</title>
+    <description>Quotes And Sayings About Incompetence</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>238</id>
+    <title>Trust Quotes And Sayings</title>
+    <description>Quotes And Sayings About Trust</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>239</id>
+    <title>Discouragement Quotes And Sayings</title>
+    <description>Quotes And Sayings About Discouragement</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>240</id>
+    <title>Fools Quotes And Sayings</title>
+    <description>Quotes And Sayings About Fools</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>241</id>
+    <title>Sight Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sight</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>242</id>
+    <title>Competence Quotes And Sayings</title>
+    <description>Quotes And Sayings About Competence</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>243</id>
+    <title>Resolution Quotes And Sayings</title>
+    <description>Quotes And Sayings About Resolution</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>244</id>
+    <title>Longing Quotes And Sayings</title>
+    <description>Quotes And Sayings About Longing</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>245</id>
+    <title>Mistake Quotes And Sayings</title>
+    <description>Quotes And Sayings About Mistake</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>246</id>
+    <title>Eloquence Quotes And Sayings</title>
+    <description>Quotes And Sayings About Eloquence</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>247</id>
+    <title>Thoughts Quotes And Sayings</title>
+    <description>Quotes And Sayings About Thoughts</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>248</id>
+    <title>Network Quotes And Sayings</title>
+    <description>Quotes And Sayings About Network</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>249</id>
+    <title>Teaching Quotes And Sayings</title>
+    <description>Quotes And Sayings About Teaching</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>250</id>
+    <title>Caution Quotes And Sayings</title>
+    <description>Quotes And Sayings About Caution</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>251</id>
+    <title>Habits Quotes And Sayings</title>
+    <description>Quotes And Sayings About Habits</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>252</id>
+    <title>Achievement Quotes And Sayings</title>
+    <description>Quotes And Sayings About Achievement</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>253</id>
+    <title>Kissing Quotes And Sayings</title>
+    <description>Quotes And Sayings About Kissing</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>254</id>
+    <title>Burden Quotes And Sayings</title>
+    <description>Quotes And Sayings About Burden</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>255</id>
+    <title>Oceans Quotes And Sayings</title>
+    <description>Quotes And Sayings About Oceans</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>256</id>
+    <title>Possibilities Quotes And Sayings</title>
+    <description>Quotes And Sayings About Possibilities</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>257</id>
+    <title>Self Quotes And Sayings</title>
+    <description>Quotes And Sayings About Self</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>258</id>
+    <title>Eye Quotes And Sayings</title>
+    <description>Quotes And Sayings About Eye</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>259</id>
+    <title>Teen Quotes And Sayings</title>
+    <description>Quotes And Sayings About Teen</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>260</id>
+    <title>Motives Quotes And Sayings</title>
+    <description>Quotes And Sayings About Motives</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>261</id>
+    <title>Clocks Quotes And Sayings</title>
+    <description>Quotes And Sayings About Clocks</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>262</id>
+    <title>Yearning Quotes And Sayings</title>
+    <description>Quotes And Sayings About Yearning</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>263</id>
+    <title>Strength Quotes And Sayings</title>
+    <description>Quotes And Sayings About Strength</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>264</id>
+    <title>Miser Quotes And Sayings</title>
+    <description>Quotes And Sayings About Miser</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>265</id>
+    <title>Memories Quotes And Sayings</title>
+    <description>Quotes And Sayings About Memories</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>266</id>
+    <title>Opportunity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Opportunity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>267</id>
+    <title>Weddings Quotes And Sayings</title>
+    <description>Quotes And Sayings About Weddings</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>268</id>
+    <title>Confession Quotes And Sayings</title>
+    <description>Quotes And Sayings About Confession</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>269</id>
+    <title>Voice Quotes And Sayings</title>
+    <description>Quotes And Sayings About Voice</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>270</id>
+    <title>Adoption Quotes And Sayings</title>
+    <description>Quotes And Sayings About Adoption</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>271</id>
+    <title>Night Quotes And Sayings</title>
+    <description>Quotes And Sayings About Night</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>272</id>
+    <title>Modernity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Modernity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>273</id>
+    <title>Ceremony Quotes And Sayings</title>
+    <description>Quotes And Sayings About Ceremony</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>274</id>
+    <title>Old Quotes And Sayings</title>
+    <description>Quotes And Sayings About Old</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>275</id>
+    <title>Misfortune Quotes And Sayings</title>
+    <description>Quotes And Sayings About Misfortune</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>276</id>
+    <title>Mountains Quotes And Sayings</title>
+    <description>Quotes And Sayings About Mountains</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>277</id>
+    <title>Relationships Quotes And Sayings</title>
+    <description>Quotes And Sayings About Relationships</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>278</id>
+    <title>Empowerment Quotes And Sayings</title>
+    <description>Quotes And Sayings About Empowerment</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>279</id>
+    <title>Applause Quotes And Sayings</title>
+    <description>Quotes And Sayings About Applause</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>280</id>
+    <title>Hurt Quotes And Sayings</title>
+    <description>Quotes And Sayings About Hurt</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>281</id>
+    <title>Impression Quotes And Sayings</title>
+    <description>Quotes And Sayings About Impression</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>282</id>
+    <title>Hope Quotes And Sayings</title>
+    <description>Quotes And Sayings About Hope</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>283</id>
+    <title>Sensitivity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sensitivity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>284</id>
+    <title>Multiplicity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Multiplicity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>285</id>
+    <title>Body Quotes And Sayings</title>
+    <description>Quotes And Sayings About Body</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>286</id>
+    <title>Nonsense Quotes And Sayings</title>
+    <description>Quotes And Sayings About Nonsense</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>287</id>
+    <title>Zest Quotes And Sayings</title>
+    <description>Quotes And Sayings About Zest</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>288</id>
+    <title>Childhood Quotes And Sayings</title>
+    <description>Quotes And Sayings About Childhood</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>289</id>
+    <title>Rhetoric Quotes And Sayings</title>
+    <description>Quotes And Sayings About Rhetoric</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>290</id>
+    <title>Compliments Quotes And Sayings</title>
+    <description>Quotes And Sayings About Compliments</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>291</id>
+    <title>Relatives Quotes And Sayings</title>
+    <description>Quotes And Sayings About Relatives</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>292</id>
+    <title>Celebrity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Celebrity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>293</id>
+    <title>Conflict Quotes And Sayings</title>
+    <description>Quotes And Sayings About Conflict</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>294</id>
+    <title>Unworthy Quotes And Sayings</title>
+    <description>Quotes And Sayings About Unworthy</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>295</id>
+    <title>Nagging Quotes And Sayings</title>
+    <description>Quotes And Sayings About Nagging</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>296</id>
+    <title>Community Quotes And Sayings</title>
+    <description>Quotes And Sayings About Community</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>297</id>
+    <title>Earth Quotes And Sayings</title>
+    <description>Quotes And Sayings About Earth</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>298</id>
+    <title>Hospitality Quotes And Sayings</title>
+    <description>Quotes And Sayings About Hospitality</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>299</id>
+    <title>Difference Quotes And Sayings</title>
+    <description>Quotes And Sayings About Difference</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>300</id>
+    <title>Pursuit Quotes And Sayings</title>
+    <description>Quotes And Sayings About Pursuit</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>301</id>
+    <title>Zeal Quotes And Sayings</title>
+    <description>Quotes And Sayings About Zeal</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>302</id>
+    <title>Uselessness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Uselessness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>303</id>
+    <title>Independence Quotes And Sayings</title>
+    <description>Quotes And Sayings About Independence</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>304</id>
+    <title>Questioning Quotes And Sayings</title>
+    <description>Quotes And Sayings About Questioning</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>305</id>
+    <title>Faithfulness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Faithfulness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>306</id>
+    <title>Consequences Quotes And Sayings</title>
+    <description>Quotes And Sayings About Consequences</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>307</id>
+    <title>Tears Quotes And Sayings</title>
+    <description>Quotes And Sayings About Tears</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>308</id>
+    <title>Sexism Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sexism</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>309</id>
+    <title>Illusion Quotes And Sayings</title>
+    <description>Quotes And Sayings About Illusion</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>310</id>
+    <title>Humanism Quotes And Sayings</title>
+    <description>Quotes And Sayings About Humanism</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>311</id>
+    <title>Oneness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Oneness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>312</id>
+    <title>Holiday Quotes And Sayings</title>
+    <description>Quotes And Sayings About Holiday</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>313</id>
+    <title>Exercise Quotes And Sayings</title>
+    <description>Quotes And Sayings About Exercise</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>314</id>
+    <title>Focus Quotes And Sayings</title>
+    <description>Quotes And Sayings About Focus</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>315</id>
+    <title>Nothingness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Nothingness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>316</id>
+    <title>Contemplation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Contemplation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>317</id>
+    <title>Guidance Quotes And Sayings</title>
+    <description>Quotes And Sayings About Guidance</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>318</id>
+    <title>Impulses Quotes And Sayings</title>
+    <description>Quotes And Sayings About Impulses</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>319</id>
+    <title>Intention Quotes And Sayings</title>
+    <description>Quotes And Sayings About Intention</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>320</id>
+    <title>Superiority Quotes And Sayings</title>
+    <description>Quotes And Sayings About Superiority</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>321</id>
+    <title>Idealism Quotes And Sayings</title>
+    <description>Quotes And Sayings About Idealism</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>322</id>
+    <title>Determinism Quotes And Sayings</title>
+    <description>Quotes And Sayings About Determinism</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>323</id>
+    <title>Boys Quotes And Sayings</title>
+    <description>Quotes And Sayings About Boys</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>324</id>
+    <title>Examination Quotes And Sayings</title>
+    <description>Quotes And Sayings About Examination</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>325</id>
+    <title>Fitness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Fitness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>326</id>
+    <title>Beauty Quotes And Sayings</title>
+    <description>Quotes And Sayings About Beauty</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>327</id>
+    <title>Experts Quotes And Sayings</title>
+    <description>Quotes And Sayings About Experts</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>328</id>
+    <title>Exhaustion Quotes And Sayings</title>
+    <description>Quotes And Sayings About Exhaustion</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>329</id>
+    <title>Respectability Quotes And Sayings</title>
+    <description>Quotes And Sayings About Respectability</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>330</id>
+    <title>Wives Quotes And Sayings</title>
+    <description>Quotes And Sayings About Wives</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>331</id>
+    <title>Punctuality Quotes And Sayings</title>
+    <description>Quotes And Sayings About Punctuality</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>332</id>
+    <title>Homosexuality Quotes And Sayings</title>
+    <description>Quotes And Sayings About Homosexuality</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>333</id>
+    <title>Jealousy Quotes And Sayings</title>
+    <description>Quotes And Sayings About Jealousy</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>334</id>
+    <title>Poems Quotes And Sayings</title>
+    <description>Quotes And Sayings About Poems</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>335</id>
+    <title>Compassion Quotes And Sayings</title>
+    <description>Quotes And Sayings About Compassion</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>336</id>
+    <title>Skepticism Quotes And Sayings</title>
+    <description>Quotes And Sayings About Skepticism</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>337</id>
+    <title>Glory Quotes And Sayings</title>
+    <description>Quotes And Sayings About Glory</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>338</id>
+    <title>Lonely Quotes And Sayings</title>
+    <description>Quotes And Sayings About Lonely</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>339</id>
+    <title>Optimism Quotes And Sayings</title>
+    <description>Quotes And Sayings About Optimism</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>340</id>
+    <title>Burnout Quotes And Sayings</title>
+    <description>Quotes And Sayings About Burnout</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>341</id>
+    <title>Meeting Quotes And Sayings</title>
+    <description>Quotes And Sayings About Meeting</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>342</id>
+    <title>Myth Quotes And Sayings</title>
+    <description>Quotes And Sayings About Myth</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>343</id>
+    <title>Surrealism Quotes And Sayings</title>
+    <description>Quotes And Sayings About Surrealism</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>344</id>
+    <title>Bragging Quotes And Sayings</title>
+    <description>Quotes And Sayings About Bragging</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>345</id>
+    <title>Cosmos Quotes And Sayings</title>
+    <description>Quotes And Sayings About Cosmos</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>346</id>
+    <title>Generations Quotes And Sayings</title>
+    <description>Quotes And Sayings About Generations</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>347</id>
+    <title>Inexplicable Quotes And Sayings</title>
+    <description>Quotes And Sayings About Inexplicable</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>348</id>
+    <title>Alliance Quotes And Sayings</title>
+    <description>Quotes And Sayings About Alliance</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>349</id>
+    <title>Land Quotes And Sayings</title>
+    <description>Quotes And Sayings About Land</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>350</id>
+    <title>Decision Quotes And Sayings</title>
+    <description>Quotes And Sayings About Decision</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>351</id>
+    <title>Art Quotes And Sayings</title>
+    <description>Quotes And Sayings About Art</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>352</id>
+    <title>Manipulation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Manipulation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>353</id>
+    <title>Complexity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Complexity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>354</id>
+    <title>Learning Quotes And Sayings</title>
+    <description>Quotes And Sayings About Learning</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>355</id>
+    <title>Responsibility Quotes And Sayings</title>
+    <description>Quotes And Sayings About Responsibility</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>356</id>
+    <title>Sharing Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sharing</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>357</id>
+    <title>Living Quotes And Sayings</title>
+    <description>Quotes And Sayings About Living</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>358</id>
+    <title>Strangers Quotes And Sayings</title>
+    <description>Quotes And Sayings About Strangers</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>359</id>
+    <title>Decisions Quotes And Sayings</title>
+    <description>Quotes And Sayings About Decisions</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>360</id>
+    <title>Materialism Quotes And Sayings</title>
+    <description>Quotes And Sayings About Materialism</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>361</id>
+    <title>Unity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Unity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>362</id>
+    <title>Prohibition Quotes And Sayings</title>
+    <description>Quotes And Sayings About Prohibition</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>363</id>
+    <title>Remembrance Quotes And Sayings</title>
+    <description>Quotes And Sayings About Remembrance</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>364</id>
+    <title>Thinking Quotes And Sayings</title>
+    <description>Quotes And Sayings About Thinking</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>365</id>
+    <title>Miscellaneous Quotes And Sayings</title>
+    <description>Quotes And Sayings About Miscellaneous</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>366</id>
+    <title>Quotation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Quotation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>367</id>
+    <title>Frustration Quotes And Sayings</title>
+    <description>Quotes And Sayings About Frustration</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>368</id>
+    <title>Quotes And Sayings</title>
+    <description>Quotes And Sayings About </description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>369</id>
+    <title>Friendship Quotes And Sayings</title>
+    <description>Quotes And Sayings About Friendship</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>370</id>
+    <title>Jeopardy Quotes And Sayings</title>
+    <description>Quotes And Sayings About Jeopardy</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>371</id>
+    <title>Spirit Quotes And Sayings</title>
+    <description>Quotes And Sayings About Spirit</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>372</id>
+    <title>Exasperation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Exasperation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>373</id>
+    <title>Worthiness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Worthiness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>374</id>
+    <title>Flirtation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Flirtation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>375</id>
+    <title>Movies Quotes And Sayings</title>
+    <description>Quotes And Sayings About Movies</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>376</id>
+    <title>Question Quotes And Sayings</title>
+    <description>Quotes And Sayings About Question</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>377</id>
+    <title>Sunset Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sunset</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>378</id>
+    <title>Care Quotes And Sayings</title>
+    <description>Quotes And Sayings About Care</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>379</id>
+    <title>Romantic Quotes And Sayings</title>
+    <description>Quotes And Sayings About Romantic</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>380</id>
+    <title>Secrets Quotes And Sayings</title>
+    <description>Quotes And Sayings About Secrets</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>381</id>
+    <title>Candor Quotes And Sayings</title>
+    <description>Quotes And Sayings About Candor</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>382</id>
+    <title>Frankness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Frankness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>383</id>
+    <title>Intolerance Quotes And Sayings</title>
+    <description>Quotes And Sayings About Intolerance</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>384</id>
+    <title>Priorities Quotes And Sayings</title>
+    <description>Quotes And Sayings About Priorities</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>385</id>
+    <title>Discovery Quotes And Sayings</title>
+    <description>Quotes And Sayings About Discovery</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>386</id>
+    <title>Power Quotes And Sayings</title>
+    <description>Quotes And Sayings About Power</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>387</id>
+    <title>Ocean Quotes And Sayings</title>
+    <description>Quotes And Sayings About Ocean</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>388</id>
+    <title>Limitations Quotes And Sayings</title>
+    <description>Quotes And Sayings About Limitations</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>389</id>
+    <title>Eyes Quotes And Sayings</title>
+    <description>Quotes And Sayings About Eyes</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>390</id>
+    <title>Ideas Quotes And Sayings</title>
+    <description>Quotes And Sayings About Ideas</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>391</id>
+    <title>Months Quotes And Sayings</title>
+    <description>Quotes And Sayings About Months</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>392</id>
+    <title>Personality Quotes And Sayings</title>
+    <description>Quotes And Sayings About Personality</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>393</id>
+    <title>Spirituality Quotes And Sayings</title>
+    <description>Quotes And Sayings About Spirituality</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>394</id>
+    <title>Expertise Quotes And Sayings</title>
+    <description>Quotes And Sayings About Expertise</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>395</id>
+    <title>Sarcastic Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sarcastic</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>396</id>
+    <title>Society Quotes And Sayings</title>
+    <description>Quotes And Sayings About Society</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>397</id>
+    <title>Fact Quotes And Sayings</title>
+    <description>Quotes And Sayings About Fact</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>398</id>
+    <title>Possessions Quotes And Sayings</title>
+    <description>Quotes And Sayings About Possessions</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>399</id>
+    <title>Lying Quotes And Sayings</title>
+    <description>Quotes And Sayings About Lying</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>400</id>
+    <title>Idea Quotes And Sayings</title>
+    <description>Quotes And Sayings About Idea</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>401</id>
+    <title>Unhappiness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Unhappiness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>402</id>
+    <title>Yesterday Quotes And Sayings</title>
+    <description>Quotes And Sayings About Yesterday</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>403</id>
+    <title>Disillusionment Quotes And Sayings</title>
+    <description>Quotes And Sayings About Disillusionment</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>404</id>
+    <title>Blush Quotes And Sayings</title>
+    <description>Quotes And Sayings About Blush</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>405</id>
+    <title>Famous Quotes And Sayings</title>
+    <description>Quotes And Sayings About Famous</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>406</id>
+    <title>Being Quotes And Sayings</title>
+    <description>Quotes And Sayings About Being</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>407</id>
+    <title>Disillusion Quotes And Sayings</title>
+    <description>Quotes And Sayings About Disillusion</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>408</id>
+    <title>Cliches Quotes And Sayings</title>
+    <description>Quotes And Sayings About Cliches</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>409</id>
+    <title>Practice Quotes And Sayings</title>
+    <description>Quotes And Sayings About Practice</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>410</id>
+    <title>Evening Quotes And Sayings</title>
+    <description>Quotes And Sayings About Evening</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>411</id>
+    <title>Observation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Observation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>412</id>
+    <title>Afterlife Quotes And Sayings</title>
+    <description>Quotes And Sayings About Afterlife</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>413</id>
+    <title>Eternity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Eternity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>414</id>
+    <title>Babyhood Quotes And Sayings</title>
+    <description>Quotes And Sayings About Babyhood</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>415</id>
+    <title>Husbands Quotes And Sayings</title>
+    <description>Quotes And Sayings About Husbands</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>416</id>
+    <title>Apologies Quotes And Sayings</title>
+    <description>Quotes And Sayings About Apologies</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>417</id>
+    <title>Peace Quotes And Sayings</title>
+    <description>Quotes And Sayings About Peace</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>418</id>
+    <title>Inspiring Quotes And Sayings</title>
+    <description>Quotes And Sayings About Inspiring</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>419</id>
+    <title>Fantasy Quotes And Sayings</title>
+    <description>Quotes And Sayings About Fantasy</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>420</id>
+    <title>Successful Quotes And Sayings</title>
+    <description>Quotes And Sayings About Successful</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>421</id>
+    <title>Moods Quotes And Sayings</title>
+    <description>Quotes And Sayings About Moods</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>422</id>
+    <title>Traditions Quotes And Sayings</title>
+    <description>Quotes And Sayings About Traditions</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>423</id>
+    <title>Participation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Participation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>424</id>
+    <title>Magic Quotes And Sayings</title>
+    <description>Quotes And Sayings About Magic</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>425</id>
+    <title>Reflection Quotes And Sayings</title>
+    <description>Quotes And Sayings About Reflection</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>426</id>
+    <title>Enthusiasm Quotes And Sayings</title>
+    <description>Quotes And Sayings About Enthusiasm</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>427</id>
+    <title>Progress Quotes And Sayings</title>
+    <description>Quotes And Sayings About Progress</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>428</id>
+    <title>Flirting Quotes And Sayings</title>
+    <description>Quotes And Sayings About Flirting</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>429</id>
+    <title>Amusement Quotes And Sayings</title>
+    <description>Quotes And Sayings About Amusement</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>430</id>
+    <title>Opinion Quotes And Sayings</title>
+    <description>Quotes And Sayings About Opinion</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>431</id>
+    <title>Appearance Quotes And Sayings</title>
+    <description>Quotes And Sayings About Appearance</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>432</id>
+    <title>Disappointment Quotes And Sayings</title>
+    <description>Quotes And Sayings About Disappointment</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>433</id>
+    <title>Language Quotes And Sayings</title>
+    <description>Quotes And Sayings About Language</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>434</id>
+    <title>Spicy Quotes And Sayings</title>
+    <description>Quotes And Sayings About Spicy</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>435</id>
+    <title>Courtesy Quotes And Sayings</title>
+    <description>Quotes And Sayings About Courtesy</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>436</id>
+    <title>Emotions Quotes And Sayings</title>
+    <description>Quotes And Sayings About Emotions</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>437</id>
+    <title>Numbers Quotes And Sayings</title>
+    <description>Quotes And Sayings About Numbers</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>438</id>
+    <title>Preparation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Preparation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>439</id>
+    <title>Hesitation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Hesitation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>440</id>
+    <title>Smile Quotes And Sayings</title>
+    <description>Quotes And Sayings About Smile</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>441</id>
+    <title>Arguments Quotes And Sayings</title>
+    <description>Quotes And Sayings About Arguments</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>442</id>
+    <title>Objectives Quotes And Sayings</title>
+    <description>Quotes And Sayings About Objectives</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>443</id>
+    <title>Diaries Quotes And Sayings</title>
+    <description>Quotes And Sayings About Diaries</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>444</id>
+    <title>Tomorrow Quotes And Sayings</title>
+    <description>Quotes And Sayings About Tomorrow</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>445</id>
+    <title>Lady Quotes And Sayings</title>
+    <description>Quotes And Sayings About Lady</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>446</id>
+    <title>Teenage Quotes And Sayings</title>
+    <description>Quotes And Sayings About Teenage</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>447</id>
+    <title>Lovers Quotes And Sayings</title>
+    <description>Quotes And Sayings About Lovers</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>448</id>
+    <title>Individuality Quotes And Sayings</title>
+    <description>Quotes And Sayings About Individuality</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>449</id>
+    <title>Testing Quotes And Sayings</title>
+    <description>Quotes And Sayings About Testing</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>450</id>
+    <title>Universe Quotes And Sayings</title>
+    <description>Quotes And Sayings About Universe</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>451</id>
+    <title>Conscience Quotes And Sayings</title>
+    <description>Quotes And Sayings About Conscience</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>452</id>
+    <title>Names Quotes And Sayings</title>
+    <description>Quotes And Sayings About Names</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>453</id>
+    <title>Dress Quotes And Sayings</title>
+    <description>Quotes And Sayings About Dress</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>454</id>
+    <title>Quick Quotes And Sayings</title>
+    <description>Quotes And Sayings About Quick</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>455</id>
+    <title>Astronomy Quotes And Sayings</title>
+    <description>Quotes And Sayings About Astronomy</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>456</id>
+    <title>Arrogance Quotes And Sayings</title>
+    <description>Quotes And Sayings About Arrogance</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>457</id>
+    <title>Energy Quotes And Sayings</title>
+    <description>Quotes And Sayings About Energy</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>458</id>
+    <title>Originality Quotes And Sayings</title>
+    <description>Quotes And Sayings About Originality</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>459</id>
+    <title>Certainty Quotes And Sayings</title>
+    <description>Quotes And Sayings About Certainty</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>460</id>
+    <title>Rest Quotes And Sayings</title>
+    <description>Quotes And Sayings About Rest</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>461</id>
+    <title>Classroom Quotes And Sayings</title>
+    <description>Quotes And Sayings About Classroom</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>462</id>
+    <title>Growth Quotes And Sayings</title>
+    <description>Quotes And Sayings About Growth</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>463</id>
+    <title>Distrust Quotes And Sayings</title>
+    <description>Quotes And Sayings About Distrust</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>464</id>
+    <title>Fault Quotes And Sayings</title>
+    <description>Quotes And Sayings About Fault</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>465</id>
+    <title>Jargon Quotes And Sayings</title>
+    <description>Quotes And Sayings About Jargon</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>466</id>
+    <title>Seasons Quotes And Sayings</title>
+    <description>Quotes And Sayings About Seasons</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>467</id>
+    <title>Obstacles Quotes And Sayings</title>
+    <description>Quotes And Sayings About Obstacles</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>468</id>
+    <title>Wishes Quotes And Sayings</title>
+    <description>Quotes And Sayings About Wishes</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>469</id>
+    <title>Listening Quotes And Sayings</title>
+    <description>Quotes And Sayings About Listening</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>470</id>
+    <title>Office Quotes And Sayings</title>
+    <description>Quotes And Sayings About Office</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>471</id>
+    <title>Lust Quotes And Sayings</title>
+    <description>Quotes And Sayings About Lust</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>472</id>
+    <title>Deception Quotes And Sayings</title>
+    <description>Quotes And Sayings About Deception</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>473</id>
+    <title>Greed Quotes And Sayings</title>
+    <description>Quotes And Sayings About Greed</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>474</id>
+    <title>Indecision Quotes And Sayings</title>
+    <description>Quotes And Sayings About Indecision</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>475</id>
+    <title>Miracles Quotes And Sayings</title>
+    <description>Quotes And Sayings About Miracles</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>476</id>
+    <title>Heroes Quotes And Sayings</title>
+    <description>Quotes And Sayings About Heroes</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>477</id>
+    <title>Speech Quotes And Sayings</title>
+    <description>Quotes And Sayings About Speech</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>478</id>
+    <title>Cause Quotes And Sayings</title>
+    <description>Quotes And Sayings About Cause</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>479</id>
+    <title>Ethics Quotes And Sayings</title>
+    <description>Quotes And Sayings About Ethics</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>480</id>
+    <title>Stability Quotes And Sayings</title>
+    <description>Quotes And Sayings About Stability</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>481</id>
+    <title>Ignorance Quotes And Sayings</title>
+    <description>Quotes And Sayings About Ignorance</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>482</id>
+    <title>Decency Quotes And Sayings</title>
+    <description>Quotes And Sayings About Decency</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>483</id>
+    <title>Causes Quotes And Sayings</title>
+    <description>Quotes And Sayings About Causes</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>484</id>
+    <title>Talk Quotes And Sayings</title>
+    <description>Quotes And Sayings About Talk</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>485</id>
+    <title>Perseverance Quotes And Sayings</title>
+    <description>Quotes And Sayings About Perseverance</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>486</id>
+    <title>Endurance Quotes And Sayings</title>
+    <description>Quotes And Sayings About Endurance</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>487</id>
+    <title>Grief Quotes And Sayings</title>
+    <description>Quotes And Sayings About Grief</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>488</id>
+    <title>Name Quotes And Sayings</title>
+    <description>Quotes And Sayings About Name</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>489</id>
+    <title>Perspective Quotes And Sayings</title>
+    <description>Quotes And Sayings About Perspective</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>490</id>
+    <title>Winter Quotes And Sayings</title>
+    <description>Quotes And Sayings About Winter</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>491</id>
+    <title>Infidelity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Infidelity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>492</id>
+    <title>Interest Quotes And Sayings</title>
+    <description>Quotes And Sayings About Interest</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>493</id>
+    <title>Moderation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Moderation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>494</id>
+    <title>Vulnerability Quotes And Sayings</title>
+    <description>Quotes And Sayings About Vulnerability</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>495</id>
+    <title>Compliment Quotes And Sayings</title>
+    <description>Quotes And Sayings About Compliment</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>496</id>
+    <title>Tenderness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Tenderness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>497</id>
+    <title>Reason Quotes And Sayings</title>
+    <description>Quotes And Sayings About Reason</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>498</id>
+    <title>Vertigo Quotes And Sayings</title>
+    <description>Quotes And Sayings About Vertigo</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>499</id>
+    <title>Sophistication Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sophistication</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>500</id>
+    <title>Grudges Quotes And Sayings</title>
+    <description>Quotes And Sayings About Grudges</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>501</id>
+    <title>Popularity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Popularity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>502</id>
+    <title>Infatuation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Infatuation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>503</id>
+    <title>Surprises Quotes And Sayings</title>
+    <description>Quotes And Sayings About Surprises</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>504</id>
+    <title>Meetings Quotes And Sayings</title>
+    <description>Quotes And Sayings About Meetings</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>505</id>
+    <title>Losing Quotes And Sayings</title>
+    <description>Quotes And Sayings About Losing</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>506</id>
+    <title>Women Quotes And Sayings</title>
+    <description>Quotes And Sayings About Women</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>507</id>
+    <title>Prayer Quotes And Sayings</title>
+    <description>Quotes And Sayings About Prayer</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>508</id>
+    <title>Wonders Quotes And Sayings</title>
+    <description>Quotes And Sayings About Wonders</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>509</id>
+    <title>Loss Quotes And Sayings</title>
+    <description>Quotes And Sayings About Loss</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>510</id>
+    <title>Misleading Quotes And Sayings</title>
+    <description>Quotes And Sayings About Misleading</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>511</id>
+    <title>Wonder Quotes And Sayings</title>
+    <description>Quotes And Sayings About Wonder</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>512</id>
+    <title>Worship Quotes And Sayings</title>
+    <description>Quotes And Sayings About Worship</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>513</id>
+    <title>Right Quotes And Sayings</title>
+    <description>Quotes And Sayings About Right</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>514</id>
+    <title>Boredom Quotes And Sayings</title>
+    <description>Quotes And Sayings About Boredom</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>515</id>
+    <title>Class Quotes And Sayings</title>
+    <description>Quotes And Sayings About Class</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>516</id>
+    <title>Compromise Quotes And Sayings</title>
+    <description>Quotes And Sayings About Compromise</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>517</id>
+    <title>Forgetfulness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Forgetfulness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>518</id>
+    <title>Sensations Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sensations</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>519</id>
+    <title>Exploration Quotes And Sayings</title>
+    <description>Quotes And Sayings About Exploration</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>520</id>
+    <title>Incredulity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Incredulity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>521</id>
+    <title>Hypocrisy Quotes And Sayings</title>
+    <description>Quotes And Sayings About Hypocrisy</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>522</id>
+    <title>Promise Quotes And Sayings</title>
+    <description>Quotes And Sayings About Promise</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>523</id>
+    <title>Coolness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Coolness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>524</id>
+    <title>Insanity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Insanity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>525</id>
+    <title>Health Quotes And Sayings</title>
+    <description>Quotes And Sayings About Health</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>526</id>
+    <title>Judgment Quotes And Sayings</title>
+    <description>Quotes And Sayings About Judgment</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>527</id>
+    <title>Traveling Quotes And Sayings</title>
+    <description>Quotes And Sayings About Traveling</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>528</id>
+    <title>Melancholy Quotes And Sayings</title>
+    <description>Quotes And Sayings About Melancholy</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>529</id>
+    <title>Ambition Quotes And Sayings</title>
+    <description>Quotes And Sayings About Ambition</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>530</id>
+    <title>Sadness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sadness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>531</id>
+    <title>Unbelief Quotes And Sayings</title>
+    <description>Quotes And Sayings About Unbelief</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>532</id>
+    <title>Determination Quotes And Sayings</title>
+    <description>Quotes And Sayings About Determination</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>533</id>
+    <title>Happiness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Happiness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>534</id>
+    <title>Shakespeare Quotes And Sayings</title>
+    <description>Quotes And Sayings About Shakespeare</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>535</id>
+    <title>Ideology Quotes And Sayings</title>
+    <description>Quotes And Sayings About Ideology</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>536</id>
+    <title>Circumstance Quotes And Sayings</title>
+    <description>Quotes And Sayings About Circumstance</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>537</id>
+    <title>Inheritance Quotes And Sayings</title>
+    <description>Quotes And Sayings About Inheritance</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>538</id>
+    <title>Change Quotes And Sayings</title>
+    <description>Quotes And Sayings About Change</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>539</id>
+    <title>Flattery Quotes And Sayings</title>
+    <description>Quotes And Sayings About Flattery</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>540</id>
+    <title>Weekend Quotes And Sayings</title>
+    <description>Quotes And Sayings About Weekend</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>541</id>
+    <title>Goodbye Quotes And Sayings</title>
+    <description>Quotes And Sayings About Goodbye</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>542</id>
+    <title>Conformity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Conformity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>543</id>
+    <title>Intentions Quotes And Sayings</title>
+    <description>Quotes And Sayings About Intentions</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>544</id>
+    <title>Love Quotes And Sayings</title>
+    <description>Quotes And Sayings About Love</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>545</id>
+    <title>Seriousness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Seriousness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>546</id>
+    <title>Travel Quotes And Sayings</title>
+    <description>Quotes And Sayings About Travel</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>547</id>
+    <title>Prejudice Quotes And Sayings</title>
+    <description>Quotes And Sayings About Prejudice</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>548</id>
+    <title>Hollywood Quotes And Sayings</title>
+    <description>Quotes And Sayings About Hollywood</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>549</id>
+    <title>Possession Quotes And Sayings</title>
+    <description>Quotes And Sayings About Possession</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>550</id>
+    <title>Reward Quotes And Sayings</title>
+    <description>Quotes And Sayings About Reward</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>551</id>
+    <title>Circumstances Quotes And Sayings</title>
+    <description>Quotes And Sayings About Circumstances</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>552</id>
+    <title>Routine Quotes And Sayings</title>
+    <description>Quotes And Sayings About Routine</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>553</id>
+    <title>Discontent Quotes And Sayings</title>
+    <description>Quotes And Sayings About Discontent</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>554</id>
+    <title>Mistrust Quotes And Sayings</title>
+    <description>Quotes And Sayings About Mistrust</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>555</id>
+    <title>Middle Quotes And Sayings</title>
+    <description>Quotes And Sayings About Middle</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>556</id>
+    <title>Chivalry Quotes And Sayings</title>
+    <description>Quotes And Sayings About Chivalry</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>557</id>
+    <title>Abstinence Quotes And Sayings</title>
+    <description>Quotes And Sayings About Abstinence</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>558</id>
+    <title>Curiosity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Curiosity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>559</id>
+    <title>Visualization Quotes And Sayings</title>
+    <description>Quotes And Sayings About Visualization</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>560</id>
+    <title>Influence Quotes And Sayings</title>
+    <description>Quotes And Sayings About Influence</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>561</id>
+    <title>Witty Quotes And Sayings</title>
+    <description>Quotes And Sayings About Witty</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>562</id>
+    <title>Suffering Quotes And Sayings</title>
+    <description>Quotes And Sayings About Suffering</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>563</id>
+    <title>Whisper Quotes And Sayings</title>
+    <description>Quotes And Sayings About Whisper</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>564</id>
+    <title>Age Quotes And Sayings</title>
+    <description>Quotes And Sayings About Age</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>565</id>
+    <title>Film Quotes And Sayings</title>
+    <description>Quotes And Sayings About Film</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>566</id>
+    <title>Heartbreak Quotes And Sayings</title>
+    <description>Quotes And Sayings About Heartbreak</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>567</id>
+    <title>Rights Quotes And Sayings</title>
+    <description>Quotes And Sayings About Rights</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>568</id>
+    <title>Paradox Quotes And Sayings</title>
+    <description>Quotes And Sayings About Paradox</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>569</id>
+    <title>Obesity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Obesity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>570</id>
+    <title>Summer Quotes And Sayings</title>
+    <description>Quotes And Sayings About Summer</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>571</id>
+    <title>Anger Quotes And Sayings</title>
+    <description>Quotes And Sayings About Anger</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>572</id>
+    <title>Affection Quotes And Sayings</title>
+    <description>Quotes And Sayings About Affection</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>573</id>
+    <title>Prosperity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Prosperity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>574</id>
+    <title>New Quotes And Sayings</title>
+    <description>Quotes And Sayings About New</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>575</id>
+    <title>Bizarre Quotes And Sayings</title>
+    <description>Quotes And Sayings About Bizarre</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>576</id>
+    <title>Guilt Quotes And Sayings</title>
+    <description>Quotes And Sayings About Guilt</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>577</id>
+    <title>Imperfection Quotes And Sayings</title>
+    <description>Quotes And Sayings About Imperfection</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>578</id>
+    <title>Followers Quotes And Sayings</title>
+    <description>Quotes And Sayings About Followers</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>579</id>
+    <title>Modesty Quotes And Sayings</title>
+    <description>Quotes And Sayings About Modesty</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>580</id>
+    <title>Years Quotes And Sayings</title>
+    <description>Quotes And Sayings About Years</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>581</id>
+    <title>Fidelity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Fidelity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>582</id>
+    <title>Dependence Quotes And Sayings</title>
+    <description>Quotes And Sayings About Dependence</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>583</id>
+    <title>Now Quotes And Sayings</title>
+    <description>Quotes And Sayings About Now</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>584</id>
+    <title>Mystery Quotes And Sayings</title>
+    <description>Quotes And Sayings About Mystery</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>585</id>
+    <title>Identity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Identity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>586</id>
+    <title>Serenity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Serenity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>587</id>
+    <title>Luck Quotes And Sayings</title>
+    <description>Quotes And Sayings About Luck</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>588</id>
+    <title>Greetings Quotes And Sayings</title>
+    <description>Quotes And Sayings About Greetings</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>589</id>
+    <title>Nature Quotes And Sayings</title>
+    <description>Quotes And Sayings About Nature</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>590</id>
+    <title>Restraint Quotes And Sayings</title>
+    <description>Quotes And Sayings About Restraint</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>591</id>
+    <title>Advice Quotes And Sayings</title>
+    <description>Quotes And Sayings About Advice</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>592</id>
+    <title>Values Quotes And Sayings</title>
+    <description>Quotes And Sayings About Values</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>593</id>
+    <title>Poets Quotes And Sayings</title>
+    <description>Quotes And Sayings About Poets</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>594</id>
+    <title>Options Quotes And Sayings</title>
+    <description>Quotes And Sayings About Options</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>595</id>
+    <title>Sun Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sun</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>596</id>
+    <title>Spiritual Quotes And Sayings</title>
+    <description>Quotes And Sayings About Spiritual</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>597</id>
+    <title>Parenthood Quotes And Sayings</title>
+    <description>Quotes And Sayings About Parenthood</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>598</id>
+    <title>Cleverness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Cleverness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>599</id>
+    <title>Satisfaction Quotes And Sayings</title>
+    <description>Quotes And Sayings About Satisfaction</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>600</id>
+    <title>Intuition Quotes And Sayings</title>
+    <description>Quotes And Sayings About Intuition</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>601</id>
+    <title>Wedding Quotes And Sayings</title>
+    <description>Quotes And Sayings About Wedding</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>602</id>
+    <title>Boasts Quotes And Sayings</title>
+    <description>Quotes And Sayings About Boasts</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>603</id>
+    <title>Honesty Quotes And Sayings</title>
+    <description>Quotes And Sayings About Honesty</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>604</id>
+    <title>Potential Quotes And Sayings</title>
+    <description>Quotes And Sayings About Potential</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>605</id>
+    <title>Paradoxes Quotes And Sayings</title>
+    <description>Quotes And Sayings About Paradoxes</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>606</id>
+    <title>Dating Quotes And Sayings</title>
+    <description>Quotes And Sayings About Dating</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>607</id>
+    <title>Today Quotes And Sayings</title>
+    <description>Quotes And Sayings About Today</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>608</id>
+    <title>Prizes Quotes And Sayings</title>
+    <description>Quotes And Sayings About Prizes</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>609</id>
+    <title>Existence Quotes And Sayings</title>
+    <description>Quotes And Sayings About Existence</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>610</id>
+    <title>Attitude Quotes And Sayings</title>
+    <description>Quotes And Sayings About Attitude</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>611</id>
+    <title>Deed Quotes And Sayings</title>
+    <description>Quotes And Sayings About Deed</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>612</id>
+    <title>Letters Quotes And Sayings</title>
+    <description>Quotes And Sayings About Letters</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>613</id>
+    <title>Mankind Quotes And Sayings</title>
+    <description>Quotes And Sayings About Mankind</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>614</id>
+    <title>Cheating Quotes And Sayings</title>
+    <description>Quotes And Sayings About Cheating</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>615</id>
+    <title>Sexes Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sexes</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>616</id>
+    <title>Past Quotes And Sayings</title>
+    <description>Quotes And Sayings About Past</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>617</id>
+    <title>Winning Quotes And Sayings</title>
+    <description>Quotes And Sayings About Winning</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>618</id>
+    <title>Justice Quotes And Sayings</title>
+    <description>Quotes And Sayings About Justice</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>619</id>
+    <title>Disappointments Quotes And Sayings</title>
+    <description>Quotes And Sayings About Disappointments</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>620</id>
+    <title>Teachers Quotes And Sayings</title>
+    <description>Quotes And Sayings About Teachers</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>621</id>
+    <title>Girlfriend Quotes And Sayings</title>
+    <description>Quotes And Sayings About Girlfriend</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>622</id>
+    <title>Quitting Quotes And Sayings</title>
+    <description>Quotes And Sayings About Quitting</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>623</id>
+    <title>Fans Quotes And Sayings</title>
+    <description>Quotes And Sayings About Fans</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>624</id>
+    <title>Imagination Quotes And Sayings</title>
+    <description>Quotes And Sayings About Imagination</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>625</id>
+    <title>Cute Quotes And Sayings</title>
+    <description>Quotes And Sayings About Cute</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>626</id>
+    <title>Stupidity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Stupidity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>627</id>
+    <title>Matrimony Quotes And Sayings</title>
+    <description>Quotes And Sayings About Matrimony</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>628</id>
+    <title>Negotiation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Negotiation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>629</id>
+    <title>Events Quotes And Sayings</title>
+    <description>Quotes And Sayings About Events</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>630</id>
+    <title>Motivational Quotes And Sayings</title>
+    <description>Quotes And Sayings About Motivational</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>631</id>
+    <title>Dedication Quotes And Sayings</title>
+    <description>Quotes And Sayings About Dedication</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>632</id>
+    <title>Acceptance Quotes And Sayings</title>
+    <description>Quotes And Sayings About Acceptance</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>633</id>
+    <title>Help Quotes And Sayings</title>
+    <description>Quotes And Sayings About Help</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>634</id>
+    <title>Deep Quotes And Sayings</title>
+    <description>Quotes And Sayings About Deep</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>635</id>
+    <title>Possibility Quotes And Sayings</title>
+    <description>Quotes And Sayings About Possibility</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>636</id>
+    <title>Behavior Quotes And Sayings</title>
+    <description>Quotes And Sayings About Behavior</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>637</id>
+    <title>Importance Quotes And Sayings</title>
+    <description>Quotes And Sayings About Importance</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>638</id>
+    <title>Wooing Quotes And Sayings</title>
+    <description>Quotes And Sayings About Wooing</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>639</id>
+    <title>Fiction Quotes And Sayings</title>
+    <description>Quotes And Sayings About Fiction</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>640</id>
+    <title>Courage Quotes And Sayings</title>
+    <description>Quotes And Sayings About Courage</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>641</id>
+    <title>Beach Quotes And Sayings</title>
+    <description>Quotes And Sayings About Beach</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>642</id>
+    <title>Humor Quotes And Sayings</title>
+    <description>Quotes And Sayings About Humor</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>643</id>
+    <title>Expression Quotes And Sayings</title>
+    <description>Quotes And Sayings About Expression</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>644</id>
+    <title>Companionship Quotes And Sayings</title>
+    <description>Quotes And Sayings About Companionship</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>645</id>
+    <title>Improvement Quotes And Sayings</title>
+    <description>Quotes And Sayings About Improvement</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>646</id>
+    <title>Opponents Quotes And Sayings</title>
+    <description>Quotes And Sayings About Opponents</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>647</id>
+    <title>Masculinity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Masculinity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>648</id>
+    <title>Truth Quotes And Sayings</title>
+    <description>Quotes And Sayings About Truth</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>649</id>
+    <title>Consistency Quotes And Sayings</title>
+    <description>Quotes And Sayings About Consistency</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>650</id>
+    <title>Ancestry Quotes And Sayings</title>
+    <description>Quotes And Sayings About Ancestry</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>651</id>
+    <title>Vulgarity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Vulgarity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>652</id>
+    <title>Stairs Quotes And Sayings</title>
+    <description>Quotes And Sayings About Stairs</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>653</id>
+    <title>Nerves Quotes And Sayings</title>
+    <description>Quotes And Sayings About Nerves</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>654</id>
+    <title>Hardship Quotes And Sayings</title>
+    <description>Quotes And Sayings About Hardship</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>655</id>
+    <title>Adolescence Quotes And Sayings</title>
+    <description>Quotes And Sayings About Adolescence</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>656</id>
+    <title>Partnership Quotes And Sayings</title>
+    <description>Quotes And Sayings About Partnership</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>657</id>
+    <title>Key Quotes And Sayings</title>
+    <description>Quotes And Sayings About Key</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>658</id>
+    <title>Memory Quotes And Sayings</title>
+    <description>Quotes And Sayings About Memory</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>659</id>
+    <title>Gifts Quotes And Sayings</title>
+    <description>Quotes And Sayings About Gifts</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>660</id>
+    <title>Greatness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Greatness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>661</id>
+    <title>Loyalty Quotes And Sayings</title>
+    <description>Quotes And Sayings About Loyalty</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>662</id>
+    <title>Extremes Quotes And Sayings</title>
+    <description>Quotes And Sayings About Extremes</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>663</id>
+    <title>Repentance Quotes And Sayings</title>
+    <description>Quotes And Sayings About Repentance</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>664</id>
+    <title>Conversation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Conversation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>665</id>
+    <title>Ambiguity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Ambiguity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>666</id>
+    <title>Shyness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Shyness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>667</id>
+    <title>Benevolence Quotes And Sayings</title>
+    <description>Quotes And Sayings About Benevolence</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>668</id>
+    <title>Rapport Quotes And Sayings</title>
+    <description>Quotes And Sayings About Rapport</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>669</id>
+    <title>Fortune Quotes And Sayings</title>
+    <description>Quotes And Sayings About Fortune</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>670</id>
+    <title>Absence Quotes And Sayings</title>
+    <description>Quotes And Sayings About Absence</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>671</id>
+    <title>Popular Quotes And Sayings</title>
+    <description>Quotes And Sayings About Popular</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>672</id>
+    <title>Day Quotes And Sayings</title>
+    <description>Quotes And Sayings About Day</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>673</id>
+    <title>Intellect Quotes And Sayings</title>
+    <description>Quotes And Sayings About Intellect</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>674</id>
+    <title>Hindsight Quotes And Sayings</title>
+    <description>Quotes And Sayings About Hindsight</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>675</id>
+    <title>Madness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Madness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>676</id>
+    <title>Fool Quotes And Sayings</title>
+    <description>Quotes And Sayings About Fool</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>677</id>
+    <title>Oppression Quotes And Sayings</title>
+    <description>Quotes And Sayings About Oppression</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>678</id>
+    <title>Jewels Quotes And Sayings</title>
+    <description>Quotes And Sayings About Jewels</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>679</id>
+    <title>Darkness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Darkness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>680</id>
+    <title>Divorce Quotes And Sayings</title>
+    <description>Quotes And Sayings About Divorce</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>681</id>
+    <title>Games Quotes And Sayings</title>
+    <description>Quotes And Sayings About Games</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>682</id>
+    <title>Humility Quotes And Sayings</title>
+    <description>Quotes And Sayings About Humility</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>683</id>
+    <title>Privilege Quotes And Sayings</title>
+    <description>Quotes And Sayings About Privilege</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>684</id>
+    <title>Preaching Quotes And Sayings</title>
+    <description>Quotes And Sayings About Preaching</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>685</id>
+    <title>Agreement Quotes And Sayings</title>
+    <description>Quotes And Sayings About Agreement</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>686</id>
+    <title>Motive Quotes And Sayings</title>
+    <description>Quotes And Sayings About Motive</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>687</id>
+    <title>Teenagers Quotes And Sayings</title>
+    <description>Quotes And Sayings About Teenagers</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>688</id>
+    <title>Grace Quotes And Sayings</title>
+    <description>Quotes And Sayings About Grace</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>689</id>
+    <title>Evolution Quotes And Sayings</title>
+    <description>Quotes And Sayings About Evolution</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>690</id>
+    <title>Embarrassment Quotes And Sayings</title>
+    <description>Quotes And Sayings About Embarrassment</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>691</id>
+    <title>Obligation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Obligation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>692</id>
+    <title>Awareness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Awareness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>693</id>
+    <title>Cunning Quotes And Sayings</title>
+    <description>Quotes And Sayings About Cunning</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>694</id>
+    <title>Politeness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Politeness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>695</id>
+    <title>Quality Quotes And Sayings</title>
+    <description>Quotes And Sayings About Quality</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>696</id>
+    <title>Foresight Quotes And Sayings</title>
+    <description>Quotes And Sayings About Foresight</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>697</id>
+    <title>Delight Quotes And Sayings</title>
+    <description>Quotes And Sayings About Delight</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>698</id>
+    <title>Idleness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Idleness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>699</id>
+    <title>Isolation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Isolation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>700</id>
+    <title>Extreme Quotes And Sayings</title>
+    <description>Quotes And Sayings About Extreme</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>701</id>
+    <title>World Quotes And Sayings</title>
+    <description>Quotes And Sayings About World</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>702</id>
+    <title>Actions Quotes And Sayings</title>
+    <description>Quotes And Sayings About Actions</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>703</id>
+    <title>Ending Quotes And Sayings</title>
+    <description>Quotes And Sayings About Ending</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>704</id>
+    <title>Blushes Quotes And Sayings</title>
+    <description>Quotes And Sayings About Blushes</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>705</id>
+    <title>Struggle Quotes And Sayings</title>
+    <description>Quotes And Sayings About Struggle</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>706</id>
+    <title>Adventure Quotes And Sayings</title>
+    <description>Quotes And Sayings About Adventure</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>707</id>
+    <title>Jaded Quotes And Sayings</title>
+    <description>Quotes And Sayings About Jaded</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>708</id>
+    <title>United Quotes And Sayings</title>
+    <description>Quotes And Sayings About United</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>709</id>
+    <title>Crisis Quotes And Sayings</title>
+    <description>Quotes And Sayings About Crisis</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>710</id>
+    <title>Soul Quotes And Sayings</title>
+    <description>Quotes And Sayings About Soul</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>711</id>
+    <title>Planning Quotes And Sayings</title>
+    <description>Quotes And Sayings About Planning</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>712</id>
+    <title>Buddhist Quotes And Sayings</title>
+    <description>Quotes And Sayings About Buddhist</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>713</id>
+    <title>Pretty Quotes And Sayings</title>
+    <description>Quotes And Sayings About Pretty</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>714</id>
+    <title>Poetry Quotes And Sayings</title>
+    <description>Quotes And Sayings About Poetry</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>715</id>
+    <title>Entertainment Quotes And Sayings</title>
+    <description>Quotes And Sayings About Entertainment</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>716</id>
+    <title>Limits Quotes And Sayings</title>
+    <description>Quotes And Sayings About Limits</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>717</id>
+    <title>Students Quotes And Sayings</title>
+    <description>Quotes And Sayings About Students</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>718</id>
+    <title>Simplicity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Simplicity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>719</id>
+    <title>Vanity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Vanity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>720</id>
+    <title>Selfishness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Selfishness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>721</id>
+    <title>Conviction Quotes And Sayings</title>
+    <description>Quotes And Sayings About Conviction</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>722</id>
+    <title>Custom Quotes And Sayings</title>
+    <description>Quotes And Sayings About Custom</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>723</id>
+    <title>Thankfulness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Thankfulness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>724</id>
+    <title>Romance Quotes And Sayings</title>
+    <description>Quotes And Sayings About Romance</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>725</id>
+    <title>Freedom Quotes And Sayings</title>
+    <description>Quotes And Sayings About Freedom</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>726</id>
+    <title>Personal Quotes And Sayings</title>
+    <description>Quotes And Sayings About Personal</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>727</id>
+    <title>Difficulties Quotes And Sayings</title>
+    <description>Quotes And Sayings About Difficulties</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>728</id>
+    <title>Weakness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Weakness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>729</id>
+    <title>Husband Quotes And Sayings</title>
+    <description>Quotes And Sayings About Husband</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>730</id>
+    <title>Mentors Quotes And Sayings</title>
+    <description>Quotes And Sayings About Mentors</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>731</id>
+    <title>Colors Quotes And Sayings</title>
+    <description>Quotes And Sayings About Colors</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>732</id>
+    <title>Encouragement Quotes And Sayings</title>
+    <description>Quotes And Sayings About Encouragement</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>733</id>
+    <title>Rejection Quotes And Sayings</title>
+    <description>Quotes And Sayings About Rejection</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>734</id>
+    <title>Heaven Quotes And Sayings</title>
+    <description>Quotes And Sayings About Heaven</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>735</id>
+    <title>Global Quotes And Sayings</title>
+    <description>Quotes And Sayings About Global</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>736</id>
+    <title>Anxiety Quotes And Sayings</title>
+    <description>Quotes And Sayings About Anxiety</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>737</id>
+    <title>Flexibility Quotes And Sayings</title>
+    <description>Quotes And Sayings About Flexibility</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>738</id>
+    <title>Passion Quotes And Sayings</title>
+    <description>Quotes And Sayings About Passion</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>739</id>
+    <title>Sincerity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sincerity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>740</id>
+    <title>Pregnancy Quotes And Sayings</title>
+    <description>Quotes And Sayings About Pregnancy</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>741</id>
+    <title>Virginity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Virginity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>742</id>
+    <title>Acquaintance Quotes And Sayings</title>
+    <description>Quotes And Sayings About Acquaintance</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>743</id>
+    <title>Remedies Quotes And Sayings</title>
+    <description>Quotes And Sayings About Remedies</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>744</id>
+    <title>Myths Quotes And Sayings</title>
+    <description>Quotes And Sayings About Myths</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>745</id>
+    <title>Vow Quotes And Sayings</title>
+    <description>Quotes And Sayings About Vow</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>746</id>
+    <title>Succeed Quotes And Sayings</title>
+    <description>Quotes And Sayings About Succeed</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>747</id>
+    <title>Solidarity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Solidarity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>748</id>
+    <title>Explanations Quotes And Sayings</title>
+    <description>Quotes And Sayings About Explanations</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>749</id>
+    <title>Wishing Quotes And Sayings</title>
+    <description>Quotes And Sayings About Wishing</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>750</id>
+    <title>Vice Quotes And Sayings</title>
+    <description>Quotes And Sayings About Vice</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>751</id>
+    <title>Wit Quotes And Sayings</title>
+    <description>Quotes And Sayings About Wit</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>752</id>
+    <title>Femininity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Femininity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>753</id>
+    <title>Temptations Quotes And Sayings</title>
+    <description>Quotes And Sayings About Temptations</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>754</id>
+    <title>Zenith Quotes And Sayings</title>
+    <description>Quotes And Sayings About Zenith</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>755</id>
+    <title>Normality Quotes And Sayings</title>
+    <description>Quotes And Sayings About Normality</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>756</id>
+    <title>Nobility Quotes And Sayings</title>
+    <description>Quotes And Sayings About Nobility</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>757</id>
+    <title>Youth Quotes And Sayings</title>
+    <description>Quotes And Sayings About Youth</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>758</id>
+    <title>Neighbors Quotes And Sayings</title>
+    <description>Quotes And Sayings About Neighbors</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>759</id>
+    <title>Beginnings Quotes And Sayings</title>
+    <description>Quotes And Sayings About Beginnings</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>760</id>
+    <title>Resentment Quotes And Sayings</title>
+    <description>Quotes And Sayings About Resentment</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>761</id>
+    <title>Fatigue Quotes And Sayings</title>
+    <description>Quotes And Sayings About Fatigue</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>762</id>
+    <title>Mystics Quotes And Sayings</title>
+    <description>Quotes And Sayings About Mystics</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>763</id>
+    <title>Gentlemen Quotes And Sayings</title>
+    <description>Quotes And Sayings About Gentlemen</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>764</id>
+    <title>Insecurity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Insecurity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>765</id>
+    <title>Extravagance Quotes And Sayings</title>
+    <description>Quotes And Sayings About Extravagance</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>766</id>
+    <title>Persuasion Quotes And Sayings</title>
+    <description>Quotes And Sayings About Persuasion</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>767</id>
+    <title>Immortality Quotes And Sayings</title>
+    <description>Quotes And Sayings About Immortality</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>768</id>
+    <title>Prostitution Quotes And Sayings</title>
+    <description>Quotes And Sayings About Prostitution</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>769</id>
+    <title>Excitement Quotes And Sayings</title>
+    <description>Quotes And Sayings About Excitement</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>770</id>
+    <title>Family Quotes And Sayings</title>
+    <description>Quotes And Sayings About Family</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>771</id>
+    <title>Tradition Quotes And Sayings</title>
+    <description>Quotes And Sayings About Tradition</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>772</id>
+    <title>Present Quotes And Sayings</title>
+    <description>Quotes And Sayings About Present</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>773</id>
+    <title>Credibility Quotes And Sayings</title>
+    <description>Quotes And Sayings About Credibility</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>774</id>
+    <title>Parenting Quotes And Sayings</title>
+    <description>Quotes And Sayings About Parenting</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>775</id>
+    <title>Leadership Quotes And Sayings</title>
+    <description>Quotes And Sayings About Leadership</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>776</id>
+    <title>Regret Quotes And Sayings</title>
+    <description>Quotes And Sayings About Regret</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>777</id>
+    <title>Unkindness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Unkindness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>778</id>
+    <title>Innocence Quotes And Sayings</title>
+    <description>Quotes And Sayings About Innocence</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>779</id>
+    <title>Fashion Quotes And Sayings</title>
+    <description>Quotes And Sayings About Fashion</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>780</id>
+    <title>Parting Quotes And Sayings</title>
+    <description>Quotes And Sayings About Parting</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>781</id>
+    <title>Opposites Quotes And Sayings</title>
+    <description>Quotes And Sayings About Opposites</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>782</id>
+    <title>Detail Quotes And Sayings</title>
+    <description>Quotes And Sayings About Detail</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>783</id>
+    <title>Haste Quotes And Sayings</title>
+    <description>Quotes And Sayings About Haste</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>784</id>
+    <title>Sea Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sea</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>785</id>
+    <title>Character Quotes And Sayings</title>
+    <description>Quotes And Sayings About Character</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>786</id>
+    <title>Chance Quotes And Sayings</title>
+    <description>Quotes And Sayings About Chance</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>787</id>
+    <title>Appreciation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Appreciation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>788</id>
+    <title>Delusion Quotes And Sayings</title>
+    <description>Quotes And Sayings About Delusion</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>789</id>
+    <title>Dance Quotes And Sayings</title>
+    <description>Quotes And Sayings About Dance</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>790</id>
+    <title>Quest Quotes And Sayings</title>
+    <description>Quotes And Sayings About Quest</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>791</id>
+    <title>Vision Quotes And Sayings</title>
+    <description>Quotes And Sayings About Vision</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>792</id>
+    <title>Housewife Quotes And Sayings</title>
+    <description>Quotes And Sayings About Housewife</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>793</id>
+    <title>Buddhism Quotes And Sayings</title>
+    <description>Quotes And Sayings About Buddhism</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>794</id>
+    <title>Silly Quotes And Sayings</title>
+    <description>Quotes And Sayings About Silly</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>795</id>
+    <title>Luxury Quotes And Sayings</title>
+    <description>Quotes And Sayings About Luxury</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>796</id>
+    <title>Productivity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Productivity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>797</id>
+    <title>Anticipation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Anticipation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>798</id>
+    <title>Adultery Quotes And Sayings</title>
+    <description>Quotes And Sayings About Adultery</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>799</id>
+    <title>Shadows Quotes And Sayings</title>
+    <description>Quotes And Sayings About Shadows</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>800</id>
+    <title>Radical Quotes And Sayings</title>
+    <description>Quotes And Sayings About Radical</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>801</id>
+    <title>Sex Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sex</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>802</id>
+    <title>Helpfulness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Helpfulness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>803</id>
+    <title>Rainbows Quotes And Sayings</title>
+    <description>Quotes And Sayings About Rainbows</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>804</id>
+    <title>Genius Quotes And Sayings</title>
+    <description>Quotes And Sayings About Genius</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>805</id>
+    <title>Choices Quotes And Sayings</title>
+    <description>Quotes And Sayings About Choices</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>806</id>
+    <title>Tolerance Quotes And Sayings</title>
+    <description>Quotes And Sayings About Tolerance</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>807</id>
+    <title>Perceptions Quotes And Sayings</title>
+    <description>Quotes And Sayings About Perceptions</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>808</id>
+    <title>Publicity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Publicity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>809</id>
+    <title>Solitude Quotes And Sayings</title>
+    <description>Quotes And Sayings About Solitude</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>810</id>
+    <title>Foolishness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Foolishness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>811</id>
+    <title>Praise Quotes And Sayings</title>
+    <description>Quotes And Sayings About Praise</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>812</id>
+    <title>Accuracy Quotes And Sayings</title>
+    <description>Quotes And Sayings About Accuracy</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>813</id>
+    <title>Consciousness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Consciousness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>814</id>
+    <title>Woman Quotes And Sayings</title>
+    <description>Quotes And Sayings About Woman</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>815</id>
+    <title>Rank Quotes And Sayings</title>
+    <description>Quotes And Sayings About Rank</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>816</id>
+    <title>Spontaneity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Spontaneity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>817</id>
+    <title>Necessity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Necessity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>818</id>
+    <title>Contradiction Quotes And Sayings</title>
+    <description>Quotes And Sayings About Contradiction</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>819</id>
+    <title>Favorite Quotes And Sayings</title>
+    <description>Quotes And Sayings About Favorite</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>820</id>
+    <title>Pride Quotes And Sayings</title>
+    <description>Quotes And Sayings About Pride</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>821</id>
+    <title>Act Quotes And Sayings</title>
+    <description>Quotes And Sayings About Act</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>822</id>
+    <title>Time Quotes And Sayings</title>
+    <description>Quotes And Sayings About Time</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>823</id>
+    <title>Misers Quotes And Sayings</title>
+    <description>Quotes And Sayings About Misers</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>824</id>
+    <title>Procrastination Quotes And Sayings</title>
+    <description>Quotes And Sayings About Procrastination</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>825</id>
+    <title>Ego Quotes And Sayings</title>
+    <description>Quotes And Sayings About Ego</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>826</id>
+    <title>Dishonesty Quotes And Sayings</title>
+    <description>Quotes And Sayings About Dishonesty</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>827</id>
+    <title>Impatience Quotes And Sayings</title>
+    <description>Quotes And Sayings About Impatience</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>828</id>
+    <title>Risk Quotes And Sayings</title>
+    <description>Quotes And Sayings About Risk</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>829</id>
+    <title>Excellence Quotes And Sayings</title>
+    <description>Quotes And Sayings About Excellence</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>830</id>
+    <title>Reading Quotes And Sayings</title>
+    <description>Quotes And Sayings About Reading</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>831</id>
+    <title>Survival Quotes And Sayings</title>
+    <description>Quotes And Sayings About Survival</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>832</id>
+    <title>Betrayal Quotes And Sayings</title>
+    <description>Quotes And Sayings About Betrayal</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>833</id>
+    <title>Adaptability Quotes And Sayings</title>
+    <description>Quotes And Sayings About Adaptability</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>834</id>
+    <title>Inefficiency Quotes And Sayings</title>
+    <description>Quotes And Sayings About Inefficiency</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>835</id>
+    <title>Feelings Quotes And Sayings</title>
+    <description>Quotes And Sayings About Feelings</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>836</id>
+    <title>Approval Quotes And Sayings</title>
+    <description>Quotes And Sayings About Approval</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>837</id>
+    <title>Ability Quotes And Sayings</title>
+    <description>Quotes And Sayings About Ability</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>838</id>
+    <title>Adulthood Quotes And Sayings</title>
+    <description>Quotes And Sayings About Adulthood</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>839</id>
+    <title>Justification Quotes And Sayings</title>
+    <description>Quotes And Sayings About Justification</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>840</id>
+    <title>Effort Quotes And Sayings</title>
+    <description>Quotes And Sayings About Effort</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>841</id>
+    <title>Mind Quotes And Sayings</title>
+    <description>Quotes And Sayings About Mind</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>842</id>
+    <title>Hobbies Quotes And Sayings</title>
+    <description>Quotes And Sayings About Hobbies</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>843</id>
+    <title>Accomplishment Quotes And Sayings</title>
+    <description>Quotes And Sayings About Accomplishment</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>844</id>
+    <title>People Quotes And Sayings</title>
+    <description>Quotes And Sayings About People</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>845</id>
+    <title>Majority Quotes And Sayings</title>
+    <description>Quotes And Sayings About Majority</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>846</id>
+    <title>Liberty Quotes And Sayings</title>
+    <description>Quotes And Sayings About Liberty</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>847</id>
+    <title>Rituals Quotes And Sayings</title>
+    <description>Quotes And Sayings About Rituals</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>848</id>
+    <title>Skin Quotes And Sayings</title>
+    <description>Quotes And Sayings About Skin</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>849</id>
+    <title>Feminism Quotes And Sayings</title>
+    <description>Quotes And Sayings About Feminism</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>850</id>
+    <title>Superstition Quotes And Sayings</title>
+    <description>Quotes And Sayings About Superstition</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>851</id>
+    <title>Ladies Quotes And Sayings</title>
+    <description>Quotes And Sayings About Ladies</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>852</id>
+    <title>Authority Quotes And Sayings</title>
+    <description>Quotes And Sayings About Authority</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>853</id>
+    <title>Exploitation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Exploitation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>854</id>
+    <title>Success Quotes And Sayings</title>
+    <description>Quotes And Sayings About Success</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>855</id>
+    <title>Native Quotes And Sayings</title>
+    <description>Quotes And Sayings About Native</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>856</id>
+    <title>Vitality Quotes And Sayings</title>
+    <description>Quotes And Sayings About Vitality</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>857</id>
+    <title>Faces Quotes And Sayings</title>
+    <description>Quotes And Sayings About Faces</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>858</id>
+    <title>Growing Quotes And Sayings</title>
+    <description>Quotes And Sayings About Growing</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>859</id>
+    <title>Competition Quotes And Sayings</title>
+    <description>Quotes And Sayings About Competition</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>860</id>
+    <title>Reincarnation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Reincarnation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>861</id>
+    <title>Fear Quotes And Sayings</title>
+    <description>Quotes And Sayings About Fear</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>862</id>
+    <title>Results Quotes And Sayings</title>
+    <description>Quotes And Sayings About Results</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>863</id>
+    <title>Trying Quotes And Sayings</title>
+    <description>Quotes And Sayings About Trying</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>864</id>
+    <title>Lesbian Quotes And Sayings</title>
+    <description>Quotes And Sayings About Lesbian</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>865</id>
+    <title>News Quotes And Sayings</title>
+    <description>Quotes And Sayings About News</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>866</id>
+    <title>Tourists Quotes And Sayings</title>
+    <description>Quotes And Sayings About Tourists</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>867</id>
+    <title>Shame Quotes And Sayings</title>
+    <description>Quotes And Sayings About Shame</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>868</id>
+    <title>Goals Quotes And Sayings</title>
+    <description>Quotes And Sayings About Goals</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>869</id>
+    <title>First Quotes And Sayings</title>
+    <description>Quotes And Sayings About First</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>870</id>
+    <title>Denial Quotes And Sayings</title>
+    <description>Quotes And Sayings About Denial</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>871</id>
+    <title>Deeds Quotes And Sayings</title>
+    <description>Quotes And Sayings About Deeds</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>872</id>
+    <title>Envy Quotes And Sayings</title>
+    <description>Quotes And Sayings About Envy</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>873</id>
+    <title>Smiles Quotes And Sayings</title>
+    <description>Quotes And Sayings About Smiles</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>874</id>
+    <title>Communication Quotes And Sayings</title>
+    <description>Quotes And Sayings About Communication</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>875</id>
+    <title>Prevention Quotes And Sayings</title>
+    <description>Quotes And Sayings About Prevention</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>876</id>
+    <title>Faith Quotes And Sayings</title>
+    <description>Quotes And Sayings About Faith</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>877</id>
+    <title>Shadow Quotes And Sayings</title>
+    <description>Quotes And Sayings About Shadow</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>878</id>
+    <title>Sweetness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sweetness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>879</id>
+    <title>Stress Quotes And Sayings</title>
+    <description>Quotes And Sayings About Stress</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>880</id>
+    <title>Positive Quotes And Sayings</title>
+    <description>Quotes And Sayings About Positive</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>881</id>
+    <title>Holidays Quotes And Sayings</title>
+    <description>Quotes And Sayings About Holidays</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>882</id>
+    <title>Patience Quotes And Sayings</title>
+    <description>Quotes And Sayings About Patience</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>883</id>
+    <title>Overcoming Quotes And Sayings</title>
+    <description>Quotes And Sayings About Overcoming</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>884</id>
+    <title>Feeling Quotes And Sayings</title>
+    <description>Quotes And Sayings About Feeling</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>885</id>
+    <title>Birth Quotes And Sayings</title>
+    <description>Quotes And Sayings About Birth</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>886</id>
+    <title>Fun Quotes And Sayings</title>
+    <description>Quotes And Sayings About Fun</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>887</id>
+    <title>Space Quotes And Sayings</title>
+    <description>Quotes And Sayings About Space</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>888</id>
+    <title>Midnight Quotes And Sayings</title>
+    <description>Quotes And Sayings About Midnight</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>889</id>
+    <title>Expectation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Expectation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>890</id>
+    <title>Caring Quotes And Sayings</title>
+    <description>Quotes And Sayings About Caring</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>891</id>
+    <title>Gold Quotes And Sayings</title>
+    <description>Quotes And Sayings About Gold</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>892</id>
+    <title>Purpose Quotes And Sayings</title>
+    <description>Quotes And Sayings About Purpose</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>893</id>
+    <title>Graduation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Graduation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>894</id>
+    <title>Rectitude Quotes And Sayings</title>
+    <description>Quotes And Sayings About Rectitude</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>895</id>
+    <title>Failure Quotes And Sayings</title>
+    <description>Quotes And Sayings About Failure</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>896</id>
+    <title>Persistence Quotes And Sayings</title>
+    <description>Quotes And Sayings About Persistence</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>897</id>
+    <title>Friend Quotes And Sayings</title>
+    <description>Quotes And Sayings About Friend</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>898</id>
+    <title>Wisdom Quotes And Sayings</title>
+    <description>Quotes And Sayings About Wisdom</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>899</id>
+    <title>Senses Quotes And Sayings</title>
+    <description>Quotes And Sayings About Senses</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>900</id>
+    <title>Misery Quotes And Sayings</title>
+    <description>Quotes And Sayings About Misery</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>901</id>
+    <title>Competency Quotes And Sayings</title>
+    <description>Quotes And Sayings About Competency</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>902</id>
+    <title>Realism Quotes And Sayings</title>
+    <description>Quotes And Sayings About Realism</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>903</id>
+    <title>Future Quotes And Sayings</title>
+    <description>Quotes And Sayings About Future</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>904</id>
+    <title>Journey Quotes And Sayings</title>
+    <description>Quotes And Sayings About Journey</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>905</id>
+    <title>Party Quotes And Sayings</title>
+    <description>Quotes And Sayings About Party</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>906</id>
+    <title>Fancy Quotes And Sayings</title>
+    <description>Quotes And Sayings About Fancy</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>907</id>
+    <title>Prudence Quotes And Sayings</title>
+    <description>Quotes And Sayings About Prudence</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>908</id>
+    <title>Creation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Creation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>909</id>
+    <title>Obsession Quotes And Sayings</title>
+    <description>Quotes And Sayings About Obsession</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>910</id>
+    <title>Farewells Quotes And Sayings</title>
+    <description>Quotes And Sayings About Farewells</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>911</id>
+    <title>Rules Quotes And Sayings</title>
+    <description>Quotes And Sayings About Rules</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>912</id>
+    <title>Inconsistency Quotes And Sayings</title>
+    <description>Quotes And Sayings About Inconsistency</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>913</id>
+    <title>Promises Quotes And Sayings</title>
+    <description>Quotes And Sayings About Promises</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>914</id>
+    <title>Ideals Quotes And Sayings</title>
+    <description>Quotes And Sayings About Ideals</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>915</id>
+    <title>Obedience Quotes And Sayings</title>
+    <description>Quotes And Sayings About Obedience</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>916</id>
+    <title>Intimacy Quotes And Sayings</title>
+    <description>Quotes And Sayings About Intimacy</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>917</id>
+    <title>Human Quotes And Sayings</title>
+    <description>Quotes And Sayings About Human</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>918</id>
+    <title>Strategy Quotes And Sayings</title>
+    <description>Quotes And Sayings About Strategy</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>919</id>
+    <title>Anarchy Quotes And Sayings</title>
+    <description>Quotes And Sayings About Anarchy</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>920</id>
+    <title>Humanity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Humanity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>921</id>
+    <title>Control Quotes And Sayings</title>
+    <description>Quotes And Sayings About Control</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>922</id>
+    <title>Elegance Quotes And Sayings</title>
+    <description>Quotes And Sayings About Elegance</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>923</id>
+    <title>Charity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Charity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>924</id>
+    <title>Gratitude Quotes And Sayings</title>
+    <description>Quotes And Sayings About Gratitude</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>925</id>
+    <title>Expediency Quotes And Sayings</title>
+    <description>Quotes And Sayings About Expediency</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>926</id>
+    <title>Inspirational Quotes And Sayings</title>
+    <description>Quotes And Sayings About Inspirational</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>927</id>
+    <title>Obscurity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Obscurity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>928</id>
+    <title>Heroism Quotes And Sayings</title>
+    <description>Quotes And Sayings About Heroism</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>929</id>
+    <title>Obstinacy Quotes And Sayings</title>
+    <description>Quotes And Sayings About Obstinacy</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>930</id>
+    <title>Training Quotes And Sayings</title>
+    <description>Quotes And Sayings About Training</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>931</id>
+    <title>Maturity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Maturity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>932</id>
+    <title>Ingratitude Quotes And Sayings</title>
+    <description>Quotes And Sayings About Ingratitude</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>933</id>
+    <title>Mediocrity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Mediocrity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>934</id>
+    <title>Empathy Quotes And Sayings</title>
+    <description>Quotes And Sayings About Empathy</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>935</id>
+    <title>Excess Quotes And Sayings</title>
+    <description>Quotes And Sayings About Excess</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>936</id>
+    <title>Understanding Quotes And Sayings</title>
+    <description>Quotes And Sayings About Understanding</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>937</id>
+    <title>College Quotes And Sayings</title>
+    <description>Quotes And Sayings About College</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>938</id>
+    <title>Birthday Quotes And Sayings</title>
+    <description>Quotes And Sayings About Birthday</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>939</id>
+    <title>Education Quotes And Sayings</title>
+    <description>Quotes And Sayings About Education</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>940</id>
+    <title>Idols Quotes And Sayings</title>
+    <description>Quotes And Sayings About Idols</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>941</id>
+    <title>Virtue Quotes And Sayings</title>
+    <description>Quotes And Sayings About Virtue</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>942</id>
+    <title>Performance Quotes And Sayings</title>
+    <description>Quotes And Sayings About Performance</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>943</id>
+    <title>Wellness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Wellness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>944</id>
+    <title>Brevity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Brevity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>945</id>
+    <title>Sexuality Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sexuality</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>946</id>
+    <title>Marriage Quotes And Sayings</title>
+    <description>Quotes And Sayings About Marriage</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>947</id>
+    <title>Tranquility Quotes And Sayings</title>
+    <description>Quotes And Sayings About Tranquility</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>948</id>
+    <title>Irony Quotes And Sayings</title>
+    <description>Quotes And Sayings About Irony</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>949</id>
+    <title>Moon Quotes And Sayings</title>
+    <description>Quotes And Sayings About Moon</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>950</id>
+    <title>Aspirations Quotes And Sayings</title>
+    <description>Quotes And Sayings About Aspirations</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>951</id>
+    <title>Desperation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Desperation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>952</id>
+    <title>Tides Quotes And Sayings</title>
+    <description>Quotes And Sayings About Tides</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>953</id>
+    <title>Astrology Quotes And Sayings</title>
+    <description>Quotes And Sayings About Astrology</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>954</id>
+    <title>Bravery Quotes And Sayings</title>
+    <description>Quotes And Sayings About Bravery</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>955</id>
+    <title>Clarity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Clarity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>956</id>
+    <title>Wife Quotes And Sayings</title>
+    <description>Quotes And Sayings About Wife</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>957</id>
+    <title>Negativity Quotes And Sayings</title>
+    <description>Quotes And Sayings About Negativity</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>958</id>
+    <title>Discipline Quotes And Sayings</title>
+    <description>Quotes And Sayings About Discipline</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>959</id>
+    <title>Talking Quotes And Sayings</title>
+    <description>Quotes And Sayings About Talking</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>960</id>
+    <title>Man Quotes And Sayings</title>
+    <description>Quotes And Sayings About Man</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>961</id>
+    <title>Kisses Quotes And Sayings</title>
+    <description>Quotes And Sayings About Kisses</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>962</id>
+    <title>Pain Quotes And Sayings</title>
+    <description>Quotes And Sayings About Pain</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>963</id>
+    <title>Imitation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Imitation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>964</id>
+    <title>Effect Quotes And Sayings</title>
+    <description>Quotes And Sayings About Effect</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>965</id>
+    <title>Sacrifice Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sacrifice</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>966</id>
+    <title>Sympathy Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sympathy</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>967</id>
+    <title>Neglect Quotes And Sayings</title>
+    <description>Quotes And Sayings About Neglect</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>968</id>
+    <title>Forgiveness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Forgiveness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>969</id>
+    <title>Sentiment Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sentiment</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>970</id>
+    <title>Girlfriends Quotes And Sayings</title>
+    <description>Quotes And Sayings About Girlfriends</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>971</id>
+    <title>Clouds Quotes And Sayings</title>
+    <description>Quotes And Sayings About Clouds</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>972</id>
+    <title>Reputation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Reputation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>973</id>
+    <title>Folk Quotes And Sayings</title>
+    <description>Quotes And Sayings About Folk</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>974</id>
+    <title>Sky Quotes And Sayings</title>
+    <description>Quotes And Sayings About Sky</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>975</id>
+    <title>Attention Quotes And Sayings</title>
+    <description>Quotes And Sayings About Attention</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>976</id>
+    <title>Abundance Quotes And Sayings</title>
+    <description>Quotes And Sayings About Abundance</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>977</id>
+    <title>Loneliness Quotes And Sayings</title>
+    <description>Quotes And Sayings About Loneliness</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>978</id>
+    <title>Gain Quotes And Sayings</title>
+    <description>Quotes And Sayings About Gain</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>979</id>
+    <title>Vices Quotes And Sayings</title>
+    <description>Quotes And Sayings About Vices</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>980</id>
+    <title>Forbidden Quotes And Sayings</title>
+    <description>Quotes And Sayings About Forbidden</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>981</id>
+    <title>End Quotes And Sayings</title>
+    <description>Quotes And Sayings About End</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>982</id>
+    <title>Facts Quotes And Sayings</title>
+    <description>Quotes And Sayings About Facts</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>983</id>
+    <title>Suspense Quotes And Sayings</title>
+    <description>Quotes And Sayings About Suspense</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>984</id>
+    <title>Confusion Quotes And Sayings</title>
+    <description>Quotes And Sayings About Confusion</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>985</id>
+    <title>Morality Quotes And Sayings</title>
+    <description>Quotes And Sayings About Morality</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>986</id>
+    <title>Gods Quotes And Sayings</title>
+    <description>Quotes And Sayings About Gods</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>987</id>
+    <title>Courtship Quotes And Sayings</title>
+    <description>Quotes And Sayings About Courtship</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>988</id>
+    <title>Funny Quotes And Sayings</title>
+    <description>Quotes And Sayings About Funny</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>989</id>
+    <title>Pretension Quotes And Sayings</title>
+    <description>Quotes And Sayings About Pretension</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>990</id>
+    <title>Victory Quotes And Sayings</title>
+    <description>Quotes And Sayings About Victory</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>991</id>
+    <title>Support Quotes And Sayings</title>
+    <description>Quotes And Sayings About Support</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>992</id>
+    <title>Vacation Quotes And Sayings</title>
+    <description>Quotes And Sayings About Vacation</description>
+    <image></image>
+  </Item>
+  <Item>
+    <id>993</id>
+    <title>Benefits Quotes And Sayings</title>
+    <description>Quotes And Sayings About Benefits</description>
+    <image></image>
+  </Item>
+</Items>

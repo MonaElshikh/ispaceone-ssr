@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Items>
+  <Item>
+    <title>
+          FAVORITE PROFILES AND POSTINGS
+    </title>
+    <body>
+          -This feature is available for profiles and postings (and also for updates and comments).
+
+          -This feature is available to use for free to all our registered and active members in good standing;
+            please note that this feature is not available to users who are just visitors and are not our registered
+            members.
+
+          -There is no limit to the number of items than can be liked, but each registered member is granted only
+            one vote for like for each item.
+
+          -In order to like any item, simply click on the “Like” button, to undo like or unlike, simply click on
+            the “Like” button again.
+    </body>
+  </Item>
+  <Item>
+    <title>
+          LIKE PROFILES AND POSTINGS
+    </title>
+    <body>
+          - This feature is available for profiles and postings (and also for updates and comments).
+
+          - This feature is available to use for free to all our registered and active members in good standing;
+          please note that this feature is not available to users who are just visitors and are not our registered
+          members.
+
+          -There is no limit to the number of items than can be liked, but each registered member is granted only
+          one vote for like for each item.
+
+          In order to like any item, simply click on the “Like” button, to undo like or unlike, simply click on
+          the “Like” button again.
+    </body>
+  </Item>
+  <Item>
+    <title>
+          SHARE PROFILES AND POSTINGS
+    </title>
+    <body>
+         -This feature is available for profiles and postings.
+
+         -This feature is available to use for free to all our registered and active members in good standing; please note that this feature is not available to users who are just visitors and are not our registered members.
+        
+         -There is no limit on how many items can be forwarded, but members will be banned if they try to abuse this facility to spam other people.
+        
+         -In order to forward any item, simply click on the “Forward” button that open a pop-up where you can type the email address and also attach a small optional small note that will go along with the forwarded link to the friend.
+    </body>
+  </Item>
+  <Item>
+    <title>
+          REPORT ABUSE PROFILES AND POSTINGS
+    </title>
+    <body>
+          -This feature is available for profiles and postings.
+
+          -This feature is available to use for free to all our registered and active members in good standing; please note that this feature is not available to users who are just visitors and are not our registered members.
+          
+          -There is no limit to the number of items than can be reported as abused, but each registered member is granted only one vote to report abuse for each item.
+          
+          -In order to report abuse of any item, simply click on the “Report Abuse” button.
+          
+          -We encourage all our members to report abuse of any profile or posting if they find anything that doesn’t adhere to our general posting guidelines.
+         
+          -Due to privacy issues, we will not be able to disclose the outcome of any specific case that is reported to us.
+    </body>
+  </Item>
+  <Item>
+    <title>
+          POST COMMENTS ON ARTICLE POSTS
+    </title>
+    <body>
+          -This feature is available for postings.
+
+          -This feature is available to use for free to all our registered and active members in good standing; please note that this feature is not available to users who are just visitors and are not our registered members.
+         
+          -Posted article comments can’t be edited or deleted under any circumstances.
+          
+          -There is no limit to the number of article comments that can be posted for the postings as long as there is no abuse or spam.
+          
+          -All article comments posted must adhere to our general posting guidelines, or they may be removed.
+         
+          -All article comments will be moderated by our moderator before it appears on our website.
+         
+          -We reserve the right to approve, remove, or reject any article comment that is posted.
+         
+          -Members who continuously post comments that are against our general posting guidelines may be banned from further posting comments and their account may also be permanently terminated.
+    </body>
+  </Item>
+  <Item>
+    <title>
+          POST POSTINGS
+    </title>
+    <body>
+         -This feature is available to use for free to all our registered and active members in good standing; please note that this feature is not available to users who are just visitors and are not our registered members.
+        
+        -Posted postings can’t be edited or deleted under any circumstances.
+       
+        -There is no limit to the number of postings that can be posted as long as there is no abuse or spam.
+        
+        -All postings must adhere to our general posting guidelines, or they may be removed.
+       
+        -All postings may be moderated by our moderator before it appears on our website.
+        
+        -We reserve the right to approve, remove, or reject any posting that is posted.
+        
+        -Members who continuously post postings that are against our general posting guidelines may be banned from further posting and their account may also be permanently terminated.
+    </body>
+  </Item>
+  <Item>
+    <title>
+          MY PROFILE
+    </title>
+    <body>
+        -Edit Profile: From here you can edit your profile based on many different criterion, feel free to fill as many or fewer fields as you want, only the filled fields would appear in your public profile, we suggest entering as much information as you can so that others can learn more about you.
+        
+        -View Profile: Here you can see your profile exactly as it would appear to others, and you can always update your profile as per your preferences.
+        
+        -Upload Photos: From here you can add or edit your pictures, the profile picture would be used as your main profile picture in your profile and everywhere else, the canvas picture would be used as the canvas picture in your public profile, the left tower picture would be displayed on the left panels of your profile, the right tower picture would be used be displayed on the right panels of your profile, make sure to upload good quality images as per what is allowed and suggested by us, and you can also make use of the cropping and dragging tools to adjust your uploaded images, but please be aware that uploading pictures would make a dramatic difference to your profile.
+        
+        -Profile Suggestions: Here you will find a list of profiles that matches yours, we match multiple fields to show you profiles that you may be interested in, and you will also see profiles in your extended network, make sure to check them out and see if you’d be interested in them.
+    </body>
+  </Item>
+  <Item>
+    <title>
+        MY POSTINGS
+    </title>
+    <body>
+      -Post Postings: Here you can post postings under various categories, but please make sure that you adhere to our posting guidelines, all postings posted will undergo a moderation process after which they will appear online, for more information, please read our posting guidelines prior to submitting any postings.
+      
+      -Posted Postings: Here you can see and manage the list of postings that you have already posted.
+      
+      -Posted Comments: Here you can post comments for the postings posted, but please make sure that you adhere to our posting guidelines.
+      
+      -Favorite Postings: Here you can see and manage the list of postings you have added to your favorites.
+    </body>
+  </Item>
+  <Item>
+    <title>
+        MY CONNECTIONS
+    </title>
+    <body>
+        -Approved Connections: Here you can see the list of all your approved connections.
+        
+        -Requests Received: Here you can see the list of all the requests you received from others and their status, if they are pending, removed, or accepted.
+        
+        -Requests Sent: Here you can see the list of all the requests you sent to others and their status, if they are pending, removed, or accepted.
+        
+        -Invite Others: Here you can send invitations to become a member of our website and join your network.
+    </body>
+  </Item>
+  <Item>
+    <title>
+        MY MESSAGES
+    </title>
+    <body>
+        -Inbox: Here you can see the list of messages you have received from others.
+
+        -Sent Box: Here you can see the list of messages you have sent to others.
+    </body>
+  </Item>
+  <Item>
+    <title>
+          MY STATISTICS
+    </title>
+    <body>
+        -Profile Views: Here you can gain access to daily and monthly break-up of how many people viewed your profile, and to who all, when, and how many times others viewed your profile with their complete details
+        
+        -Profile Appearances: Here you can gain access to daily and monthly break-up of how many times your profile appeared in search results, and to top keyword searches for your profile and their respective counts
+        
+        -Profiles Favorites: Here you can see the list of profiles you have added to your favorites and the list of profiles who have added your profile to their favorites.
+        
+        -Profiles Likes: Here you can see the list of profiles you have added to your likes and the list of profiles who have added your profile to their likes.
+    </body>
+  </Item>
+  <Item>
+    <title>
+        MY TOOLS
+    </title>
+    <body>
+      -Settings: Here you can change settings for your: Profile Status (if your profile is in good status), Profile Visibility (make it visible or invisible), Incoming Messages (turn incoming messages on or off), Connection Requests (turn incoming messages on or off), Close Account (permanently close your account and delete all your content).
+      
+      -Profile Upgrade: Here you can upgrade your account to featured or premium status and enjoy exclusive benefits.
+      
+      -Change Password: Here you can change your password to access your account, we suggest you change your password periodically to safeguard access to your account.
+      
+      -Edit Email Address: Here you can change/update your email address so that we always have your most updated email address.
+    </body>
+  </Item>
+  <Item>
+    <title>
+         MESSAGING SYSTEM
+    </title>
+    <body>
+        -This feature is available to use for free to all our registered and active members in good standing; please note that this feature is not available to users who are just visitors and are not our registered members.
+        -Sending Messages: members can send messages to anyone else depending on the settings of the recipient and sending ability of the sender.
+        -Receiving Messages: members can receive messages from anyone else depending on the settings of the recipient and sending ability of the sender.
+        -In-box: this box will contain a list of all incoming messages that have been received from other members.
+        -Sent-box: this box will contain a list of all outgoing messages that have been sent to other members.
+        -Reply: by clicking on the reply button, users can reply to messages received from any other members, and all messages to which a reply has been sent will display a reply arrow icon.
+        -Delete: by clicking on delete button, the chosen message will be permanently deleted from the system and there will be no way to restore it.
+        -Delete All: by clicking on delete all button, all messages in that box will be permanently deleted from the system and there will be no way to restore them.
+        -Violations: Members may be banned or their account may be terminated if they try to send messages that don’t adhere with our general guidelines.
+        -Spam: Members may be banned or their account may be terminated if they try to spam other members by sending unsolicited messages.
+        -Settings: to secure the privacy of our users, all members can go to the setting links from the My Account section and turn on or turn off the messaging system, turn-on means anyone will be allowed to send a message to the user, turn-off means no one will be allowed to send a message to the user.
+        -Automatic Truncation: All messages may get automatically deleted after a certain period.
+        -Limits: The boxes don’t have any preset limits for the number of messages that they can contain, but all members are requested to keep deleting old messages so that their messages are sent and received smoothly.
+    </body>
+  </Item>
+  <Item>
+    <title>
+        CONNECTIONS SYSTEM
+    </title>
+    <body>
+        -Sending Invitations: Any registered member can send connection requests to anyone else depending on the settings of the recipient and sending ability of the sender.
+        -Receiving Invitations: Any registered member can receive connection requests from anyone else depending on the settings of the recipient and sending ability of the sender.
+        -Received Invitation Options: Recipient of connection requests can accept, remove, ignore, or report the request, accepting a connection request would add that to the accepted contacts list, removing a connection request would remove that from the pending connection requests list and the sender will not be able to send the connection requests again, ignoring a connection requests would eliminate that request from the pending connection requests list of both the sender and the receiver and either party can initiate a new connection request again, reporting a connection request as spam would remove that request from the pending connection requests list along with reporting the sender as a spammer in our system and the sender will not be able to send the connection request again to this user.
+        -Accepted Invitation Options: User can ignore or remove the connection request that is already accepted, ignoring an already accepted connection request would eliminate that connection from the accepted connections list but either party can initiate a new connection request, removing an already accepted connection would remove that connection from the accepted connections list and the sender will not be able to send the connection request again.
+        -Settings: to secure the privacy of our users, all members can go to the setting links from the My Account section and turn on or turn off the connection requests, turn-on means anyone will be allowed to send connection requests to the user, turn-off means no one will be allowed to send connection requests to the user.
+    </body>
+  </Item>
+</Items>

@@ -1,0 +1,30 @@
+.sing-up-form {
+    width: 50%;
+}
+.gender-radio-width {
+    width: 43.4%;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    padding-left: 5px;
+}
+.profile-type-width {
+    width: 75%;
+    position: relative;
+    padding:10px
+}
+@media (min-width:280px) and (max-width:760px) {
+    .sing-up-form {
+       width: 98%
+    }
+    .captcha {
+        margin-bottom: 5px;
+    }
+    .profile-type-width {
+        width: 88%;
+    }
+}
+@media (max-Width:525px) {
+    .gender-radio-width {
+        width: 97%; 
+    }
+}

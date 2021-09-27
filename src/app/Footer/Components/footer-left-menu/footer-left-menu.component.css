@@ -1,0 +1,37 @@
+.main-div {
+  position: relative;
+}
+.show {
+  display: flex !important;
+  width: 100% !important;
+  border-top: solid 1px rgba(0, 0, 0, 0.125);
+}
+.display-flex {
+  display: flex;
+  width: 95%;
+}
+
+.btn-toggle {
+  position: absolute;
+  display: flex;
+  top: -26px;
+  left: 4px;
+  margin-bottom: 5px;
+}
+
+@media (max-Width:768px) {
+  .display-flex{
+    display: none;
+   }
+   .display-flex>a:first-of-type {
+    display: none;
+   }
+}
+
+@media (min-Width:768px) {
+  .btn-toggle {
+    display: none;
+  }
+ 
+}
+

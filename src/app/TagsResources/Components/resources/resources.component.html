@@ -1,0 +1,45 @@
+<div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8  border rounded shadow-lg p-4 m-3 bg-white">
+        <div class="card">
+            <div class="card-header p-0 cursor bg-light" id="headingOne" (click)="tagsToggle()">
+                <h3 class="mb-0">
+                    <span class="btn text-secondary pl-2" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        Resources
+                    </span>
+                </h3>
+            </div>
+            <table class="bg-light px-5 tagsresourecesGrid" [ngClass]="{ collapse : isExpanedTage }">
+                <tbody>
+                    <tr>
+                        <td class="px-2 w-50 border-bottom border-right"> <a class="linkFontStyle"
+                                [routerLink]="['/Just-Friends']">Just Friends</a></td>
+                        <td class="px-2 border-bottom"><a class="linkFontStyle"
+                                [routerLink]="['/Short-Relationship']">Short Relation Ship</a></td>
+                    </tr>
+                    <tr>
+                        <td class="px-2 border-bottom border-right"><a class="linkFontStyle"
+                                [routerLink]="['/Activity-Partner']">Activity Partner</a></td>
+                        <td class="px-2 border-bottom border-top"><a class="linkFontStyle"
+                                [routerLink]="['/Long-Relationship']"> Long Relation Ship</a></td>
+                    </tr>
+                    <tr>
+                        <td class="px-2 border-bottom border-right"> <a class="linkFontStyle"
+                                [routerLink]="['/Virtual-Relationship']">Virtual Relationship</a></td>
+                        <td class="px-2 border-bottom border-top"><a class="linkFontStyle"
+                                [routerLink]="['/Business-Partner']">Business Partner</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-2 border-right"><a class="linkFontStyle"
+                                [routerLink]="['/Open-Relationship']">Open Relationship</a></td>
+                        <td class="px-2 border-top"><a class="linkFontStyle"
+                                [routerLink]="['/Career-Opportunities']">Career Opportunities</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="col-lg-2"></div>
+</div>

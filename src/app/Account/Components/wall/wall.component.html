@@ -1,0 +1,133 @@
+<div class="mb-3">
+    <div class="card  mb-3 box-style">
+        <div class="card-header">
+            <h5>Account Suggestions </h5>
+        </div>
+        <div class="card-body">
+            <div *ngIf="mainAccountSuggestionBox" id="1">
+                <div class="row">
+                    <div class="col-md-9">- Update your profile so that you can have more detailed information and
+                        be
+                        easily searchable.</div>
+                    <div class="col md-3 "><a class="btn btn-dark text-light btn-sm float-right w-75"
+                            [routerLink]="['/Profile/',MessagesService.getUname()]">Update
+                            Profile</a></div>
+                </div>
+                <div class="border-top dotted mb-1 mt-1"></div>
+                <div class="row">
+                    <div class="col-md-9">- Upload your photos so that you can get ten times more hits and receive
+                        more
+                        relevant responses.</div>
+                    <div class="col md-3 "><a class="btn  btn-dark text-light btn-sm float-right w-75"
+                            [routerLink]="['/Profile/',MessagesService.getUname()]">Upload
+                            Photos</a></div>
+                </div>
+                <div class="border-top dotted mb-1 mt-1"></div>
+                <div class="row">
+                    <div class="col-md-9">- Respond to your pending messages so that you are more responsive and
+                        accessible.
+                    </div>
+                    <div class="col md-3"><a class="btn  btn-dark text-light btn-sm float-right w-75"
+                            [routerLink]="['/Messages/',MessagesService.getUname()]">Respond to
+                            Messages</a></div>
+                </div>
+                <div class="border-top dotted mb-1 mt-1"></div>
+                <div class="row">
+                    <div class="col-md-9">- Respond to your pending interests so that you are more receptive and
+                        approachable.
+                    </div>
+                    <div class="col md-3"><a class="btn  btn-dark text-light btn-sm float-right w-75"
+                            [routerLink]="['/ProfileInterests']">Respond to
+                            Interests</a></div>
+                </div>
+                <div class="border-top dotted mb-1 mt-1"></div>
+                <div class="row">
+                    <div class="col-md-9">- Upgrade your account so that you can enjoy premium benefits and
+                        features.
+                    </div>
+                    <div class="col md-3"><a class="btn  btn-dark text-light btn-sm float-right w-75"
+                            [routerLink]="['/Upgrade']">Upgrade
+                            Account</a></div>
+                </div>
+                <div class="border-top dotted mb-1 mt-1"></div>
+                <div class="row">
+                    <div class="col-md-9">- Upgrade your account so that you can enjoy many additional premium
+                        benefits
+                        and features.
+                    </div>
+                    <div class="col md-3"><a class="btn  btn-dark text-light btn-sm float-right w-75"
+                            [routerLink]="['/Settings']">Additional
+                            products</a></div>
+                </div>
+            </div>
+            <div *ngIf="updateAccountSuggestionBox">
+                <div class="row">
+                    <div class="col-md-9">- Update your profile so that you can have more detailed information and
+                        be
+                        easily searchable.</div>
+                    <div class="col md-3 "><a class="btn btn-dark text-light btn-sm float-right w-75"
+                            [routerLink]="['/Profile/',uName]">Update
+                            Profile</a></div>
+                </div>
+            </div>
+            <div *ngIf="uploadAccountSuggestionBox">
+                <div class="row">
+                    <div class="col-md-9">- Upload your photos so that you can get ten times more hits and receive
+                        more
+                        relevant responses.</div>
+                    <div class="col md-3 "><a class="btn  btn-dark text-light btn-sm float-right w-75"
+                            [routerLink]="['/Profile/',uName]">Upload
+                            Photos</a></div>
+                </div>
+            </div>
+            <div *ngIf="messagesAccountSuggestionBox">
+                <div class="row">
+                    <div class="col-md-9">- Respond to your pending messages so that you are more responsive and
+                        accessible.
+                    </div>
+                    <div class="col md-3"><a class="btn  btn-dark text-light btn-sm float-right w-75"
+                            [routerLink]="['/Messgaes/',uName]">Respond to
+                            Messages</a></div>
+                </div>
+            </div>
+            <div *ngIf="interestsAccountSuggestionBox">
+                <div class="row">
+                    <div class="col-md-9">- Respond to your pending interests so that you are more receptive and
+                        approachable.
+                    </div>
+                    <div class="col md-3"><a class="btn  btn-dark text-light btn-sm float-right w-75"
+                            [routerLink]="['/ProfileInterests']">Respond to
+                            Interests</a></div>
+                </div>
+            </div>
+            <div *ngIf="upgradeAccountSuggestionBox">
+                <div class="row">
+                    <div class="col-md-9">- Upgrade your account so that you can enjoy premium benefits and
+                        features.
+                    </div>
+                    <div class="col md-3"><a class="btn  btn-dark text-light btn-sm float-right w-75"
+                            [routerLink]="['/Upgrade']">Upgrade
+                            Account</a></div>
+                </div>
+            </div>
+            <div *ngIf="additionalProdAccountSuggestionBox">
+                <div class="row">
+                    <div class="col-md-9">- Upgrade your account so that you can enjoy many additional premium
+                        benefits
+                        and features.
+                    </div>
+                    <div class="col md-3"><a class="btn  btn-dark text-light btn-sm float-right w-75"
+                            [routerLink]="['/Settings']">Additional
+                            products</a></div>
+                </div>
+            </div>
+            <div class="border-top dotted mb-2 mt-2"></div>
+            <div class="row mb-1">
+                <div class="col-md-6"><button class="btn  btn-dark btn-sm w-25" (click)="onPrev()">Previous</button>
+                </div>
+                <div class="col md-6"><button class="btn  btn-dark btn-sm float-right w-25"
+                        (click)="onNext()">Next</button></div>
+            </div>
+        </div>
+    </div>
+</div>

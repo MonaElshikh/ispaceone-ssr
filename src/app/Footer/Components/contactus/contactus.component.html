@@ -1,0 +1,149 @@
+<div class="row p-0 mb-3">
+  <div class="col-md-3 pt-0">
+    <app-footer-left-menu></app-footer-left-menu>
+  </div>
+  <div class="col-md-9">
+    <h5 class="header-style">Contact us</h5>
+    <form name="contactUsFrom" #contactUsFrom="ngForm" (ngSubmit)="sendContactUsData(contactUsFrom)">
+      <div class="border p-3">
+        <div class="form-group pb-2">
+          <div class="row border-bottom pb-3">
+            <div class="col-md-11">
+              <div class="has-float-label">
+                <input type="text" ngModel id="CompanyName" name="CompanyName" #CompanyName="ngModel" maxlength="25"
+                  (ngModelChange)="companyNameRemainingChars= $event.length" class="form-control pl-2"
+                  placeholder="Company Name" [ngClass]="{ 'is-valid':CompanyName.valid }" required>
+                <label for="CompanyName">Company Name</label>
+                <div *ngIf="CompanyName.touched && CompanyName.invalid" class="alert-alert-danger notValid">
+                  required
+                </div>
+              </div>
+            </div>
+            <div class="col-md-1 my-auto">
+              <app-chars-counter [usedChars]="companyNameRemainingChars" [maxChars]="25">
+              </app-chars-counter>
+            </div>
+          </div>
+        </div>
+        <div class="form-group pb-2">
+          <div class="row border-bottom pb-3">
+            <div class="col-md-11">
+              <div class="has-float-label">
+                <input type="text" id="FullName" name="FullName" ngModel #FullName="ngModel"
+                  (ngModelChange)="fullNameRemainingChars= $event.length" maxlength="25" class="form-control pl-2"
+                  placeholder="Full Name" [ngClass]="{ 'is-valid':FullName.valid }" required>
+                <label for="FullName">Full Name</label>
+                <div *ngIf="FullName.touched && FullName.invalid" class="alert-alert-danger notValid">
+                  required
+                </div>
+              </div>
+            </div>
+            <div class="col-md-1 my-auto">
+              <app-chars-counter [usedChars]="fullNameRemainingChars" [maxChars]="25">
+              </app-chars-counter>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row border-bottom pb-3">
+            <div class="col-md-11">
+              <div class="has-float-label">
+                <input type="tel" ngModel id="EmailAddress" name="EmailAddress" #EmailAddress="ngModel"
+                  (ngModelChange)="emailRemainingChars= $event.length" maxlength="25" class="form-control pl-2"
+                  placeholder="Email Address" [ngClass]="{ 'is-valid':EmailAddress.valid }" required email>
+                <label for="EmailAddress">Email Address</label>
+                <div *ngIf="EmailAddress.touched && EmailAddress.invalid" class="alert-alert-danger notValid">
+                  <div *ngIf="EmailAddress.errors.required">required</div>
+                  <div *ngIf="EmailAddress.errors.email">Please enter a valid email address</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-1 my-auto">
+              <app-chars-counter [usedChars]="emailRemainingChars" [maxChars]="25">
+              </app-chars-counter>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row border-bottom pb-3">
+            <div class="col-md-11">
+              <div class="has-float-label">
+                <input type="text" ngModel #phone="ngModel" id="Phone" name="Phone" class="form-control pl-2"
+                  (ngModelChange)="phoneRemainingChars= $event.length" maxlength="25" placeholder="Phone No"
+                  [ngClass]="{ 'is-valid':phone.valid }" required>
+                <label for="Phone">Phone No</label>
+                <div *ngIf="phone.touched && phone.invalid" class="alert-alert-danger notValid">
+                  required
+                </div>
+              </div>
+            </div>
+            <div class="col-md-1 my-auto">
+              <app-chars-counter [usedChars]="phoneRemainingChars" [maxChars]="25">
+              </app-chars-counter>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row border-bottom pb-3">
+            <div class="col-md-11">
+              <label for="Subject">Subject:</label>
+              <select class="form-control" id="Subject" name="Subject" ngModel #subject="ngModel"
+                [ngClass]="{ 'is-valid':subject.valid }" required>
+                <option value="">Select Subject</option>
+                <option value="1">Partnership Offer</option>
+                <option value="2">Business Development</option>
+                <option value="3">Report Error</option>
+                <option value="4">Report Abuse</option>
+                <option value="5">Technical Support</option>
+                <option value="6">Guest Post</option>
+                <option value="7"> Media Inquiry</option>
+                <option value="8"> Suggestions</option>
+                <option value="9"> Feedback</option>
+                <option value="10">Other Issues</option>
+              </select>
+              <div *ngIf="subject.touched && subject.invalid" class="alert-alert-danger notValid">
+                required
+              </div>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+        </div>
+        <div class="row border-bottom pb-3">
+          <div class="col-md-11">
+            <label for="">Remarks:</label>
+            <textarea autosize cols="30" rows="4" maxlength="10000"  name="remarks"  ngModel #remarks="ngModel"
+              (ngModelChange)="remarksRemaningChars= $event.length" type="text" class="form-control" id="remarks"
+             [ngClass]="{ 'is-valid':remarks.valid }" required></textarea>
+            <div *ngIf="remarks.touched && remarks.invalid" class="alert-alert-danger notValid">
+              required
+            </div>
+          </div>
+          <div class="col-md-1 my-auto">
+            <app-chars-counter [usedChars]="remarksRemaningChars" [maxChars]="10000">
+            </app-chars-counter>
+          </div>
+        </div>
+        <div class="form-group pt-2">
+          <div class="row border-bottom pb-3">
+            <div class="col-md-11">
+              <div class="has-float-label">
+                <input type="text" ngModel #SecurityCode="ngModel" id="SecurityCode" name="SecurityCode"
+                  class="form-control pl-2" placeholder="Security Code" [ngClass]="{ 'is-valid':SecurityCode.valid }"
+                  required>
+                <label for="Phone">Security Code</label>
+                <div *ngIf="SecurityCode.touched && SecurityCode.invalid" class="alert-alert-danger notValid">
+                  required
+                </div>
+              </div>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary btn-sm text-center p-2 m-2"
+            [disabled]="contactUsFrom.invalid">Submit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

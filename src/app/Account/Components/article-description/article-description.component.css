@@ -1,0 +1,9 @@
+.fa{
+    font-size: 1.25rem;
+}
+.grayNavyLink{
+    color:#545454;
+  }
+  .grayNavyLink:hover{
+      color:navy;
+   }

@@ -1,0 +1,9 @@
+<div *ngIf="IsList">
+    <app-tagesresources-list [articlesList]="articlesList" [url]="url" [header]="header" [lbl1]="lbl1" [lbl2]="lbl2">
+    </app-tagesresources-list>
+</div>
+<div *ngIf="!IsList">
+    <app-tagesresources-details [header]="header" [TagsResourcesObject]="TagsResourcesObject"
+        [readThisList]="readThisList" [url]="url" [arrayLength]="arrayLength" [articlesList]="articlesList"
+        [menuUrl]="menuUrl" [randomImageUrl]="randomImageUrl"></app-tagesresources-details>
+</div>

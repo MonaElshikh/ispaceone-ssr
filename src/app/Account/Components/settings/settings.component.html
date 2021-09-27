@@ -1,0 +1,722 @@
+<div class="row mt-2 mb-2 p-0">
+    <div class="col-md-12">
+        <h5 class="header-style">Settings</h5>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="media border p-1 mb-2">
+                    <img [src]="authService.bindImageUrl('profile',profileImage)" class="mr-3 img-fluid square-circle"
+                        style="width:3rem;" alt="...">
+                    <div class="media-body">
+                        Current Status: {{CurrentStatus}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col md-12">
+                <div class="card mb-3 box-style">
+                    <div class="card-header bg-white cursor" (click)="toggleSettingsBoxes('limits')">
+                        <span class="font-weight-bold">Limits</span>
+                    </div>
+                    <div class="card-body" [ngClass]='{ collapse : isLimitsBoxCollapse }'>
+                        <div class="row border-bottom pb-3">
+                            <div class="col-md-2"><label class="small font-weight-bold">Photos</label> </div>
+                            <div class="col-md-2"><label class="small">{{photosCredits}} of {{LiftimeLimits}}
+                                    used</label>
+                            </div>
+                            <div class="col-md-2"> <label class="small font-weight-bold">Profile
+                                    Likes</label></div>
+                            <div class="col-md-2"> <label class="small">{{likesCredits}} of {{DailyLimits}}
+                                    used</label>
+                            </div>
+                            <div class="col-md-2"> <label class="small font-weight-bold">Profile
+                                    Loves</label></div>
+                            <div class="col-md-2"> <label class="small">{{favsCredits}} of {{DailyLimits}}
+                                    used</label>
+                            </div>
+                        </div>
+                        <div class="row border-bottom pb-3">
+                            <div class="col-md-2"> <label class="small font-weight-bold">Profile
+                                    Blocks</label></div>
+                            <div class="col-md-2"> <label class="small">{{blockCredits}} of {{DailyLimits}}
+                                    used</label>
+                            </div>
+                            <div class="col-md-2"> <label class="small font-weight-bold">Profile
+                                    Reports</label></div>
+                            <div class="col-md-2"> <label class="small">{{reportCredits}} of {{DailyLimits}}
+                                    used</label>
+                            </div>
+                            <div class="col-md-2"> <label class="small font-weight-bold">Messages</label></div>
+                            <div class="col-md-2"> <label class="small">{{messageCredits}} of {{DailyLimits}}
+                                    used</label>
+                            </div>
+                        </div>
+                        <div class="row border-bottom pb-3">
+                            <div class="col-md-2"><label class="small font-weight-bold">Articles</label></div>
+                            <div class="col-md-2"> <label class="small">{{articleCredits}} of {{MonthlyLimits}}
+                                    used</label>
+                            </div>
+                            <div class="col-md-2"><label class="small font-weight-bold">Article
+                                    Likes</label></div>
+                            <div class="col-md-2"><label class="small">{{articleLikesCredits}} of {{DailyLimits}}
+                                    used</label>
+                            </div>
+                            <div class="col-md-2"> <label class="small font-weight-bold">Article
+                                    Loves</label></div>
+                            <div class="col-md-2"> <label class="small">{{articleTracks}} of {{DailyLimits}}
+                                    used</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2"><label class="small font-weight-bold">Article
+                                    Comments</label></div>
+                            <div class="col-md-2"> <label class="small">{{articleCommentsCredits}} of
+                                    {{DailyLimits}}
+                                    used</label></div>
+                            <div class="col-md-2"><label class="small font-weight-bold">Comments
+                                    Likes</label></div>
+                            <div class="col-md-2"><label class="small">{{articleCommentLikesCredits}} of
+                                    {{DailyLimits}}
+                                    used</label></div>
+                            <div class="col-md-2"></div>
+                            <div class="col-md-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card mb-3 box-style">
+                            <div class="card-header bg-white cursor"
+                                (click)="toggleSettingsBoxes('VisibilitySettings')">
+                                <span class="font-weight-bold">Visibility Settings</span>
+                            </div>
+                            <div class="card-body" [ngClass]='{ collapse : isVisibilitySettingsCollapse }'>
+                                <div class="row border-bottom pb-3">
+                                    <div class="col-md-12 ">Profile Visibility: Manage who can view your
+                                        public
+                                        profile:
+                                    </div>
+                                </div>
+                                <div class="row border-bottom pb-3 pt-3">
+                                    <div class="col-md-6 border-right">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="profilestatsrb"
+                                                id="inlineRadio1" value="Everyone"
+                                                [checked]="userProfile.profile_status==='Everyone'"
+                                                (change)="changeSelection('profilestats',$event)">
+                                            <label class="form-check-label" for="inlineRadio1">Everyone</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="profilestatsrb"
+                                                id="inlineRadio2" value="No one"
+                                                [checked]="userProfile.profile_status==='No one'"
+                                                (change)="changeSelection('profilestats',$event)">
+                                            <label class="form-check-label" for="inlineRadio2">No one
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">Current Status: {{userProfile.profile_status}}
+                                    </div>
+                                </div>
+                                <div class="row border-bottom pb-3 pt-3">
+                                    <div class="col-md-12">Manage what others will see when you view their
+                                        profile:
+                                    </div>
+                                </div>
+                                <div class="row border-bottom pb-3 pt-3">
+                                    <div class="col-md-6 border-right">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="profileanonymousrb"
+                                                id="inlineRadio1" value="Actual"
+                                                [checked]="!userProfile.isViewAnonymous"
+                                                (change)="changeSelection('profileanonymous',$event)">
+                                            <label class="form-check-label" for="inlineRadio1">Actual</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="profileanonymousrb"
+                                                id="inlineRadio2" value="Anonymous"
+                                                [checked]="userProfile.isViewAnonymous"
+                                                (change)="changeSelection('profileanonymous',$event)">
+                                            <label class="form-check-label" for="inlineRadio2">Anonymous</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">Current Status: {{userProfile.isViewAnonymous?
+                                        'Anonymous'
+                                        : 'Actual'}}</div>
+                                </div>
+                                <div *ngIf="isUpdateVisibility" class="alert alert-primary col-md-10 mx-auto mb-0 mt-2"
+                                    role="alert">
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            Are you sure you want to change your profile visibility?
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a class="alert-link cursor"
+                                                (click)="UpdateVisibilitySettings()">yes</a>&nbsp;&nbsp;
+                                            <a class="alert-link cursor"
+                                                (click)="ShowConfirmPanel('visibility','cancel')">cancel</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3">
+                                    <div class="col-md-12 text-center mt-2"><button
+                                            (click)="ShowConfirmPanel('visibility','show')"
+                                            class="btn btn-primary">Submit</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card mb-3 box-style">
+                            <div class="card-header bg-white cursor"
+                                (click)="toggleSettingsBoxes('NotificationSettings')">
+                                <span class="font-weight-bold">Notification Settings</span>
+                            </div>
+                            <div class="card-body coll" [ngClass]='{ collapse : isNotificationSettingsCollapse }'>
+                                <div class="row border-bottom pb-3">
+                                    <div class="col-md-12 ">New Profile Activity: Receive auto emails after
+                                        new
+                                        profile
+                                        activity such as messages or likes:
+                                    </div>
+                                </div>
+                                <div class="row border-bottom pb-3 pt-3">
+                                    <div class="col-md-6 border-right">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="profileActivityrb"
+                                                id="inlineRadio1" value="yes"
+                                                [checked]="userProfile.isRecAutoMailsToNewMessagesRequest"
+                                                (change)="changeSelection('profileActivity',$event)">
+                                            <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="profileActivityrb"
+                                                id="inlineRadio2" value="no"
+                                                [checked]="!userProfile.isRecAutoMailsToNewMessagesRequest"
+                                                (change)="changeSelection('profileActivity',$event)">
+                                            <label class="form-check-label" for="inlineRadio2">No</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">Current Status : Yes</div>
+                                </div>
+                                <div class="row border-bottom pb-3 pt-3">
+                                    <div class="col-md-12">New Posting Activity: Receive auto emails after
+                                        new
+                                        posting
+                                        activity such as comments or likes:
+                                    </div>
+                                </div>
+                                <div class="row border-bottom pb-3 pt-3">
+                                    <div class="col-md-6 border-right">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="postingsActivityrb"
+                                                id="inlineRadio1" value="yes"
+                                                [checked]="userProfile.isRecAutoMailsToPostingActivity"
+                                                (change)="changeSelection('postingsActivity',$event)">
+                                            <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="postingsActivityrb"
+                                                id="inlineRadio2" value="no"
+                                                [checked]="!userProfile.isRecAutoMailsToPostingActivity"
+                                                (change)="changeSelection('postingsActivity',$event)">
+                                            <label class="form-check-label" for="inlineRadio2">No </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">Current Status : Yes</div>
+                                </div>
+                                <div class="row border-bottom pb-3 pt-3">
+                                    <div class="col-md-12 ">Promotional Emails: Set frequency of special
+                                        offers
+                                        emails:
+                                    </div>
+                                </div>
+                                <div class="row border-bottom pb-3 pt-3">
+                                    <div class="col-md-6 border-right">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="promotionalEmailrb"
+                                                id="inlineRadio1" value="1"
+                                                [checked]="userProfile.promotionalEmailSetting===1"
+                                                (change)="changeSelection('promotionalEmail',$event)">
+                                            <label class="form-check-label" for="inlineRadio1">Frequently</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="promotionalEmailrb"
+                                                id="inlineRadio2" value="2"
+                                                [checked]="userProfile.promotionalEmailSetting===2"
+                                                (change)="changeSelection('promotionalEmail',$event)">
+                                            <label class="form-check-label" for="inlineRadio2">Rarely
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="promotionalEmailrb"
+                                                id="inlineRadio2" value="3"
+                                                [checked]="userProfile.promotionalEmailSetting===3"
+                                                (change)="changeSelection('promotionalEmail',$event)">
+                                            <label class="form-check-label" for="inlineRadio2">Never
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">Current Status : Frequently</div>
+                                </div>
+                                <div class="row border-bottom pb-3 pt-3">
+                                    <div class="col-md-12 ">Stats Emails: Set frequency of account stats
+                                        emails:
+                                    </div>
+                                </div>
+                                <div class="row border-bottom pb-3 pt-3">
+                                    <div class="col-md-6 border-right">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="statsEmailrb"
+                                                id="inlineRadio1" value="1"
+                                                [checked]="userProfile.statsEmailSettings===1"
+                                                (change)="changeSelection('statsEmail',$event)">
+                                            <label class="form-check-label" for="inlineRadio1">Frequently</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="statsEmailrb"
+                                                id="inlineRadio2" value="2"
+                                                [checked]="userProfile.statsEmailSettings===2"
+                                                (change)="changeSelection('statsEmail',$event)">
+                                            <label class="form-check-label" for="inlineRadio2">Rarely
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="statsEmailrb"
+                                                id="inlineRadio2" value="3"
+                                                [checked]="userProfile.statsEmailSettings===3"
+                                                (change)="changeSelection('statsEmail',$event)">
+                                            <label class="form-check-label" for="inlineRadio2">Never
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">Current Status : Frequently</div>
+                                </div>
+                                <div *ngIf="isUpdateNotification"
+                                    class="alert alert-primary col-md-10 mx-auto mb-0 mt-2" role="alert">
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            Are you sure you want to change your notification settings?
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a class="alert-link cursor"
+                                                (click)="UpdateNotificationSettings()">yes</a>&nbsp;&nbsp;
+                                            <a class="alert-link cursor"
+                                                (click)="ShowConfirmPanel('notifications','cancel')">cancel</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3">
+                                    <div class="col-md-12 text-center mt-2"><button
+                                            (click)="ShowConfirmPanel('notifications','show')"
+                                            class="btn btn-primary">Submit</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card mb-3 box-style">
+                            <div class="card-header bg-white cursor" (click)="toggleSettingsBoxes('FullNameSettings')">
+                                <span class="font-weight-bold">Full Name</span>
+                            </div>
+                            <div class="card-body pb-2" [ngClass]='{ collapse : isFullNameSettingsCollapse }'>
+                                <div class="row border-bottom pb-3">
+                                    <div class="col-md-12 ">Enter the full name as you would like others to
+                                        see
+                                        throughout
+                                        the site:
+                                    </div>
+                                </div>
+                                <div class="row border-bottom pb-3 pt-3">
+                                    <div class="col-md-6 border-right">
+                                        <div class="form-group ">
+                                            <label>Full Name</label>
+                                            <input class="form-control" type="text" name="txtFullName" id="txtFullName"
+                                                [(ngModel)]="fullName">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">Current Full Name :{{userProfile.fullName}}</div>
+                                </div>
+                                <div *ngIf="isUpdateFullName" class="alert alert-primary col-md-10 mx-auto mb-0 mt-2"
+                                    role="alert">
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            Are you sure you want to change your full name?
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a class="alert-link cursor"
+                                                (click)="UpdateProfileFullName()">yes</a>&nbsp;&nbsp;
+                                            <a class="alert-link cursor"
+                                                (click)="ShowConfirmPanel('fullName','cancel')">cancel</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-2">
+                                    <div class="col-md-12 text-center mt-2">
+                                        <button class="btn btn-primary" [disabled]="!fullName"
+                                            (click)="ShowConfirmPanel('fullName','show')">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card mb-3 box-style">
+                            <div class="card-header bg-white cursor" (click)="toggleSettingsBoxes('ChangePwSettings')">
+                                <span class="font-weight-bold">Change Password</span>
+                            </div>
+                            <div class="card-body" [ngClass]='{ collapse : isChangePwSettingsCollapse }'>
+                                <div class="row border-bottom pb-3">
+                                    <div class="col-md-12 ">Here you can change your password:
+                                    </div>
+                                </div>
+                                <div class="row border-bottom pb-3 pt-3">
+                                    <div class="col-md-6 border-right">
+                                        <div class="form-group ">
+                                            <label class="form-check-label float-left" for="inlineRadio1">Old
+                                                Password</label>
+                                            <input class="form-control" type="password" name="txtOldPassword"
+                                                [(ngModel)]="oldPw" (blur)="CheckOldPw()" id="txtOldPassword">
+                                            <p class="text-danger" *ngIf="!rigthOldPw">{{pwError}}</p>
+                                            <label class="form-check-label float-left" for="inlineRadio1">New
+                                                Password</label>
+                                            <input class="form-control" type="password" name="txtNewPassword"
+                                                id="txtNewPassword" [(ngModel)]="newPw" (blur)="CheckNewpw()">
+                                            <p class="text-danger" *ngIf="!rightNewPw">{{pwError}}</p>
+                                            <label class="form-check-label float-left" for="inlineRadio1">Confirm
+                                                Password</label>
+                                            <input class="form-control" type="password" name="txtConfirmPassword"
+                                                [(ngModel)]="confirmNewPw" id="txtConfirmPassword"
+                                                (blur)="CheckUpdatedPw()">
+                                            <p class="text-danger" *ngIf="!rigtConfirmPw">Password and
+                                                confirm
+                                                password not
+                                                match.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6" style="vertical-align: middle;">Current Password :
+                                        ******
+                                    </div>
+                                </div>
+                                <div *ngIf="isUpdatePw" class="alert alert-primary col-md-12 mx-auto mb-0 mt-2"
+                                    role="alert">
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            Are you sure you want to change your password?
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a class="alert-link cursor" (click)="UpdatePassword()">yes</a>&nbsp;&nbsp;
+                                            <a class="alert-link cursor" (click)="UpdatePassword('cancel')">cancel</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3">
+                                    <div class="col-md-12 text-center mt-2"><button class="btn btn-primary"
+                                            [disabled]="!enableSubmitPw" (click)="isUpdatePw=true">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card mb-3 box-style">
+                            <div class="card-header bg-white cursor"
+                                (click)="toggleSettingsBoxes('UpdateEmailSettings')">
+                                <span class="font-weight-bold">Update Email</span>
+                            </div>
+                            <div class="card-body" [ngClass]='{ collapse : isUpdateEmailSettingsCollapse }'>
+                                <div class="row border-bottom pb-3">
+                                    <div class="col-md-12 ">Here you can update your email address:
+                                    </div>
+                                </div>
+                                <div class="row border-bottom pb-3 pt-3">
+                                    <div class="col-md-6 border-right">
+                                        <div class="form-group ">
+                                            <label class="form-check-label float-left" for="inlineRadio1">New
+                                                Email
+                                                Add</label>
+                                            <input class="form-control" type="text" name="NewEmail"
+                                                [(ngModel)]="NewEmail" (blur)="CheckUniqueEmail()"
+                                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                                            <p class="text-danger" *ngIf="takenEmail">
+                                                Email is taken.</p>
+                                        </div>
+                                        <div class="form-group ">
+                                            <label>Confirm Email Add</label>
+                                            <input class="form-control" type="text" name="confirmNewEmail"
+                                                [(ngModel)]="confirmNewEmail"
+                                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                                (blur)="CheckUpdatedEmail()">
+                                            <p class="text-danger" *ngIf="!rightConfirmEmail">
+                                                Email and confirm email not match.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="short-div">
+                                            <span> Current Status: </span>
+                                            <span
+                                                [ngClass]="{'text-success':emailVervied ,'text-danger':!emailVervied}">
+                                                {{currentMailStatus}}
+                                            </span>
+                                        </div>
+                                        <div class="short-div mt-2" *ngIf="VervicationCodeSent">
+                                            <div class="row">
+                                                <div class="col-md-7">
+                                                    <input type="text" class="form-control" name="EmailVervicationCode"
+                                                        [(ngModel)]="EmailVervicationCode"
+                                                        placeholder="Enter verfication code">
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <button [disabled]="EmailVervicationCode===''"
+                                                        class="btn btn-default btn-sm text-secondary border-secondary rounded-pill"
+                                                        (click)="UpdateEmailAddress()">Verfy</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div *ngIf="isUpdateEmail" class="alert alert-primary col-md-12 mx-auto mb-0 mt-2"
+                                    role="alert">
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            Are you sure you want to change your email address?
+                                        </div>
+                                        <div class="col-md-2">
+                                            <span *ngIf="isUpdateEmailClicked"
+                                                class="spinner-border spinner-border-sm"></span>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <button class="btn btn-link alert-link cursor"
+                                                (click)="SendVervicationCodeForUpdateEmail();">yes</button>&nbsp;&nbsp;
+                                            <button class="btn btn-link alert-link cursor"
+                                                (click)="UpdateEmailAddress('cancel')">cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3">
+                                    <div class="col-md-12 text-center mt-2"><button [disabled]="!enableSubmitEmail"
+                                            (click)="isUpdateEmail=true" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card mb-3 box-style">
+                            <div class="card-header bg-white cursor"
+                                (click)="toggleSettingsBoxes('DateOfBirthSettings')">
+                                <span class="font-weight-bold">Date Of Birth</span>
+                            </div>
+                            <div class="card-body" [ngClass]='{ collapse : isDateOfBirthSettingsCollapse }'>
+                                <div class="row border-bottom pb-3">
+                                    <div class="col-md-12 ">Here you can update your Date of Birth:<br>
+                                        Note: you must be at least 18 years old to use our service.
+                                    </div>
+                                </div>
+                                <form #fDob="ngForm" (ngSubmit)="SubmitDateOfBirth(fDob)">
+                                    <div class="form-group">
+                                        <div class="row border-bottom pb-3 pt-3">
+                                            <div class="col-md-6 border-right">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div>
+                                                            <input type="date" name="dobTxt" class="form-control pl-2"
+                                                                ngModel [value]="dateOfBirth | date:'yyyy-MM-dd'">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="radio">
+                                                            <label>
+                                                                <input type="radio" name="DobRadio" value="1"
+                                                                    [checked]="IsShowAgeOnly" ngModel>
+                                                                Show age only
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-5">
+                                                        <div class="radio">
+                                                            <label>
+                                                                <input type="radio" name="DobRadio" value="2"
+                                                                    [checked]="IsShowAgeDob" ngModel>
+                                                                Show age and DoB</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">Current Status : {{userProfile.dob |date}}
+                                            </div>
+                                        </div>
+                                        <div class="row pt-3">
+                                            <div *ngIf="isUpdatingDob"
+                                                class="alert alert-primary col-md-12 mx-auto mb-0 mt-2" role="alert">
+                                                <div class="row">
+                                                    <div class="col-md-10">
+                                                        Are you sure you want to change your date of birth?
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <button class="btn btn-link alert-link cursor"
+                                                            type="submit">yes</button>&nbsp;&nbsp;
+                                                        <a class="btn btn-link alert-link cursor"
+                                                            (click)="UpdateDob('cancel')">cancel</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 text-center mt-2">
+                                                <button class="btn btn-primary"
+                                                    (click)="UpdateDob('update')">Submit</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card mb-3 box-style">
+                            <div class="card-header bg-white cursor"
+                                (click)="toggleSettingsBoxes('BlockedProfilesSettings')">
+                                <span class="font-weight-bold">Blocked Profiles</span>
+                            </div>
+                            <div class="card-body pb-2" [ngClass]='{ collapse : isBlockedProfilesSettingsCollapse }'>
+                                <div class="row border-bottom pb-2">
+                                    <div class="col-md-12 ">Here you can see your blocked profiles list:<br>
+                                        Note: only you can see which profiles you have blocked.
+                                    </div>
+                                </div>
+                                <div class="row border-bottom p-2">
+                                    <div class="col-md-2 m-1" *ngFor="let blockedProfile of blockedProfilesList">
+                                        <button class="btn btn-outline-secondary btn-sm text-truncate"
+                                            style="width: 10rem;" [disabled]="isUnblocking" name="btnBloced"
+                                            id="btnBloced">
+                                            {{blockedProfile.sname}}
+                                            <span class="float-right" style="fill: gray;"
+                                                (click)="ShowConfirmPanel('block','show',blockedProfile)">
+                                                <svg-close></svg-close>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div *ngIf="isUnblocking" class="alert alert-primary col-md-12 mx-auto mb-0 mt-2"
+                                        role="alert">
+                                        <div class="row">
+                                            <div class="col-md-10">
+                                                Are you sure you want to unblock this profile?
+                                            </div>
+                                            <div class="col-md-2">
+                                                <a class="alert-link cursor"
+                                                    (click)="UnblockProfile()">yes</a>&nbsp;&nbsp;
+                                                <a class="alert-link cursor"
+                                                    (click)="ShowConfirmPanel('block','cancel')">cancel</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-md-12  pr-2"><button
+                                            class="btn btn-secondary btn-sm float-right">next</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card mb-3 box-style">
+                            <div class="card-header bg-white cursor"
+                                (click)="toggleSettingsBoxes('LoginHistorySettings')">
+                                <span class="font-weight-bold"> Login History</span>
+                            </div>
+                            <div class="card-body" [ngClass]='{ collapse : isLoginHistorySettingsCollapse }'>
+                                <div class="row border-bottom pb-3">
+                                    <div class="col-md-12 ">Here you can see your login history:
+                                    </div>
+                                </div>
+                                <div class="row pt-2 pb-2 border-bottom bg-secondary">
+                                    <div class="col-md-2">Os</div>
+                                    <div class="col-md-2">Browser</div>
+                                    <div class="col-md-2">Device</div>
+                                    <div class="col-md-2">Location</div>
+                                    <div class="col-md-2">IP Address</div>
+                                    <div class="col-md-2">Date</div>
+                                </div>
+                                <div class="row pt-3 border" *ngFor="let logHistory of loginHistoryList">
+                                    <div class="col-md-2">{{logHistory.Os}}</div>
+                                    <div class="col-md-2">{{logHistory.Browser}}</div>
+                                    <div class="col-md-2">{{logHistory.Device}}</div>
+                                    <div class="col-md-2">{{logHistory.Location}}</div>
+                                    <div class="col-md-2">{{logHistory.IpAddress}}</div>
+                                    <div class="col-md-2">{{logHistory.Date}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card mb-3 box-style">
+                            <div class="card-header bg-white cursor"
+                                (click)="toggleSettingsBoxes('CloseAccountSetting')">
+                                <span class="font-weight-bold"> Close Account</span>
+                            </div>
+                            <div class="card-body" [ngClass]='{ collapse : isCloseAccountSettingsCollapse }'>
+                                <div class="row border-bottom pb-3">
+                                    <div class="col-md-12 ">Close your account permanently:<br>
+                                        Note: If you close your account permanently, all your content may
+                                        also get
+                                        deleted
+                                        and you may not be able to restore it.
+                                    </div>
+                                </div>
+                                <div class="row border-bottom pb-3 pt-3">
+                                    <div class="col-md-6 border-right">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="option1" (click)="isClosingAccount=true">
+                                            <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">Current Status : Open</div>
+                                </div>
+                                <div *ngIf="ShowCloseAccountPanel"
+                                    class="alert alert-primary col-md-12 mx-auto mb-0 mt-2" role="alert">
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            Are you sure you want to permanently close this account?
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a class="alert-link cursor" (click)="CloseAccount()">yes</a>&nbsp;&nbsp;
+                                            <a class="alert-link cursor"
+                                                (click)="isClosingAccount=false;ShowCloseAccountPanel=false">cancel</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row pt-3">
+                                    <div class="col-md-12 text-center mt-2"><button class="btn btn-primary"
+                                            (click)="ShowCloseAccountPanel=true">Submit</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,1772 @@
+<div class="row mt-2 mb-3 p-0">
+    <div class="col-md-3">
+        <div class="list-group shadow bg-white">
+            <a class="list-group-item list-group-item-action bg-secondray active">
+                Search Profiles
+            </a>
+            <div class="card mb-2 mt-2">
+                <div class="card-header cursor p-2" (click)="toggle('keywords')"> Keywords</div>
+                <div class="card-body p-2" [ngClass]='{ collapse :isKeywordsCollapse}'>
+                    <input type="text" class="form-control w-75" [(ngModel)]="KeyWord">
+                </div>
+            </div>
+            <div class="card mb-2 mt-2">
+                <div class="card-header cursor p-2" (click)="toggle('profileType')"> Profile Types</div>
+                <div class="card-body p-2" [ngClass]='{ collapse :isProfileTypeCollapse}'>
+                    <div class="border overflow-auto h-50 pl-1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Just Friends"
+                                (change)="changeSelection('profileType',$event)">
+                            <label class="form-check-label">
+                                Just Friends
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Activity Partner"
+                                (change)="changeSelection('profileType',$event)">
+                            <label class="form-check-label">
+                                Activity Partner
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Virtual Relationship"
+                                (change)="changeSelection('profileType',$event)">
+                            <label class="form-check-label">
+                                Virtual Relationship
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"
+                                value="No, and I definitely don’t want to have any"
+                                (change)="changeSelection('profileType',$event)">
+                            <label class="form-check-label">
+                                No, and I definitely don’t want to have any
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Short Relationship"
+                                (change)="changeSelection('profileType',$event)">
+                            <label class="form-check-label">
+                                Short Relationship
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Long Relationship"
+                                (change)="changeSelection('profileType',$event)">
+                            <label class="form-check-label">
+                                Long Relationship
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Business Partner"
+                                (change)="changeSelection('profileType',$event)">
+                            <label class="form-check-label">
+                                Business Partner
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Career Opportunities"
+                                (change)="changeSelection('profileType',$event)">
+                            <label class="form-check-label">
+                                Career Opportunities
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-2 mt-2">
+                <div class="card-header cursor p-2" (click)="toggle('photo')"> Photos</div>
+                <div class="card-body p-2" [ngClass]='{ collapse :isPhotofilterCollapse}'>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" value="all" class="pl-2" name="photoFilter"
+                                (change)="changeSelection('photo',$event)">
+                            Show all
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" value="photos" v class="pl-2" name="photoFilter"
+                                (change)="changeSelection('photo',$event)">
+                            Photos only
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-2 mt-2">
+                <div class="card-header cursor p-2" (click)="toggle('interacted')"> Interacted</div>
+                <div class="card-body p-2" [ngClass]='{ collapse :isInteractedCollapse}'>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" value="everyone" class="pl-2" name="Interacted"
+                                (change)="changeSelection('interacted',$event)">
+                            Everyone
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" value="interacted" v class="pl-2" name="Interacted"
+                                (change)="changeSelection('interacted',$event)">
+                            Already Interacted
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" value="notinteracted" v class="pl-2" name="Interacted"
+                                (change)="changeSelection('interacted',$event)">
+                            Not Interacted
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-2 mt-2">
+                <div class="card-header cursor p-2" (click)="toggle('gender')"> Gender</div>
+                <div class="card-body p-2" [ngClass]='{ collapse :isGenderCollapse}'>
+                    <div class="border overflow-auto h-50 pl-1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Male"
+                                (change)="changeSelection('gender',$event)">
+                            <label class="form-check-label">
+                                Male
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Female"
+                                (change)="changeSelection('gender',$event)">
+                            <label class="form-check-label">
+                                Female
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-2 mt-2">
+                <div class="card-header cursor p-2" (click)="toggle('agegroup')"> Age group</div>
+                <div class="card-body p-2" [ngClass]='{ collapse :isAgeGroupCollapse}'>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <select class="form-control" (change)="GetFromAge($event)">
+                                <option value="">From</option>
+                                <option *ngFor="let age of AgeGroupList" value="{{age}}">{{age}}</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <select class="form-control" (change)="GetToAge($event)">
+                                <option value="">To</option>
+                                <option *ngFor="let age of AgeGroupList" value="{{age}}">{{age}}</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-2 mt-2">
+                <div class="card-header cursor p-2" (click)="toggle('mstatus')"> Marital Status</div>
+                <div class="card-body p-2" [ngClass]='{ collapse :isMaritalStatusCollapse}'>
+                    <div class="border overflow-auto h-50 pl-1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Never Married"
+                                (change)="changeSelection('mstatus',$event)">
+                            <label class="form-check-label">
+                                Never Married
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Single"
+                                (change)="changeSelection('mstatus',$event)">
+                            <label class="form-check-label">
+                                Single
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Annulled"
+                                (change)="changeSelection('mstatus',$event)">
+                            <label class="form-check-label">
+                                Annulled
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Separated"
+                                (change)="changeSelection('mstatus',$event)">
+                            <label class="form-check-label">
+                                Separated
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Widowed"
+                                (change)="changeSelection('mstatus',$event)">
+                            <label class="form-check-label">
+                                Widowed
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Divorced"
+                                (change)="changeSelection('mstatus',$event)">
+                            <label class="form-check-label">
+                                Divorced
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"
+                                value="No, but I probably want to have some day"
+                                (change)="changeSelection('mstatus',$event)">
+                            <label class="form-check-label">
+                                No, but I probably want to have some day
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"
+                                value="No, and I probably don’t want to have any"
+                                (change)="changeSelection('mstatus',$event)">
+                            <label class="form-check-label">
+                                No, and I probably don’t want to have any
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"
+                                value="No, and I definitely don’t want to have any"
+                                (change)="changeSelection('mstatus',$event)">
+                            <label class="form-check-label">
+                                No, and I definitely don’t want to have any
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Committed Relationship"
+                                (change)="changeSelection('mstatus',$event)">
+                            <label class="form-check-label">
+                                Committed Relationship
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Engaged"
+                                (change)="changeSelection('mstatus',$event)">
+                            <label class="form-check-label">
+                                Engaged
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Married"
+                                (change)="changeSelection('mstatus',$event)">
+                            <label class="form-check-label">
+                                Married
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-2 mt-2">
+                <div class="card-header cursor p-2" (click)="toggle('children')"> Children</div>
+                <div class="card-body p-2" [ngClass]='{ collapse :isChildrenCollapse}'>
+                    <div class="border overflow-auto h-50 pl-1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Zilch"
+                                (change)="changeSelection('children',$event)">
+                            <label class="form-check-label">
+                                Zero
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Yes and they always live at home"
+                                (change)="changeSelection('children',$event)">
+                            <label class="form-check-label">
+                                Yes, and they always live at home
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"
+                                value="Yes and they sometimes they live at home"
+                                (change)="changeSelection('children',$event)">
+                            <label class="form-check-label">
+                                Yes, and they sometimes they live at home
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Yes and they never live at home"
+                                (change)="changeSelection('children',$event)">
+                            <label class="form-check-label">
+                                Yes, and they never live at home
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Yes and I am not in touch with them"
+                                (change)="changeSelection('children',$event)">
+                            <label class="form-check-label">
+                                Yes, and I am not in touch with them
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"
+                                value="No but I definitely want to have some day"
+                                (change)="changeSelection('children',$event)">
+                            <label class="form-check-label">
+                                No, but I definitely want to have some day
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"
+                                value="No but I probably want to have some day"
+                                (change)="changeSelection('children',$event)">
+                            <label class="form-check-label">
+                                No, but I probably want to have some day
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"
+                                value="No and I probably don’t want to have any"
+                                (change)="changeSelection('children',$event)">
+                            <label class="form-check-label">
+                                No, and I probably don’t want to have any
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"
+                                value="No and I definitely don’t want to have any"
+                                (change)="changeSelection('children',$event)">
+                            <label class="form-check-label">
+                                No, and I definitely don’t want to have any
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-2 mt-2">
+                <div class="card-header cursor p-2" (click)="toggle('sexuality')"> Sexuality</div>
+                <div class="card-body p-2" [ngClass]='{ collapse :isSexualityCollapse}'>
+                    <div class="border overflow-auto h-50 pl-1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Straight"
+                                (change)="changeSelection('sexuality',$event)">
+                            <label class="form-check-label">
+                                Straight
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Gay"
+                                (change)="changeSelection('sexuality',$event)">
+                            <label class="form-check-label">
+                                Gay
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Lesbian"
+                                (change)="changeSelection('sexuality',$event)">
+                            <label class="form-check-label">
+                                Lesbian
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Bisexual"
+                                (change)="changeSelection('sexuality',$event)">
+                            <label class="form-check-label">
+                                Bisexual
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-2 mt-2">
+                <div class="card-header cursor p-2" (click)="toggle('religion')"> Religion</div>
+                <div class="card-body p-2" [ngClass]='{ collapse :isReligionCollapse}'>
+                    <div class="border overflow-auto h-50 pl-1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Agnostic"
+                                (change)="changeSelection('religion',$event)">
+                            <label class="form-check-label">
+                                Agnostic
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Atheist"
+                                (change)="changeSelection('religion',$event)">
+                            <label class="form-check-label">
+                                Atheist
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Buddhist"
+                                (change)="changeSelection('religion',$event)">
+                            <label class="form-check-label">
+                                Buddhist
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Christian Catholic"
+                                (change)="changeSelection('religion',$event)">
+                            <label class="form-check-label">
+                                Christian – Catholic
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Christian LDS"
+                                (change)="changeSelection('religion',$event)">
+                            <label class="form-check-label">
+                                Christian – LDS
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Christian Protestant"
+                                (change)="changeSelection('religion',$event)">
+                            <label class="form-check-label">
+                                Christian – Protestant
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Christian Other"
+                                (change)="changeSelection('religion',$event)">
+                            <label class="form-check-label">
+                                Christian – Other
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Hindu"
+                                (change)="changeSelection('religion',$event)">
+                            <label class="form-check-label">
+                                Hindu
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Jewish"
+                                (change)="changeSelection('religion',$event)">
+                            <label class="form-check-label">
+                                Jewish
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Scientology"
+                                (change)="changeSelection('religion',$event)">
+                            <label class="form-check-label">
+                                Scientology
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Sikh"
+                                (change)="changeSelection('religion',$event)">
+                            <label class="form-check-label">
+                                Sikh
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Muslim Islam"
+                                (change)="changeSelection('religion',$event)">
+                            <label class="form-check-label">
+                                Muslim / Islam
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="No Religion"
+                                (change)="changeSelection('religion',$event)">
+                            <label class="form-check-label">
+                                No Religion
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Other"
+                                (change)="changeSelection('religion',$event)">
+                            <label class="form-check-label">
+                                Other
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-2 mt-2">
+                <div class="card-header cursor p-2" (click)="toggle('ethencity')"> Ethnicity</div>
+                <div class="card-body p-2" [ngClass]='{ collapse :isEthencityCollapse}'>
+                    <div class="border overflow-auto h-50 pl-1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Asian"
+                                (change)="changeSelection('ethencity',$event)">
+                            <label class="form-check-label">
+                                Asian
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Black/African Descent"
+                                (change)="changeSelection('ethencity',$event)">
+                            <label class="form-check-label">
+                                Black/African Descent
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="East Indian"
+                                (change)="changeSelection('ethencity',$event)">
+                            <label class="form-check-label">
+                                East Indian
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Indian/Indian Subcontinent"
+                                (change)="changeSelection('ethencity',$event)">
+                            <label class="form-check-label">
+                                Indian/Indian Subcontinent
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Latino/Hispanic"
+                                (change)="changeSelection('ethencity',$event)">
+                            <label class="form-check-label">
+                                Latino/Hispanic
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Middle Eastern"
+                                (change)="changeSelection('ethencity',$event)">
+                            <label class="form-check-label">
+                                Middle Eastern
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Native American"
+                                (change)="changeSelection('ethencity',$event)">
+                            <label class="form-check-label">
+                                Native American
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Pacific Islander"
+                                (change)="changeSelection('ethencity',$event)">
+                            <label class="form-check-label">
+                                Pacific Islander
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="White/Caucasian"
+                                (change)="changeSelection('ethencity',$event)">
+                            <label class="form-check-label">
+                                White/Caucasian
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Other"
+                                (change)="changeSelection('ethencity',$event)">
+                            <label class="form-check-label">
+                                Other
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-2 mt-2">
+                <div class="card-header cursor p-2" (click)="toggle('political')"> Political Affiliation</div>
+                <div class="card-body p-2" [ngClass]='{ collapse :isPoliticalCollapse}'>
+                    <div class="border overflow-auto h-50 pl-1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Very Liberal"
+                                (change)="changeSelection('political',$event)">
+                            <label class="form-check-label">
+                                Very Liberal
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Liberal"
+                                (change)="changeSelection('political',$event)">
+                            <label class="form-check-label">
+                                Liberal
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Middle of the Road"
+                                (change)="changeSelection('political',$event)">
+                            <label class="form-check-label">
+                                Middle of the Road
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Centrist"
+                                (change)="changeSelection('political',$event)">
+                            <label class="form-check-label">
+                                Centrist
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Conservative"
+                                (change)="changeSelection('political',$event)">
+                            <label class="form-check-label">
+                                Conservative
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Ultra Conservative"
+                                (change)="changeSelection('political',$event)">
+                            <label class="form-check-label">
+                                Ultra Conservative
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Non-conformist"
+                                (change)="changeSelection('ethencity',$event)">
+                            <label class="form-check-label">
+                                Non-conformist
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-2 mt-2">
+                <div class="card-header cursor p-2" (click)="toggle('slang')">Languages</div>
+                <div class="card-body p-2" [ngClass]='{ collapse :isSlanguagesCollapse}'>
+                    <div class="border overflow-auto h-50 pl-1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Arabic"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Arabic
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Bengali"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Bengali
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Cantonese"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Cantonese
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Chinese"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Chinese
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Dutch"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Dutch
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="English"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                English
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="French"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                French
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="German"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                German
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Guajarati"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Guajarati
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Hebrew"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Hebrew
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Hindi"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Hindi
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Italian"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Italian
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Japanese"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Japanese
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Kannada"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Kannada
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Konkani"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Konkani
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Malayalam"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Malayalam
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Mandarin"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Mandarin
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Marathi"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Marathi
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Norwegian"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Norwegian
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Oriya"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Oriya
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Persian"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Persian
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Portuguese"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Portuguese
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Punjabi"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Punjabi
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Russian"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Russian
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Sanskrit"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Sanskrit
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Sindhi"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Sindhi
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Sinhalese"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Sinhalese
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Spanish"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Spanish
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Swahili"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Swahili
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Swedish"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Swedish
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Tagalong"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Tagalong
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Tamil"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Tamil
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Telugu"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Telugu
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Thai"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Thai
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Urdu"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Urdu
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Vietnamese"
+                                (change)="changeSelection('slang',$event)">
+                            <label class="form-check-label">
+                                Vietnamese
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-2 mt-2">
+                <div class="card-header cursor p-2" (click)="toggle('edulevel')"> Education Level</div>
+                <div class="card-body p-2" [ngClass]='{ collapse :isEducationLevelCollapse}'>
+                    <div class="border overflow-auto h-50 pl-1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Less than High School"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Less than High School
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="High School"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                High School
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Trade School"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Trade School
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Associates Degree"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Associates Degree
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Diploma"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Diploma
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Some college"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Some college
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Bachelors/Undergrad Degree"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Bachelors/Undergrad Degree
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Masters/Grad Degree"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Masters/Grad Degree
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Honors Degree"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Honors Degree
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Joint Degree"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Joint Degree
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Double Degree"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Double Degree
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Doctorate/PhD"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Doctorate/PhD
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-2 mt-2">
+                <div class="card-header cursor p-2" (click)="toggle('profession')">Profession</div>
+                <div class="card-body p-2" [ngClass]='{ collapse :isProfessionCollapse}'>
+                    <div class="border scroll pl-1">
+                        <div class="form-check m-2" *ngFor="let proffesion of ProfessionList">
+                            <input class="form-check-input" type="checkbox"
+                                [checked]="profileSeeking!==undefined && profileSeeking.profession.indexOf(proffesion)!==-1"
+                                value="{{proffesion}}"
+                                (change)="changeSelection('profession',$event)">
+                            <label class="form-check-label">
+                                {{proffesion}}
+                            </label>
+                        </div>
+                    </div>
+                    <!-- <div class="border overflow-auto h-50 pl-1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Academician"
+                                (change)="changeSelection('profession',$event)">
+                            <label class="form-check-label">
+                                Academician
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Accountant / Book Keeper"
+                                (change)="changeSelection('profession',$event)">
+                            <label class="form-check-label">
+                                Accountant / Book Keeper
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Actor"
+                                (change)="changeSelection('profession',$event)">
+                            <label class="form-check-label">
+                                Actor
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Administrative / Secretarial"
+                                (change)="changeSelection('profession',$event)">
+                            <label class="form-check-label">
+                                Administrative / Secretarial
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Advertising Professional"
+                                (change)="changeSelection('profession',$event)">
+                            <label class="form-check-label">
+                                Advertising Professional
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Airline/Aviation Professional"
+                                (change)="changeSelection('profession',$event)">
+                            <label class="form-check-label">
+                                Airline/Aviation Professional
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Architect"
+                                (change)="changeSelection('profession',$event)">
+                            <label class="form-check-label">
+                                Architect
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Artisan / Craftsman"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Artisan / Craftsman
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Artist"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Artist
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Audiologist"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Audiologist
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Double Degree"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Double Degree
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Auditor"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Auditor
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Banking Professional"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Banking Professional
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Beautician"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Beautician
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Biologist / Botanist"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Biologist / Botanist
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Business Person"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Business Person
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Chef"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Chef
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Clerical Official"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Clerical Official
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Commercial Pilot"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Commercial Pilot
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Computer Professional"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Computer Professional
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Construction"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Construction
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Consultant"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Consultant
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Contractor"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Contractor
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="CPA / CA (Accountant)"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                CPA / CA (Accountant)
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Creative Person"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Creative Person
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Customer Support Professional"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Customer Support Professional
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"
+                                value="Defense Employee (Army/AirForce/Military/Navy)"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Defense Employee (Army/AirForce/Military/Navy)
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Dentist"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Dentist
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Designer"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Designer
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Doctor"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Doctor
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Economist"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Economist
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Engineer (Civil)"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Engineer (Civil)
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Engineer (Electronics)"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Engineer (Electronics)
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Engineer (Mechanical)"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Engineer (Mechanical)
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Engineer (Projects)"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Engineer (Projects)
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Entertainment Professional"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Entertainment Professional
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Management Professional"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Management Professional
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Factory Worker"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Factory Worker
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Farmer"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Farmer
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Fashion Designer"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Fashion Designer
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Finance Professional"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Finance Professional
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Flight Attendant"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Flight Attendant
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Government Employee"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Government Employee
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Hardware Professional"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Hardware Professional
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Health Care Professional"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Health Care Professional
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Hospitality (Hotel/Restaurant)"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Hospitality (Hotel/Restaurant)
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Human Resources Professional"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Human Resources Professional
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Instructor / Teacher"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Instructor / Teacher
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Interior Designer"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Interior Designer
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Investment Professional"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Investment Professional
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="IT/Telecom Professional"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                IT/Telecom Professional
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Journalist"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Journalist
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Law Enforcement Officer"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Law Enforcement Officer
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Legal Professional"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Legal Professional
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Marketing Professional"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Marketing Professional
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Media Professional"
+                                (change)="changeSelection('edulevel',$event)">
+                            <label class="form-check-label">
+                                Media Professional
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Medical Professional"
+                            (change)="changeSelection('edulevel',$event)">
+                        <label class="form-check-label">
+                            Medical Professional
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Merchant Naval Officer"
+                            (change)="changeSelection('edulevel',$event)">
+                        <label class="form-check-label">
+                            Merchant Naval Officer
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Non-Mainstream Professional"
+                            (change)="changeSelection('edulevel',$event)">
+                        <label class="form-check-label">
+                            Non-Mainstream Professional
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Nurse"
+                            (change)="changeSelection('edulevel',$event)">
+                        <label class="form-check-label">
+                            Nurse
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Office Administrator"
+                            (change)="changeSelection('edulevel',$event)">
+                        <label class="form-check-label">
+                            Office Administrator
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Optician"
+                            (change)="changeSelection('edulevel',$event)">
+                        <label class="form-check-label">
+                            Optician
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Paramedical Professional"
+                            (change)="changeSelection('edulevel',$event)">
+                        <label class="form-check-label">
+                            Paramedical Professional
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Pharmacist"
+                            (change)="changeSelection('edulevel',$event)">
+                        <label class="form-check-label">
+                            Pharmacist
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Photographer"
+                            (change)="changeSelection('edulevel',$event)">
+                        <label class="form-check-label">
+                            Photographer
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Physician Assistant"
+                            (change)="changeSelection('edulevel',$event)">
+                        <label class="form-check-label">
+                            Physician Assistant
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Physicist"
+                            (change)="changeSelection('edulevel',$event)">
+                        <label class="form-check-label">
+                            Physicist
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Physiotherapist"
+                            (change)="changeSelection('edulevel',$event)">
+                        <label class="form-check-label">
+                            Physiotherapist
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Pilot"
+                            (change)="changeSelection('edulevel',$event)">
+                        <label class="form-check-label">
+                            Pilot
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Politician"
+                            (change)="changeSelection('edulevel',$event)">
+                        <label class="form-check-label">
+                            Politician
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Production Professional"
+                            (change)="changeSelection('edulevel',$event)">
+                        <label class="form-check-label">
+                            Production Professional
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Professor / Lecturer"
+                            (change)="changeSelection('edulevel',$event)">
+                        <label class="form-check-label">
+                            Professor / Lecturer
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Psychologist"
+                            (change)="changeSelection('edulevel',$event)">
+                        <label class="form-check-label">
+                            Psychologist
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Public Relation Professional"
+                            (change)="changeSelection('edulevel',$event)">
+                        <label class="form-check-label">
+                            Public Relation Professional
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Real Estate Professional"
+                            (change)="changeSelection('edulevel',$event)">
+                        <label class="form-check-label">
+                            Real Estate Professional
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Research Scholar"
+                            (change)="changeSelection('edulevel',$event)">
+                        <label class="form-check-label">
+                            Research Scholar
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Retail Professional"
+                            (change)="changeSelection('edulevel',$event)">
+                        <label class="form-check-label">
+                            Retail Professional
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Sales Professional"
+                            (change)="changeSelection('edulevel',$event)">
+                        <label class="form-check-label">
+                            Sales Professional
+                        </label>
+                    </div> -->
+                </div>
+            </div>
+            <div class="card mb-2 mt-2">
+                <div class="card-header cursor p-2" (click)="toggle('activitylevel')">Activity Level</div>
+                <div class="card-body p-2" [ngClass]='{ collapse :isActivityLevelCollapse}'>
+                    <div class="border overflow-auto h-50 pl-1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Always on the Run"
+                                (change)="changeSelection('activitylevel',$event)">
+                            <label class="form-check-label">
+                                Always on the Run
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Out n About"
+                                (change)="changeSelection('activitylevel',$event)">
+                            <label class="form-check-label">
+                                Out n About
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Extremely Active"
+                                (change)="changeSelection('activitylevel',$event)">
+                            <label class="form-check-label">
+                                Extremely Active
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Very Active"
+                                (change)="changeSelection('activitylevel',$event)">
+                            <label class="form-check-label">
+                                Very Active
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Not very Active"
+                                (change)="changeSelection('activitylevel',$event)">
+                            <label class="form-check-label">
+                                Not very Active
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-2 mt-2">
+                <div class="card-header cursor p-2" (click)="toggle('profstatus')">Status</div>
+                <div class="card-body p-2" [ngClass]='{ collapse :isProfStatusCollapse}'>
+                    <div class="border overflow-auto h-50 pl-1">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Working Full-Time"
+                                (change)="changeSelection('profstatus',$event)">
+                            <label class="form-check-label">
+                                Working Full-Time
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Working Part-Time"
+                                (change)="changeSelection('profstatus',$event)">
+                            <label class="form-check-label">
+                                Working Part-Time
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Full-Time Student"
+                                (change)="changeSelection('profstatus',$event)">
+                            <label class="form-check-label">
+                                Full-Time Student
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Part-Time Student"
+                                (change)="changeSelection('profstatus',$event)">
+                            <label class="form-check-label">
+                                Part-Time Student
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Between Jobs"
+                                (change)="changeSelection('profstatus',$event)">
+                            <label class="form-check-label">
+                                Between Jobs
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Retired"
+                                (change)="changeSelection('profstatus',$event)">
+                            <label class="form-check-label">
+                                Retired
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Home Maker"
+                                (change)="changeSelection('profstatus',$event)">
+                            <label class="form-check-label">
+                                Home Maker
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="Not Working"
+                                (change)="changeSelection('profstatus',$event)">
+                            <label class="form-check-label">
+                                Not Working
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row container mb-3">
+                <div class="col-md-12 text-center">
+                    <button class="btn btn-sm btn-primary" (click)="SearchProfiles()">Apply Filters</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-9" *ngIf="!DataLoading">
+        <h5 class="mb-0 header-style">Profiles <span class="small"> ({{ProfilesCount}}) </span></h5>
+        <div class="row">
+            <div class="col-md-9">
+                <select class="form-control ml-1 mt-2 mb-2 w-50" (change)="SortProfilesList($event)">
+                    <option value="">Sort</option>
+                    <option value="recent">Most Recent</option>
+                    <option value="active">Most Active</option>
+                    <option value="viewed">Most Viewed</option>
+                    <option value="liked">Most Liked</option>
+                    <option value="favourite">Most Favorited</option>
+                </select>
+            </div>
+            <div class="col md-3">
+                <div class="m-2 mb-0 cursor float-right pr-3" (click)="changeMode('List')">
+                    <span *ngIf="!isGalleryView">
+                        <svg-list-view></svg-list-view>
+                    </span>
+                    <span *ngIf="isGalleryView" style="fill:gray;">
+                        <svg-list-view></svg-list-view>
+                    </span>
+                </div>
+                <div class="m-2 mb-0 cursor float-right pr-3" (click)="changeMode('Gallery')">
+                    <span *ngIf="!isListView">
+                        <svg-gallrey-view></svg-gallrey-view>
+                    </span>
+                    <span *ngIf="isListView" style="fill:gray;">
+                        <svg-gallrey-view></svg-gallrey-view>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="row" *ngIf="!isGalleryView">
+            <div class="container col-md-12">
+                <div class="card p-0 pb-4 mr-1 ml-1 mb-2 mt-0 cursor" *ngFor="let profile of pageOfItems"
+                    (click)="openProfile(profile.uName)">
+                    <img class="card-img-top cursor" style="position: relative;height:10rem;"
+                        [lazyLoad]="profileService.bindImageUrl('posting',profile.canvasImageUrl)">
+                    <img class="img-fluid shadow rounded shadow square imgSize mx-2 cursor"
+                        style="position: absolute; z-index: 1000;width:7.5rem;height:7.5rem;top:40%"
+                        [lazyLoad]="profileService.bindImageUrl('profile',profile.passportImageUrl)">
+                    <div class="card-body mx-0 pb-0 pt-0" style="padding-left:8.9rem;">
+                        <div class="row pt-1">
+                            <div class="col-md-4 pr-0 pl-2">
+                                <span class="cursor" style="fill:#1e90ff;" *ngIf="aType==='Premium'">
+                                    <svg-star></svg-star>
+                                </span>
+                                <span class="cursor" style="fill:#008080;" *ngIf="aType==='Featured'">
+                                    <svg-star></svg-star>
+                                </span>
+                                <a class="card-text cursor ml-1">{{profile.sname}} </a>
+                                <label> {{profile.gender}} | {{profileService.CalculateAge(profile.dob)}} yrs old
+                                    | {{SetUserLocation(profile)}}</label>
+                            </div>
+                            <div class="col-md-8 p-0">
+                                <div class="pl-2">
+                                    <h6>
+                                        <small *ngIf="profile.photoTagline">{{profile.photoTagline}}</small>
+                                        <small *ngIf="!profile.photoTagline">'hello there, looking forward to connecting
+                                            with you – thanks, ' {{profile.sname}}</small>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-row flex-wrap mx-auto pb-2" *ngIf="isGalleryView">
+            <div class="col-md-3 p-0" *ngFor="let profile of pageOfItems" (click)="openProfile(profile.uName)">
+                <div class="card card-block m-1 cursor rounded text-center">
+                    <div class="row" style="height:12.2rem;">
+                        <div class="col-md-12">
+                            <img class="card-img-top img-fluid"
+                                [lazyLoad]="profileService.bindImageUrl('posting',profile.canvasImageUrl)"
+                                style="position: relative;height: 8rem;">
+                            <img class="img-fluid mt-2 mb-2 rounded-circle mx-auto d-block"
+                                style="position: relative;height:9.5rem;top:-95px;z-index: 1000;"
+                                [lazyLoad]="profileService.bindImageUrl('profile',profile.passportImageUrl)">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 class="text-center text-truncate mb-0">
+                                <span class="cursor mr-1" style="fill:#1e90ff;" *ngIf="aType==='Premium'">
+                                    <svg-star></svg-star>
+                                </span>
+                                <span class="cursor mr-1" style="fill:#008080;" *ngIf="aType==='Featured'">
+                                    <svg-star></svg-star>
+                                </span> {{profile.sname}}
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 pb-2">
+                            <small class="text-center">{{profile.gender}} |
+                                {{profileService.CalculateAge(profile.dob)}} yrs |
+                                {{profileService.getCountryAppriviation(profile.country)}}</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-100 cursor d-flex align-items-center justify-content-center">
+            <jw-pagination
+                class="pagination w-100 pt-3 pb-0 page-item page-link number-item first-item last-item previous-item"
+                [items]="profileList" [pageSize]="16" (changePage)="onChangePage($event)">
+            </jw-pagination>
+        </div>
+    </div>
+    <div class="col-md-9" *ngIf="DataLoading">
+        <div class="row">
+            <div class="col-md-12">
+                <ngx-skeleton-loader></ngx-skeleton-loader>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9">
+                <ngx-skeleton-loader></ngx-skeleton-loader>
+            </div>
+            <div class="col md-3 text-right">
+                <ngx-skeleton-loader count="2" [theme]="{'width':'2rem','margin-left':'1px'}"></ngx-skeleton-loader>
+
+            </div>
+        </div>
+        <div class="d-flex flex-row flex-wrap mx-auto pb-2">
+            <div class="col-md-3 p-0" *ngFor="let i of placeHolderItems">
+                <div class="card card-block m-1 p-1 cursor rounded text-center">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <ngx-skeleton-loader appearance="circle"
+                                [theme]="{ width: '150px', height: '150px','top':'2rem' ,'margin-bottom':'2rem'}">
+                            </ngx-skeleton-loader>
+                            <ngx-skeleton-loader></ngx-skeleton-loader>
+                            <ngx-skeleton-loader></ngx-skeleton-loader>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

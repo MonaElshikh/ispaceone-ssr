@@ -1,0 +1,75 @@
+<div class="main-div">
+  <span class="btn-toggle cursor"  (click)="toggleDisplay()">
+    <svg-list-view></svg-list-view>
+  </span>
+  <div class="list-group display-flex" [ngClass]="{'show':!isColapse}" >
+    <a class="list-group-item list-group-item-action bg-secondray active">
+      Tags & Resources
+    </a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Love-Romance']"
+      [routerLinkActive]="['activeNode']">Love & Romance</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Dating-Courtship']"
+      [routerLinkActive]="['activeNode']">Dating & Courtship</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Infidelity-Cheating']"
+      [routerLinkActive]="['activeNode']">Infidelity & Cheating</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Heartbreaks-Breakups']"
+      [routerLinkActive]="['activeNode']">Heartbreaks & Breakups</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Relationship-Commitment']"
+      [routerLinkActive]="['activeNode']">Relationship & Commitment</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Singles-Unattached']"
+      [routerLinkActive]="['activeNode']">Singles & Unattached</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Harmony-Compatibility']"
+      [routerLinkActive]="['activeNode']">Harmony & Compatibility</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Spouses-Couples']"
+      [routerLinkActive]="['activeNode']">Spouses & Couples</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Abbreviations-Acronyms']"
+      [routerLinkActive]="['activeNode']">Abbreviations & Acronyms</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Quotes-Sayings']"
+      [routerLinkActive]="['activeNode']">Quotes & Sayings</a>
+      <a class="list-group-item list-group-item-action" [routerLink]="['/Quotes-Sayings-author']"
+      [routerLinkActive]="['activeNode']">Quotes & Sayings-author</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Life-Style']"
+      [routerLinkActive]="['activeNode']">Life-Style</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Friends-Acquaintances']"
+      [routerLinkActive]="['activeNode']">Friends & Acquaintances</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Hookups-Affairs']"
+      [routerLinkActive]="['activeNode']">Hookups & Affairs</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Sex-Intimacy']"
+      [routerLinkActive]="['activeNode']">Sex & Intimacy</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Marriage-Wedding']"
+      [routerLinkActive]="['activeNode']">Marriage & Wedding</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Attraction-Crushes']"
+      [routerLinkActive]="['activeNode']">Attraction & Crushes</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Flirting-Seducing']"
+      [routerLinkActive]="['activeNode']">Flirting & Seducing</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Chemistry-Connection']"
+      [routerLinkActive]="['activeNode']">Chemistry & Connection</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Gays-Lesbians']"
+      [routerLinkActive]="['activeNode']">Gays & Lesbians</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Idioms-Proverbs']"
+      [routerLinkActive]="['activeNode']">Idioms & Proverbs
+    </a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Astrology-Horoscope']"
+      [routerLinkActive]="['activeNode']">Astrology & Horoscope
+    </a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Just-Friends']"
+      [routerLinkActive]="['activeNode']">Just Friends</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Activity-Partner']"
+      [routerLinkActive]="['activeNode']">Activity Partner</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Virtual-Relationship']"
+      [routerLinkActive]="['activeNode']">Virtual Relationship</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Open-Relationship']"
+      [routerLinkActive]="['activeNode']">Open Relationship</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Short-Relationship']"
+      [routerLinkActive]="['activeNode']">Short Relationship</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Long-Relationship']"
+      [routerLinkActive]="['activeNode']">Long Relationship</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Business-Partner']"
+      [routerLinkActive]="['activeNode']">Business Partner</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Career-Opportunities']"
+      [routerLinkActive]="['activeNode']">Career Opportunities</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Extras-Extras']"
+      [routerLinkActive]="['activeNode']">Extras & Extras
+    </a>
+  </div>
+</div>

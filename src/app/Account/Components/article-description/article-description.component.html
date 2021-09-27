@@ -1,0 +1,596 @@
+<form #pdForm="ngForm">
+    <div *ngIf="!DataLoading">
+        <div class="row">
+            <div class="col-md-12 p-0">
+                <div class="row m-1 header-style">
+                    <div class="col-md-9 pl-1 p-2">
+                        <div class="short-div" *ngIf="!editMode">
+                            <h5>{{article.header}} </h5>
+                        </div>
+                        <div class="short-div" *ngIf="editMode">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <label>Posting Title</label>
+                                </div>
+                                <div class="col-md-9">
+                                    <input type="text" class="form-control" maxlength="50" [(ngModel)]="article.header"
+                                        name="header" (ngModelChange)="articleTitleRemainingChars= $event.length">
+                                </div>
+                                <div class="col-md-1 my-auto">
+                                    <app-chars-counter [usedChars]="articleTitleRemainingChars" [maxChars]="50">
+                                    </app-chars-counter>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 p-2">
+                        <button *ngIf="!editMode && ArticleOwner"
+                            class="btn btn-default rounded-pill rounded-sm border-secondary text-secondary float-right ml-2"
+                            (click)="DeleteArticle(article)">Delete
+                        </button>
+                        <button *ngIf="!editMode && ArticleOwner"
+                            class="btn btn-default rounded-pill rounded-sm border-secondary text-secondary float-right"
+                            (click)="toggelMode('edit');SetPostDescriptionForm(pdForm);">Edit
+                        </button>
+                        <button *ngIf="editMode"
+                            class="btn btn-default rounded-pill rounded-sm border-secondary text-secondary float-right  ml-2"
+                            (click)="toggelMode('cancel')">Cancel
+                        </button>
+                        <button *ngIf="editMode"
+                            class="btn btn-default rounded-pill rounded-sm border-secondary text-secondary float-right"
+                            (click)="savePostings('save',true)">Save
+                        </button>
+                    </div>
+                </div>
+                <div class="row m-1 mt-2 border">
+                    <div class="col-md-1 pl-1 p-2">
+                        <a [routerLink]="['/Profile/',article.uname]">
+                            <img [src]="articleDescription.bindImageUrl('profile',article.passportImageURL)"
+                                class="card-img-top cursor mr-3" style="width: 3rem;height: 3rem;">
+                        </a>
+                    </div>
+                    <div class="col-md-1 pl-1">
+                        <div class="short-div">
+                            <small>Posted By:</small>
+                        </div>
+                        <div class="short-div">
+                            <small>Posted in:</small>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pl-1">
+                        <div class="short-div">
+                            <small> <a class="cursor grayNavyLink text-truncate"
+                                    [routerLink]="['/Profile/',article.uname]">{{article.author}}</a>
+                                (on {{article.timeCreated | date}})</small>
+                        </div>
+                        <div class="short-div">
+                            <a class="cursor grayNavyLink small" (click)="GoToArticlesByCat(article.catId)"
+                                *ngIf="!editMode">{{article.category}}</a>
+                            <select class="form-control" id="postingCategoriesOptions" [(ngModel)]="article.category"
+                                name="category" *ngIf="editMode" (ngModelChange)="selectChange($event)">
+                                <option selected="selected">Select One</option>
+                                <option>Love & Romance</option>
+                                <option>Friends & Acquaintances</option>
+                                <option>Dating & Courtship</option>
+                                <option>Hookups & Affairs</option>
+                                <option>Infidelity & Cheating</option>
+                                <option>Sex & Intimacy</option>
+                                <option>Heartbreaks & Breakups</option>
+                                <option>Marriage & Matrimony</option>
+                                <option>Relationship & Commitment</option>
+                                <option>Attraction & Crushes</option>
+                                <option>Singles & Unattached</option>
+                                <option>Flirting & Seducing</option>
+                                <option>Harmony & Compatibility</option>
+                                <option>Chemistry & Connection</option>
+                                <option>Spouses & Couples</option>
+                                <option>Gays & Lesbians</option>
+                                <option>Extra & Extra</option>
+                                <option>Entertainment</option>
+                                <option>Lifestyle</option>
+                                <option>Movies</option>
+                                <option>Music</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pl0">
+                        <div class="short-div">
+                            <div *ngIf="ArticleOwner">
+                                <span class="card-text small">Status:&nbsp;
+                                </span><span class="small"
+                                    [ngClass]="{ 'text-danger' :article.onllinStatus!='Approved','text-success':article.onllinStatus==='Approved'}">{{article.onllinStatus}}</span>
+                            </div>
+                        </div>
+                        <div class="short-div">
+                            <div *ngIf="ArticleOwner">
+                                <span class="small"
+                                    [ngClass]="{ 'text-danger' :article.lockUnlock,'text-success':!article.lockUnlock}">
+                                    {{article.lockUnlock?'Locked':'Unlocked'}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" *ngIf="editMode">
+                        <div class="row mb-2 pt-2 pb-2">
+                            <div class="col-md-5 p-0">Allow Comments:</div>
+                            <div class="col-md-7 p-0">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="rbAllowComments"
+                                        (change)="getAllowCommentValue($event)" id="rbAllowComments" value="yes"
+                                        [checked]="article.commentStatus==='yes'">
+                                    <label class="form-check-label" for="rbAllowComments">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="rbAllowComments"
+                                        (change)="getAllowCommentValue($event)" id="rbrbAllowCommentsNo" value="no"
+                                        [checked]="article.commentStatus==='no'">
+                                    <label class="form-check-label" for="rbrbAllowCommentsNo">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col md-12 rounded  mb-2" (mouseleave)="showbtnEditPosterImg=false"
+                        (mouseenter)="showbtnEditPosterImg=true" *ngIf="!isPosterImageEdit">
+                        <div class="media p-1">
+                            <img [src]="articleDescription.bindImageUrl('posting',article.postingLargeImageUrl)"
+                                class="card-img-top cursor mr-3" style="position: relative;height: 25rem;"
+                                alt="poster image">
+                            <button class="btn btn-sm btn-secondary btn-poster rounded-pill rounded-sm "
+                                *ngIf="showbtnEditPosterImg && ArticleOwner" (click)="EditPostingPoster()">Edit</button>
+                        </div>
+                    </div>
+                    <div class="col md-12 border rounded mr-3 ml-3 mt-0 mb-3 pl-1" *ngIf="isPosterImageEdit">
+                        <input type="file" (change)="fileChangeEvent($event)" />
+                        <div class="row pb-4">
+                            <div class="text-center col-md-12">
+                                <h5>Crop Image</h5>
+                                <image-cropper [imageChangedEvent]="imageChangedEvent" [maintainAspectRatio]="true"
+                                    [aspectRatio]="32/15" [cropperMinWidth]="1280" [cropperMinHeight]="600"
+                                    [imageQuality]="100" format="png,jpeg,jpg" (imageCropped)="imageCropped($event)"
+                                    (imageLoaded)="imageLoaded($event)" (cropperReady)="cropperReady()"
+                                    (loadImageFailed)="loadImageFailed()"></image-cropper>
+                            </div>
+                            <div class="col-md-12" *ngIf="isLoadingImageError">
+                                <p class="text-danger">{{loadingimageError}}</p>
+                            </div>
+                        </div>
+                        <div class="row pb-4">
+                            <div class="col-md-8">
+                            </div>
+                            <div class="col-md-4">
+                                <button class="btn btn-default rounded-pill rounded-sm border-secondary text-secondary"
+                                    (click)="SavePostingPoster('cancel')">Cancel</button>&nbsp;&nbsp;
+                                <button class="btn btn-default rounded-pill rounded-sm border-danger text-danger"
+                                    style="width: 6rem;" [disabled]="!hasPosterImage"
+                                    (click)="SavePostingPoster('remove',true)">Remove
+                                    <span *ngIf="isPosterImageRemoveClicked"
+                                        class="spinner-border spinner-border-sm"></span>
+                                </button>&nbsp;&nbsp;
+                                <button class="btn btn-default rounded-pill rounded-sm border-primary text-primary"
+                                    style="width: 6rem;" [disabled]="!imageChangedEvent"
+                                    (click)="SavePostingPoster('save',true)">
+                                    Save
+                                    <span *ngIf="isPosterImageSaveClicked"
+                                        class="spinner-border spinner-border-sm"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="btn-toolbar mb-3">
+                            <button type="button" style="width:9rem;"
+                                class="btn btn-light mr-2 border border-dark rounded-pill rounded-sm"
+                                (click)="ArticleLike()" [disabled]="!authService.isLoggedIn()">
+                                <span  [ngStyle]="{'fill': !liked? 'gray' : '#1E90FF'}" >
+                                    <svg-like></svg-like>
+                                </span>
+                                Like ({{articleLikesCount}})</button>
+                            <button type="button" style="width:9rem;"
+                                class="btn btn-light border border-dark rounded-pill rounded-sm  mr-2"
+                                (click)="ArticleTrack()" [disabled]="!authService.isLoggedIn()">
+                                <span  [ngStyle]="{'fill': !tracked? 'gray' : 'red'}" 
+                                 style="stroke-width: 0;">
+                                    <svg-love></svg-love>
+                                </span>
+                                love ({{articleTracksCount}})</button>
+                            <button type="button" style="width:9rem;"
+                                class="btn btn-light border border-dark rounded-pill rounded-sm  mr-2">
+                                Views ({{article.viewno}})</button>
+                            <button type="button" style="width:9rem;"
+                                class="btn btn-light border border-dark rounded-pill rounded-sm">
+                                Comments ({{articleComments?articleComments.length:0}})</button>
+                        </div>
+                        <div class="row pl-3 mb-2" *ngIf="!editMode && article.tag">
+                            <div class="col-md-12 ">
+                                <h5>"{{article.tag}}"</h5>
+                            </div>
+                        </div>
+                        <div class="row pl-3 mb-3" *ngIf="editMode">
+                            <div class="col-md-2"><label>Description:</label></div>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" maxlength="150" [(ngModel)]="article.tag"
+                                    name="tag" (ngModelChange)="articleTagsRemainingChars= $event.length">
+                            </div>
+                            <div class="col-md-1 my-auto">
+                                <app-chars-counter [usedChars]="articleTagsRemainingChars" [maxChars]="150">
+                                </app-chars-counter>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col md-12 border rounded mr-3 ml-3 mt-0 mb-3 pl-1">
+                                <div *ngIf="!editMode">
+                                    <div class="pt-2 pr-2 pl-2">
+                                        <label class="text-break whiteSpace">
+                                            {{ShownDescription}}
+                                        </label>
+                                    </div>
+                                    <div class="pr-2 pl-2 pb-1" *ngIf="article.description.length>5000">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <a class="cursor font-weight-bold" (click)="ShowMoreLess()">{{viewMore ?
+                                                    'View More' : 'View Less'}}
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div *ngIf="editMode">
+                                    <div class="row p-2">
+                                        <div class="col-md-2">
+                                            <label>Posting Body: </label>
+                                        </div>
+                                        <div class="col-md-9">
+                                            <textarea autosize id="articleBody" cols="10" rows="4" class="form-control"
+                                                maxlength="12000" [(ngModel)]="article.description" name="articleBody"
+                                                (ngModelChange)="articleBodyRemainingChars= $event.length"></textarea>
+                                        </div>
+                                        <div class="col-md-1 p-0 m-0 my-auto">
+                                            <app-chars-counter [usedChars]="articleBodyRemainingChars"
+                                                [maxChars]="12000">
+                                            </app-chars-counter>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" *ngIf="authService.isLoggedIn()">
+                            <div class="col md-12 border rounded mr-3 ml-3 mb-3 mt-0 pl-1">
+                                <div class="row media p-2">
+                                    <div class="col-md-1 pl-2">
+                                        <a [routerLink]="['/Profile/',uName]">
+                                            <img [src]="articleDescription.bindImageUrl('profile',UserProfileImage)"
+                                                class="card-img-top cursor rounded" style="width:3.9rem;height:3.9rem;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-10 pl-1 pr-0">
+                                        <textarea autosize id="articleCommenttxt"
+                                            [placeholder]="commentStatus==='no'? 'Comments for this posting has been disabled' :'Write a Comment'"
+                                            [disabled]="commentStatus==='no'" class="form-control" maxlength="250"
+                                            [(ngModel)]="articleComment" name="articleComment"
+                                            (ngModelChange)="articleCommentRemainingChars = $event.length"></textarea>
+                                    </div>
+                                    <div class="col-md-1 p-2">
+                                        <div class="short-div float-left pl-1 pb-2 my-auto">
+                                            <app-chars-counter [usedChars]="articleCommentRemainingChars"
+                                                [maxChars]="250">
+                                            </app-chars-counter>
+                                        </div>
+                                        <div class="short-div">
+                                            <button
+                                                class="btn btn-default rounded-pill rounded-sm border-secondary text-secondary"
+                                                [disabled]="articleComment===''" style="width: 4rem;"
+                                                (click)="AddArticleComment()">Post</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row" *ngFor="let comment of articleComments ,index as i;">
+                                    <div class="col md-12 border rounded mr-3 ml-3 mt-0 mb-3 pl-1"
+                                        (onCreate)="CheckArticleCommentLike(comment,i)">
+                                        <div class="row mt-2 mb-2 ml-1">
+                                            <div class="col md-12 p-0">
+                                                <table class="w-100">
+                                                    <tr>
+                                                        <td style="width: 5%;">
+                                                            <a [routerLink]="['/Profile/',comment.uname]">
+                                                                <img [src]="articleDescription.bindImageUrl('profile',comment.commentAuthorImage)"
+                                                                    class="card-img-top cursor"
+                                                                    style="width: 3rem;height: 3rem;">
+                                                            </a>
+                                                        </td>
+                                                        <td class="pl-2">Bosted By:
+                                                            <a [routerLink]="['/Profile/',comment.uname]">
+                                                                {{comment.name}}</a> (on {{comment.timeCreated |
+                                                            date}})
+                                                        </td>
+                                                        <td>
+                                                            <div class="float-right"> <label
+                                                                    style="vertical-align: text-top;"
+                                                                    class="small pr-2">{{comment.likecomm}}</label>
+                                                            </div>
+                                                            <div (click)="ArticleCommentLikeDisLike(comment,i)">
+                                                                <span class="float-right pr-1 cursor"
+                                                                    *ngIf="!isCommentLiked[i]">
+                                                                    <svg-like></svg-like>
+                                                                </span>
+                                                                <span class="float-right pr-1 cursor"
+                                                                    *ngIf="isCommentLiked[i]">
+                                                                    <svg-dis-like></svg-dis-like>
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="border-top dotted"></div>
+                                        <div class="row p-3" *ngIf="!editComment[i]">
+                                            <div class="col md-12 whiteSpace text-break">
+                                                <span>{{comment.comments}}</span>
+                                            </div>
+                                            <div *ngIf="loggedInUserUname==comment.uname">
+                                                <button
+                                                    class="btn btn-default rounded-pill rounded-sm border-secondary text-secondary mr-2"
+                                                    (click)="ModifyComment(i)">Edit</button>
+                                                <button
+                                                    class="btn btn-default rounded-pill rounded-sm border-secondary text-secondary"
+                                                    (click)="DeleteComment(comment)">Delete</button>
+                                            </div>
+                                        </div>
+                                        <div class="row p-3" *ngIf="editComment[i] && loggedInUserUname==comment.uname">
+                                            <div class="col md-12 pl-0">
+                                                <input type="text" class="form-control" [(ngModel)]="comment.comments"
+                                                    name="comments">
+                                            </div>
+                                            <div>
+                                                <button
+                                                    class="btn btn-default rounded-pill rounded-sm border-secondary text-secondary mr-2"
+                                                    (click)="editComment[i]=false;UpdateArticleComment(comment)">Update</button>
+                                                <button
+                                                    class="btn btn-default rounded-pill rounded-sm border-secondary text-secondary"
+                                                    (click)="editComment[i]=false">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col md-12 border rounded mr-3 ml-3 mb-3 mt-0 pl-1 pt-2 pb-2">
+                                <table class="w-100">
+                                    <tr>
+                                        <td><label>Posting Url: <a class="small" [routerLink]="currentRoute">
+                                                    {{hosturl}}{{currentRoute}}</a>
+                                                <a class="cursor" *ngIf="!ArticleOwner" (click)="ReportArticle()">
+                                                    <small> |
+                                                        Report Posting</small></a></label></td>
+                                        <td class="float-right pr-2"><button
+                                                class="btn btn-sm btn-primary rounded-pill rounded-sm">Share</button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row"
+                            *ngIf="mainPostingList && mainPostingList!==undefined && mainPostingList.length>0">
+                            <div class="col-md-12">
+                                <div class="card mb-3 box-style">
+                                    <div class="card-header font-weight-bold"> Related Postings
+                                    </div>
+                                    <div class="row p-1 m-1 border-bottom cursor" *ngFor="let post of mainPostingList"
+                                        (click)="OpenArticle(post)">
+                                        <div class="col-md-2 p-0">
+                                            <img ngIf="post && post!=undefined"
+                                                [src]="authService.bindImageUrl('profile',post.profileImage)"
+                                                class="meduimImgSize rounded-circle" alt="...">
+                                        </div>
+                                        <div ngIf="post && post!=undefined" class="col-md-10 p-0 pl-3 pt-2">
+                                            <label class="small text-break cursor">{{post.header}}</label>
+                                        </div>
+                                    </div>
+                                    <div *ngIf="showExtraPostings">
+                                        <div class="row p-1 m-1 border-bottom cursor"
+                                            *ngFor="let post of extraPostingList">
+                                            <div class="col-md-2 p-0">
+                                                <img ngIf="post && post!=undefined"
+                                                    [src]="authService.bindImageUrl('profile',post.profileImage)"
+                                                    class="meduimImgSize rounded-circle" alt="...">
+                                            </div>
+                                            <div ngIf="post && post!=undefined" class="col-md-10 p-0 pl-3 pt-2">
+                                                <label class="small text-break cursor">{{post.header}}</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center cursor" (click)="showMorePostings()">
+                                        <span *ngIf="!showExtraPostings">
+                                            <svg-angle-down></svg-angle-down>
+                                        </span>
+                                        <span *ngIf="showExtraPostings">
+                                            <svg-angle-up></svg-angle-up>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <app-adds></app-adds>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="DataLoading">
+        <div class="row">
+            <div class="col-md-12 mt-2 p-0">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="item">
+                            <ngx-skeleton-loader></ngx-skeleton-loader>
+                        </div>
+                    </div>
+                </div>
+                <div class="row p-3">
+                    <div class="col-md-12 border rounded">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <ngx-skeleton-loader appearance="circle"
+                                    [theme]="{width:'3rem',height:'3rem','border-radius':'1rem'}">
+                                </ngx-skeleton-loader>
+                            </div>
+                            <div class="col-md-11 pt-2">
+                                <ngx-skeleton-loader></ngx-skeleton-loader>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-2 mt-1 p-0">
+                    <ngx-skeleton-loader appearance="circle"
+                        [theme]="{'width':'72rem','height':'25rem','border-radius':'2rem'}">
+                    </ngx-skeleton-loader>
+                </div>
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="btn-toolbar mb-3">
+                            <ngx-skeleton-loader count="4" appearance="circle"
+                                [theme]="{width: '6rem',height: '3rem','border-radius': '2rem'}">
+                            </ngx-skeleton-loader>
+                        </div>
+                        <div class="row pl-3 mb-2">
+                            <div class="col-md-12 ">
+                                <ngx-skeleton-loader></ngx-skeleton-loader>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="item">
+                                    <ngx-skeleton-loader count="3"></ngx-skeleton-loader>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row p-2">
+                            <div class="col-md-12 border rounded">
+                                <div class="row">
+                                    <div class="col-md-2 p-0">
+                                        <ngx-skeleton-loader appearance="circle"
+                                            [theme]="{width:'3rem',height:'3rem','border-radius':'2rem'}">
+                                        </ngx-skeleton-loader>
+                                    </div>
+                                    <div class="col-md-10 pt-2 pl-3">
+                                        <div>
+                                            <ngx-skeleton-loader></ngx-skeleton-loader>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row p-2">
+                            <div class="col-md-12 border rounded">
+                                <div class="row">
+                                    <div class="col-md-2 p-0">
+                                        <ngx-skeleton-loader appearance="circle"
+                                            [theme]="{width:'3rem',height:'3rem','border-radius':'2rem'}">
+                                        </ngx-skeleton-loader>
+                                    </div>
+                                    <div class="col-md-10 pt-2 pl-3">
+                                        <div>
+                                            <ngx-skeleton-loader></ngx-skeleton-loader>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row p-2">
+                            <div class="col-md-12 border rounded">
+                                <div class="row">
+                                    <div class="col-md-2 p-0">
+                                        <ngx-skeleton-loader appearance="circle"
+                                            [theme]="{width:'3rem',height:'3rem','border-radius':'2rem'}">
+                                        </ngx-skeleton-loader>
+                                    </div>
+                                    <div class="col-md-10 pt-2 pl-2">
+                                        <div>
+                                            <ngx-skeleton-loader></ngx-skeleton-loader>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card mb-3">
+                                    <div class="card-header">
+                                        <ngx-skeleton-loader></ngx-skeleton-loader>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-md-2 p-0">
+                                                <ngx-skeleton-loader appearance="circle"
+                                                    [theme]="{width:'3rem',height:'3rem','border-radius':'2rem'}">
+                                                </ngx-skeleton-loader>
+                                            </div>
+                                            <div class="col-md-10 p-0 pl-3">
+                                                <div>
+                                                    <ngx-skeleton-loader></ngx-skeleton-loader>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-2 p-0">
+                                                <ngx-skeleton-loader appearance="circle"
+                                                    [theme]="{width:'3rem',height:'3rem','border-radius':'2rem'}">
+                                                </ngx-skeleton-loader>
+                                            </div>
+                                            <div class="col-md-10 p-0 pl-3">
+                                                <div>
+                                                    <ngx-skeleton-loader></ngx-skeleton-loader>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-2 p-0">
+                                                <ngx-skeleton-loader appearance="circle"
+                                                    [theme]="{width:'3rem',height:'3rem','border-radius':'2rem'}">
+                                                </ngx-skeleton-loader>
+                                            </div>
+                                            <div class="col-md-10 p-0 pl-3">
+                                                <div>
+                                                    <ngx-skeleton-loader></ngx-skeleton-loader>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-2 p-0">
+                                                <ngx-skeleton-loader appearance="circle"
+                                                    [theme]="{width:'3rem',height:'3rem','border-radius':'2rem'}">
+                                                </ngx-skeleton-loader>
+                                            </div>
+                                            <div class="col-md-10 p-0 pl-3">
+                                                <div>
+                                                    <ngx-skeleton-loader></ngx-skeleton-loader>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

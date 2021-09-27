@@ -1,0 +1,34 @@
+<div class="main-div" >
+  <span class="btn-toggle cursor" (click)="toggleDisplay()">
+    <svg-list-view></svg-list-view>
+  </span> 
+  <div class="list-group mb-3 display-flex" [ngClass]="{'show':!isColapse}">
+    <a class="list-group-item list-group-item-action bg-secondray active">
+      About us
+    </a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/About']"
+      [routerLinkActive]="['activeNode']">About</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Partners']"
+      [routerLinkActive]="['activeNode']">Partners</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Announcements']"
+      [routerLinkActive]="['activeNode']">Announcements</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Plans']"
+      [routerLinkActive]="['activeNode']">Plans</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Advertising']"
+      [routerLinkActive]="['activeNode']">Advertising</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Careers']"
+      [routerLinkActive]="['activeNode']">Careers</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/Help']"
+      [routerLinkActive]="['activeNode']">Help</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/ContactUs']"
+      [routerLinkActive]="['activeNode']">Contact Us</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/UserAgreement']"
+      [routerLinkActive]="['activeNode']">User Agreement</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/PrivacyPolicy']"
+      [routerLinkActive]="['activeNode']">Privacy Policy</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/CopyrightPolicy']"
+      [routerLinkActive]="['activeNode']">Copyright Policy</a>
+    <a class="list-group-item list-group-item-action" [routerLink]="['/CookieUse']"
+      [routerLinkActive]="['activeNode']">Cookie Use</a>
+  </div>
+</div>

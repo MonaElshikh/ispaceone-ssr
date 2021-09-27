@@ -1,0 +1,395 @@
+<div class="row mt-2 mb-2 p-0">
+    <div class="col-md-12">
+        <h5 class="header-style">Account Upgrade</h5>
+        <div class="row">
+            <div class="col-md-12 ">
+                <div class="card mb-3 border-0">
+                    <div class="row p-2 mb-2">
+                        <div class="col-md-12 ">
+                            <button
+                                class="btn btn-default text-secondary border-secondary rounded-pill float-right p-0 w-100">
+                                Please Note: Prices are subject to change at any time. It is reccomended that you lock
+                                in the low prices while they last!
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-deck ml-2">
+                        <div class="w-25">
+                            <button *ngIf="isBasic" style="font-size: 15px;"
+                                class="btn btn-default text-secondary border-secondary rounded-pill w-100 ">
+                                Current Plan:{{UpgradeState}}
+                            </button>
+                        </div>
+                        <div class="w-25">
+                            <button *ngIf="isPremuim" style="font-size: 15px;"
+                                class="btn btn-default text-secondary border-secondary rounded-pill w-100 h-100 p-2">
+                                <p class="m-0">Current Plan: {{UpgradeState}}</p> {{AccountType}}
+                            </button>
+                        </div>
+                        <div class="w-25">
+                            <button *ngIf="isPlus" style="font-size: 15px;"
+                                class="btn btn-default text-secondary border-secondary rounded-pill w-100 h-100 p-2">
+                                <p class="m-0">Current Plan: {{UpgradeState}}</p> {{AccountType}}
+                            </button>
+                        </div>
+                        <div class="w-25">
+                            <button *ngIf="isExclusive" style="font-size: 15px;"
+                                class="btn btn-default text-secondary border-secondary rounded-pill w-100 h-100 p-2">
+                                <p class="m-0">Current Plan: {{UpgradeState}}</p> {{AccountType}}
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-deck ml-2">
+                        <div class="card m-2 basic-box" [ngClass]="{'active-basic-box':SelectedPlan==='Free'}">
+                            <div class="card-body p-2">
+                                <h5 class="card-title">Free: $0/month </h5>
+                                <hr>
+                                <p class="card-text m-1">
+                                    <span>&#8226;</span>
+                                    Create a limited profile
+                                </p>
+                                <p class="card-text m-1">
+                                    <span>&#8226;</span>
+                                    At risk of profile deletion
+                                </p>
+                                <p class="card-text m-1">
+                                    <span>&#8226;</span>
+                                    View few full profiles with photos
+                                </p>
+                                <p class="card-text m-1">
+                                    <span>&#8226;</span>
+                                    Very limited search functions
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card m-2 premium-box" [ngClass]="{'active-premium-box':SelectedPlan==='Premium'}">
+                            <div class="card-body p-2">
+                                <h5 class="card-title">
+                                    Premium: $25/month &nbsp;
+                                    <span class="cursor" style="fill:#1e90ff;">
+                                        <svg-star></svg-star>
+                                    </span>
+                                </h5>
+                                <hr>
+                                <p class="card-text m-1">
+                                    <span>&#8226;</span>
+                                    Create a full robust profile
+                                </p>
+                                <p class="card-text m-1">
+                                    <span>&#8226;</span>
+                                    No risk of profile deletion
+                                </p>
+                                <p class="card-text m-1">
+                                    <span>&#8226;</span>
+                                    View unlimited full profiles & photos
+                                </p>
+                                <p class="card-text m-1">
+                                    <span>&#8226;</span>
+                                    Unlimited search & multiple criterion
+                                </p>
+                                <p class="card-text m-1">
+                                    <span>&#8226;</span>
+                                    Message any member
+                                </p>
+                                <p class="card-text m-1">
+                                    <span>&#8226;</span>
+                                    See who viewed you
+                                </p>
+                                <p class="card-text m-1">
+                                    <span>&#8226;</span>
+                                    Post personal noncomm articles
+                                </p>
+                                <p class="card-text m-1">
+                                    <span>&#8226;</span>
+                                    Profile badge
+                                </p>
+                                <p class="card-text m-1">
+                                    <span>&#8226;</span>
+                                    Ticket Support
+                                </p>
+                                <p class="card-text m-1">
+                                    <span>&#8226;</span>
+                                    More exposure site wide
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-secondary mb-1 d-block w-100" [disabled]="!isExpiredMembership"
+                                    *ngFor="let prem of PremiumMembership,index as Pi;"
+                                    [ngClass]="{'btn-primary':selectedPrem[Pi],'btn-secondary': !selectedPrem[Pi]}"
+                                    (click)="SetSelectedUpgradeButtonStyle(Pi,'Premium');ChangeSelection(prem,'Premium')">
+                                    <span *ngIf="selectedPrem[Pi]" style="color:white;fill: transparent;">
+                                        <svg-tick></svg-tick>
+                                    </span>&nbsp;
+                                    {{prem.duration}}-{{prem.curancy}}{{prem.price}}</button>
+                            </div>
+                        </div>
+                        <div class="card m-2 plus-box" [ngClass]="{'active-plus-box':SelectedPlan==='Featured'}">
+                            <div class="card-body p-2">
+                                <h5 class="card-title">
+                                    Plus: $50/month &nbsp;
+                                    <span class="cursor" style="fill:#008080;">
+                                        <svg-star></svg-star>
+                                    </span>
+                                </h5>
+                                <hr>
+                                <p class="card-text m-1">
+                                    <span>&#8226;</span>
+                                    Create a full robust profile
+                                </p>
+                                <p class="card-text m-1">
+                                    <span>&#8226;</span>
+                                    No risk of profile deletion
+                                </p>
+                                <p class="card-text m-1">
+                                    <span>&#8226;</span>
+                                    View unlimited full profiles & photos
+                                </p>
+                                <p class="card-text m-1">
+                                    <span>&#8226;</span>
+                                    Unlimited search & multiple criterion
+                                </p>
+                                <p class="card-text m-1">
+                                    <span>&#8226;</span>
+                                    Message any member
+                                </p>
+                                <p class="card-text m-1">
+                                    <span>&#8226;</span>
+                                    See who viewed you
+                                </p>
+                                <p class="card-text m-1">
+                                    <span>&#8226;</span>
+                                    Post personal noncomm articles
+                                </p>
+                                <p class="card-text m-1">
+                                    <span>&#8226;</span>
+                                    Profile badge
+                                </p>
+                                <p class="card-text m-1">
+                                    <span>&#8226;</span>
+                                    Priority Support
+                                </p>
+                                <p class="card-text m-1">
+                                    <span>&#8226;</span>
+                                    Most exposure site wide
+                                </p>
+                                <p class="card-text m-1">
+                                    <span>&#8226;</span>
+                                    View profiles anonymously
+                                </p>
+                                <p class="card-text m-1">
+                                    <span>&#8226;</span>
+                                    Anybody in the world can view your profile and contact you
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="btn btn-secondary mb-1 d-block w-100" [disabled]="!isExpiredMembership"
+                                    *ngFor="let feat of FeatureMembership,index as Fi;"
+                                    (click)="SetSelectedUpgradeButtonStyle(Fi,'Featured');ChangeSelection(feat,'Featured')"
+                                    [ngClass]="{'btn-primary':selectedFeat[Fi],'btn-secondary': !selectedFeat[Fi]}">
+                                    <span *ngIf="selectedFeat[Fi]" style="color:white;fill: transparent;">
+                                        <svg-tick></svg-tick>
+                                    </span>&nbsp;
+                                    {{feat.duration}}-{{feat.curancy}}{{feat.price}}</button>
+                            </div>
+                        </div>
+                        <div class="card m-2 exclusive-box">
+                            <div class="card-body p-2">
+                                <h5 class="card-title">Exclusive: $100+/month</h5>
+                                <hr>
+                                <p class="card-text m-1">
+                                    <span>&#8226;</span>
+                                    Everything in Plus plan + more
+                                </p>
+                                <p class="card-text m-1">
+                                    <span>&#8226;</span>
+                                    Contact us for more info
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row p-3 mx-auto d-block" *ngIf="isExpiredMembership">
+                        <div class="col-md-12">
+                            <button class="btn btn-primary" [disabled]="MembershipChoosenValue ===''"
+                                (click)="SelectPlan()">Select
+                                Plan</button>&nbsp;
+                            <button class="btn btn-secondary" [disabled]="upgradeDone"
+                                (click)="CancelUpgrade()">Cancel</button>
+                        </div>
+                    </div>
+                    <div class="row p-3 mx-auto d-block" *ngIf="validCouponCodeMesg">
+                        <button class="btn btn-default text-secondary border-secondary rounded-pill pl-2 pr-2 w-100">
+                            <span style="color:green;fill: transparent;">
+                                <svg-tick></svg-tick>
+                            </span> Coupon Applied! Please make sure to
+                            make the payment
+                            before you leave this page because you
+                            may not get this great deal again.
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" *ngIf="isUpgrade">
+            <div class="col-md-12">
+                <div class="card mb-3 box-style">
+                    <div class="card-header bg-white cursor" (click)="toggleUpgradeBoxes('PaymentDetails')">
+                        <span class="font-weight-bold"> Payment Details</span>
+                    </div>
+                    <div class="card-body p-0" [ngClass]='{ collapse : !isPaymentDetailsExpand }'>
+                        <div class="row p-2">
+                            <div class="col-md-2"><label class="pl-2">Payment For:</label></div>
+                            <div class="col-md-10"><label for="">{{PaymentFor}}</label></div>
+                        </div>
+                        <hr>
+                        <div class="row p-2">
+                            <div class="col-md-2"><label class="pl-2">Payment Amount:</label></div>
+                            <div class="col-md-5">
+                                <label for="">${{PaymentAmount}}</label>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="row" *ngIf="showDiscountdetails">
+                                    <div class="col-md-5">
+                                        <input type="text" class="form-control" [(ngModel)]="couponCode"
+                                            placeholder="Coupon Code">
+                                    </div>
+                                    <div class="col-md-2 p-0">
+                                        <button class="btn btn-sm btn-secondary" [disabled]="couponCode===''"
+                                            (click)="applyCouponCode()">Apply</button>
+                                    </div>
+                                    <div class="col-md-4 p-0"> <label class="text-danger pl-2"
+                                            *ngIf="!validCouponCode">Invalid Coupon
+                                            Code</label></div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="row pt-2">
+                            <div class="col-md-5"></div>
+                            <div class="col-md-2">
+                                <ngx-paypal [config]="payPalConfig"></ngx-paypal>
+                            </div>
+                            <div class="col-md-5"></div>
+                        </div>
+                        <hr>
+                        <p class="pl-4"> I authorize payment to be made for the above plan, I also agree to all the
+                            terms and
+                            conditions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mb-3 box-style">
+                    <div class="card-header bg-white cursor" (click)="toggleUpgradeBoxes('UpgradeHistory')">
+                        <span class="font-weight-bold">Upgrade History</span>
+                    </div>
+                    <div class="card-body" [ngClass]='{ collapse : !isUpgradeHistoryExpand }'>
+                        <div class="row p-2">
+                            <div class="col-md-1 h6">id</div>
+                            <div class="col-md-2 h6">Upgrade To</div>
+                            <div class="col-md-2 h6">Period</div>
+                            <div class="col-md-2 h6">Activation Date</div>
+                            <div class="col-md-2 h6">Expiration Date</div>
+                            <div class="col-md-3 h6">Status</div>
+                        </div>
+                        <div class="row p-2 border-top" *ngFor="let UpgradeHistory of UpgradeHistoryList">
+                            <div class="col-md-1"><label> {{UpgradeHistory.id}}</label></div>
+                            <div class="col-md-2"><label> {{UpgradeHistory.upgradeTo}}</label></div>
+                            <div class="col-md-2">
+                                <label>
+                                    {{UpgradeHistory.upgradeType}}&nbsp;{{UpgradeHistory.period}}</label>
+                            </div>
+                            <div class="col-md-2"><label> {{UpgradeHistory.activationDate |date}}</label></div>
+                            <div class="col-md-2">
+                                <label *ngIf="UpgradeHistory.expirationDate">
+                                    {{UpgradeHistory.expirationDate | date}}
+                                </label>
+                            </div>
+                            <div class="col-md-3"><label>{{UpgradeHistory.adminStatus}}</label></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mb-3 box-style">
+                    <div class="card-header bg-white cursor" (click)="toggleUpgradeBoxes('AdditionalProducts')">
+                        <span class="font-weight-bold">Additional Products</span>
+                    </div>
+                    <div class="card-body" [ngClass]='{ collapse : !isAdditionalProductsExpand }'>
+                        <div class="row mb-2">
+                            <div class="col-md-3">Article Back:</div>
+                            <div class="col-md-3 blueLink cursor"><a
+                                    (click)="showArticleBackRecords =!showArticleBackRecords">Show Records</a></div>
+                            <div class="col-md-3">
+                                <div class="form-group ">
+                                    <select class="form-control float-left mr-2" style="width:9rem;"
+                                        id="articleBackOptions">
+                                        <option>1 0f 20$
+                                        </option>
+                                        <option>2 0f 40$
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3"><button class="btn btn-sm btn-primary">buy Now</button></div>
+                        </div>
+                        <div class="row mb-2" *ngIf="showArticleBackRecords">
+                            <div class="col-md-12"><label>1 of 1 Available | $20 | 10/30/2020 |
+                                    Pending</label></div>
+                        </div>
+                        <div class="border-bottom"></div>
+                        <div class="row mt-3">
+                            <div class="col-md-3">Trust Seal : </div>
+                            <div class="col-md-3 blueLink cursor"><a
+                                    (click)="showTrustSealRecords=!showTrustSealRecords">Show Records</a></div>
+                            <div class="col-md-3">
+                                <div class="form-group ">
+                                    <select class="form-control float-left mr-2" style="width:9rem;"
+                                        id="articleBackOptions">
+                                        <option>1 0f 20$
+                                        </option>
+                                        <option>2 0f 40$
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3"><button class="btn btn-sm btn-primary">buy Now</button></div>
+                        </div>
+                        <div class="row mb-2" *ngIf="showTrustSealRecords">
+                            <div class="col-md-12"><label>1 of 1 Available | $20 | 10/30/2020 |
+                                    Pending</label></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mb-3 box-style">
+                    <div class="card-header bg-white cursor" (click)="toggleUpgradeBoxes('ContributionHistory')">
+                        <span class="font-weight-bold">Contribution History</span>
+                    </div>
+                    <div class="card-body" [ngClass]='{ collapse : !isContributionHistoryExpand }'>
+                        <table class="table table-bordered">
+                            <tr>
+                                <th>Date</th>
+                                <th>Payment Type</th>
+                                <th>Amount</th>
+                            </tr>
+                            <tr>
+                                <td><label>11-12-2020</label></td>
+                                <td><label>credit</label></td>
+                                <td><label>30$</label></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-2">
+            <app-contribution></app-contribution>
+        </div>
+    </div>

@@ -1,0 +1,32 @@
+<div class="row p-0 mb-3">
+  <div class="col-md-3 pt-0">
+    <app-footer-left-menu></app-footer-left-menu>
+  </div>
+  <div class="col-md-9" *ngIf="!DataLoading">
+    <h5 class="header-style">Help</h5>
+    <div *ngIf="HelpData && HelpData!= undefined">
+      <div class="card mb-3" *ngFor="let help of HelpData,index as i;">
+        <div class="card-header p-0 cursor " id="headingOne" (click)="isExpand[i]=!isExpand[i]">
+          <h3 class="mb-0">
+            <span class="btn text-secondary">
+              {{help.title}}
+            </span>
+          </h3>
+        </div>
+        <div class="card-body" [ngClass]="{ collapse : isExpand[i] }">
+          <span class="whiteSpace">
+            {{help.body}}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-9" *ngIf="DataLoading">
+    <div class="border mb-2 pt-2 pl-2 pr-2">
+      <ngx-skeleton-loader></ngx-skeleton-loader>
+    </div>
+    <div class="border p-3">
+      <ngx-skeleton-loader count="30"></ngx-skeleton-loader>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="row p-0 mb-3">
+  <div class="col-md-3 pt-0">
+    <app-footer-left-menu></app-footer-left-menu>
+  </div>
+  <div class="col-md-9" *ngIf="!DataLoading">
+    <h5 class="header-style" *ngIf="CopyrightData[0] && CopyrightData[0]!== undefined">
+     {{CopyrightData[0].title}}
+    </h5>
+    <div class="border p-3">
+      <span class="whiteSpace" *ngIf="CopyrightData[0] && CopyrightData[0]!== undefined">
+       {{CopyrightData[0].body}}
+      </span>
+    </div>
+  </div>
+  <div class="col-md-9" *ngIf="DataLoading">
+    <div class="border mb-2 pt-2 pl-2 pr-2">
+      <ngx-skeleton-loader></ngx-skeleton-loader>
+    </div>
+    <div class="border p-3">
+      <ngx-skeleton-loader count="30"></ngx-skeleton-loader>
+    </div>
+  </div>
+</div>
